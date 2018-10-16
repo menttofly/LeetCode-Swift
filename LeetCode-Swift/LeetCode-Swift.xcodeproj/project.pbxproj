@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D30CA5121763FD000D7C0BB /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */; };
 		1D9537D121763D7B00A2C3AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9537D021763D7B00A2C3AD /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
 		1D9537CD21763D7B00A2C3AD /* LeetCode-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9537D021763D7B00A2C3AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 		1D9537D921763DF200A2C3AD /* DP */ = {
 			isa = PBXGroup;
 			children = (
+				1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */,
 			);
 			name = DP;
 			path = ../DP;
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D9537D121763D7B00A2C3AD /* main.swift in Sources */,
+				1D30CA5121763FD000D7C0BB /* LongestPalindromicSubstring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
