@@ -16,12 +16,12 @@ import Foundation
  */
 class TwoSum {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var hashmap: [Int:Int] = [:]
+        var hash: [Int: Int] = [:]
         for (i, num) in nums.enumerated() {
-            if let index = hashmap[target - num] {
+            if let index = hash[target - num] {
                 return [i, index]
             } else {
-                hashmap[num] = i
+                hash[num] = i
             }
         }
         fatalError("No valid output")
