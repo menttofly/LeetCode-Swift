@@ -17,6 +17,7 @@
 		314DE6DA218BF67B001C84FB /* ReverseInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6D9218BF67B001C84FB /* ReverseInteger.swift */; };
 		314DE6DE218C2921001C84FB /* StringToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6DD218C2921001C84FB /* StringToInteger.swift */; };
 		314DE6E0218C48CE001C84FB /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6DF218C48CE001C84FB /* PalindromeNumber.swift */; };
+		314DE6E2218C53D0001C84FB /* RegularExpressionMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */; };
 		31C53EFE218AF60C00F340E2 /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C53EFD218AF60C00F340E2 /* ZigZagConversion.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		314DE6D9218BF67B001C84FB /* ReverseInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseInteger.swift; sourceTree = "<group>"; };
 		314DE6DD218C2921001C84FB /* StringToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToInteger.swift; sourceTree = "<group>"; };
 		314DE6DF218C48CE001C84FB /* PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
+		314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpressionMatching.swift; sourceTree = "<group>"; };
 		31C53EFD218AF60C00F340E2 /* ZigZagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */,
+				314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */,
 			);
 			name = DP;
 			path = ../DP;
@@ -205,6 +208,7 @@
 				1D30CA5521764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
 				313621082188737800E9B9BB /* MedianOfTwoSortedArrays.swift in Sources */,
 				314DE6DA218BF67B001C84FB /* ReverseInteger.swift in Sources */,
+				314DE6E2218C53D0001C84FB /* RegularExpressionMatching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
