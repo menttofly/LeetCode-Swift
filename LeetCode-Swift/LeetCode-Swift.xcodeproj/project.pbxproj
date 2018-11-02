@@ -16,6 +16,7 @@
 		313621082188737800E9B9BB /* MedianOfTwoSortedArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313621072188737800E9B9BB /* MedianOfTwoSortedArrays.swift */; };
 		314DE6DA218BF67B001C84FB /* ReverseInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6D9218BF67B001C84FB /* ReverseInteger.swift */; };
 		314DE6DE218C2921001C84FB /* StringToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6DD218C2921001C84FB /* StringToInteger.swift */; };
+		314DE6E0218C48CE001C84FB /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6DF218C48CE001C84FB /* PalindromeNumber.swift */; };
 		31C53EFE218AF60C00F340E2 /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C53EFD218AF60C00F340E2 /* ZigZagConversion.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		313621072188737800E9B9BB /* MedianOfTwoSortedArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedianOfTwoSortedArrays.swift; sourceTree = "<group>"; };
 		314DE6D9218BF67B001C84FB /* ReverseInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseInteger.swift; sourceTree = "<group>"; };
 		314DE6DD218C2921001C84FB /* StringToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToInteger.swift; sourceTree = "<group>"; };
+		314DE6DF218C48CE001C84FB /* PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
 		31C53EFD218AF60C00F340E2 /* ZigZagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		1D9537D721763DF200A2C3AD /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				314DE6DF218C48CE001C84FB /* PalindromeNumber.swift */,
 				1D30CA5221764CBD00D7C0BB /* Pow.swift */,
 				314DE6D9218BF67B001C84FB /* ReverseInteger.swift */,
 			);
@@ -194,6 +197,7 @@
 				313621032186B82800E9B9BB /* TwoSum.swift in Sources */,
 				1D30CA5321764CBD00D7C0BB /* Pow.swift in Sources */,
 				1D9537D121763D7B00A2C3AD /* main.swift in Sources */,
+				314DE6E0218C48CE001C84FB /* PalindromeNumber.swift in Sources */,
 				31C53EFE218AF60C00F340E2 /* ZigZagConversion.swift in Sources */,
 				314DE6DE218C2921001C84FB /* StringToInteger.swift in Sources */,
 				313621062186DFEC00E9B9BB /* AddTwoNumbers.swift in Sources */,

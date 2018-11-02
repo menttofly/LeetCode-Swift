@@ -30,7 +30,7 @@ class ReverseInteger {
 
 /**
  * Primary idea: Using x % 10 to get the current reversely number, and use x / 10 to cut down the visited tail
- * Note: Using '&*' and '&+' to allow overflow in Int32, then judge the result / 10 to see if it is still the original value
+ * Note: Using '&*' and '&+' to allow overflow in Int32, then judge result / 10 to see if it is still the original value
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
