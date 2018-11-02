@@ -27,9 +27,9 @@ class RegularExpressionMatching {
         for i in 0...m {
             for j in 1...n {
                 if chp[j-1] == "*" {
-                    /// none macth, a* count zero time
+                    /// None macth, a* count zero time
                     let none = dp[i][j - 2]
-                    /// one or more macth, a* count at least one time
+                    /// One or more macth, a* count at least one time
                     let onemore = (i > 0 && (chs[i - 1] == chp[j - 2] || chp[j - 2] == ".") && dp[i - 1][j])
                     dp[i][j] = none || onemore
                 } else {
