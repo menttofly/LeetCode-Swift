@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
- * Primary idea: Converting the problem into a small k-th element in the merged array by divide and conquer
+ * Primary idea: Converting the problem into a small k-th element in the merged array by Divide and Conquer
  *
  * Time Complexity: O(log(m+n)), Space Complexity: O(1)
  */
