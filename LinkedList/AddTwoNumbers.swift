@@ -44,7 +44,7 @@ class AddTwoNumbers {
             p1 = p1?.next ?? nil
             p2 = p2?.next ?? nil
         }
-        if sum / 10 > 0 {
+        if sum / 10 > 0 {   /// Processing carry
             pcur.next = ListNode(sum / 10)
         }
         return list.next
