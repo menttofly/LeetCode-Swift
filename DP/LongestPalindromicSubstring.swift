@@ -12,7 +12,7 @@ import Foundation
  * Question Link: https://leetcode.com/problems/longest-palindromic-substring/
  * Primary idea: Define DP[i][j] to record whether a substring is palindromic or not by Dynamic Programming
  *
- * Note: State transition equation - DP(i,j) = (DP(i+1,j−1) and Si==Sj)
+ * State Transition Equation: DP(i,j) = (DP(i+1,j−1) and Si == Sj)
  *
  * Time Complexity: O(n^2), Space Complexity: O(n^2)
  */

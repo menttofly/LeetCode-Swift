@@ -119,9 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */,
+				1D40A634218E051800D2D5FD /* MaximumSubarray.swift */,
 				314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */,
 				1D40A632218CBA4600D2D5FD /* WildcardMatching.swift */,
-				1D40A634218E051800D2D5FD /* MaximumSubarray.swift */,
 			);
 			name = DP;
 			path = ../DP;
