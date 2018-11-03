@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/two-sum/
- * Primary idea: Traversing the array and store (target - nums[i], i) as (key, value) in a dictionary
+ * Primary idea: Traversing the array and store (nums[i], i) as (key, value) in a dictionary
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
