@@ -26,7 +26,7 @@ class LongestPalindromicSubstring {
         let chars = [Character](s)
         for i in 0..<count {
             for j in 0..<count {
-                if i >= j {   /// A string has only one character, or empty is palindromic
+                if i >= j {   /// A string has only one character, or empty is a palindromic string
                     dp[i][j] = true
                 }
             }
