@@ -26,7 +26,7 @@ class RegularExpressionMatching {
         
         for i in 0...m {
             for j in 1...n {
-                if chp[j-1] == "*" {
+                if chp[j - 1] == "*" {
                     /// None macth, a* count zero time
                     let none = dp[i][j - 2]
                     /// One or more macth, a* count at least one time
