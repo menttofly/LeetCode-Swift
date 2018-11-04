@@ -12,6 +12,7 @@
 		1D30CA5521764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5421764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift */; };
 		1D40A633218CBA4600D2D5FD /* WildcardMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40A632218CBA4600D2D5FD /* WildcardMatching.swift */; };
 		1D40A635218E051800D2D5FD /* MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40A634218E051800D2D5FD /* MaximumSubarray.swift */; };
+		1D40A637218EBC4000D2D5FD /* CoinChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40A636218EBC4000D2D5FD /* CoinChange.swift */; };
 		1D9537D121763D7B00A2C3AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9537D021763D7B00A2C3AD /* main.swift */; };
 		313621032186B82800E9B9BB /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313621022186B82800E9B9BB /* TwoSum.swift */; };
 		313621062186DFEC00E9B9BB /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313621052186DFEC00E9B9BB /* AddTwoNumbers.swift */; };
@@ -41,6 +42,7 @@
 		1D30CA5421764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringWithoutRepeatingCharacters.swift; sourceTree = "<group>"; };
 		1D40A632218CBA4600D2D5FD /* WildcardMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildcardMatching.swift; sourceTree = "<group>"; };
 		1D40A634218E051800D2D5FD /* MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubarray.swift; sourceTree = "<group>"; };
+		1D40A636218EBC4000D2D5FD /* CoinChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinChange.swift; sourceTree = "<group>"; };
 		1D9537CD21763D7B00A2C3AD /* LeetCode-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9537D021763D7B00A2C3AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		313621022186B82800E9B9BB /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				1D40A634218E051800D2D5FD /* MaximumSubarray.swift */,
 				314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */,
 				1D40A632218CBA4600D2D5FD /* WildcardMatching.swift */,
+				1D40A636218EBC4000D2D5FD /* CoinChange.swift */,
 			);
 			name = DP;
 			path = ../DP;
@@ -214,6 +217,7 @@
 				1D30CA5121763FD000D7C0BB /* LongestPalindromicSubstring.swift in Sources */,
 				1D40A633218CBA4600D2D5FD /* WildcardMatching.swift in Sources */,
 				1D30CA5521764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
+				1D40A637218EBC4000D2D5FD /* CoinChange.swift in Sources */,
 				313621082188737800E9B9BB /* MedianOfTwoSortedArrays.swift in Sources */,
 				314DE6DA218BF67B001C84FB /* ReverseInteger.swift in Sources */,
 				314DE6E2218C53D0001C84FB /* RegularExpressionMatching.swift in Sources */,
