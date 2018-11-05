@@ -21,7 +21,7 @@ class LongestIncreasingSubsequence {
         if nums.count == 0 {
             return 0
         }
-        var dp = Array(repeating: Int.min, count: nums.count)
+        var dp = Array(repeating: 1, count: nums.count)
         var result = 1
         for i in 0..<nums.count {
             var max = 0   /// Record the max DP[j] of the interval [0..<i]
