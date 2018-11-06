@@ -16,7 +16,7 @@ import Foundation
  */
 class MergeTwoSortedLists {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        let list = ListNode(0)   /// As dummy node
+        let list = ListNode(0)   /// Use as dummy node
         var ls1 = l1, ls2 = l2, ptr = list
         while ls1 != nil && ls2 != nil {
             if ls1!.val < ls2!.val {
