@@ -24,6 +24,7 @@
 		314DE6E0218C48CE001C84FB /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6DF218C48CE001C84FB /* PalindromeNumber.swift */; };
 		314DE6E2218C53D0001C84FB /* RegularExpressionMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */; };
 		31A0D4C121901146009E357D /* LongestContinuousIncreasingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0D4C021901146009E357D /* LongestContinuousIncreasingSubsequence.swift */; };
+		31A0D4C321913AF7009E357D /* ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0D4C221913AF7009E357D /* ClimbingStairs.swift */; };
 		31C53EFE218AF60C00F340E2 /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C53EFD218AF60C00F340E2 /* ZigZagConversion.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		314DE6DF218C48CE001C84FB /* PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
 		314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpressionMatching.swift; sourceTree = "<group>"; };
 		31A0D4C021901146009E357D /* LongestContinuousIncreasingSubsequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestContinuousIncreasingSubsequence.swift; sourceTree = "<group>"; };
+		31A0D4C221913AF7009E357D /* ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairs.swift; sourceTree = "<group>"; };
 		31C53EFD218AF60C00F340E2 /* ZigZagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 		1D9537D921763DF200A2C3AD /* DP */ = {
 			isa = PBXGroup;
 			children = (
+				31A0D4C221913AF7009E357D /* ClimbingStairs.swift */,
 				1D40A636218EBC4000D2D5FD /* CoinChange.swift */,
 				1D40A63B21907F0300D2D5FD /* LongestIncreasingSubsequence.swift */,
 				1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */,
@@ -230,6 +233,7 @@
 				31A0D4C121901146009E357D /* LongestContinuousIncreasingSubsequence.swift in Sources */,
 				314DE6E0218C48CE001C84FB /* PalindromeNumber.swift in Sources */,
 				31C53EFE218AF60C00F340E2 /* ZigZagConversion.swift in Sources */,
+				31A0D4C321913AF7009E357D /* ClimbingStairs.swift in Sources */,
 				314DE6DE218C2921001C84FB /* StringToInteger.swift in Sources */,
 				1D40A63C21907F0300D2D5FD /* LongestIncreasingSubsequence.swift in Sources */,
 				313621062186DFEC00E9B9BB /* AddTwoNumbers.swift in Sources */,
