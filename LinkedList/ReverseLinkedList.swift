@@ -14,7 +14,7 @@ import Foundation
  *
  * Time Complexity: O(n)
  */
-fileprivate class Solution {
+class ReverseLinkedList {
     func reverseList(_ head: ListNode?) -> ListNode? {
         var reversed: ListNode?
         var previous: ListNode?
