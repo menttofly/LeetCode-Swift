@@ -20,6 +20,7 @@
 		1D9537D121763D7B00A2C3AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9537D021763D7B00A2C3AD /* main.swift */; };
 		1DC2129C219B24E400646031 /* SuperEggDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2129B219B24E400646031 /* SuperEggDrop.swift */; };
 		1DF3F90921C4DDB900985128 /* InvertBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3F90821C4DDB900985128 /* InvertBinaryTree.swift */; };
+		1DF3F90B21C4F74F00985128 /* BinaryTreeInorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3F90A21C4F74F00985128 /* BinaryTreeInorderTraversal.swift */; };
 		313621032186B82800E9B9BB /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313621022186B82800E9B9BB /* TwoSum.swift */; };
 		313621062186DFEC00E9B9BB /* AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313621052186DFEC00E9B9BB /* AddTwoNumbers.swift */; };
 		313621082188737800E9B9BB /* MedianOfTwoSortedArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313621072188737800E9B9BB /* MedianOfTwoSortedArrays.swift */; };
@@ -59,6 +60,7 @@
 		1D9537D021763D7B00A2C3AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1DC2129B219B24E400646031 /* SuperEggDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperEggDrop.swift; sourceTree = "<group>"; };
 		1DF3F90821C4DDB900985128 /* InvertBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertBinaryTree.swift; sourceTree = "<group>"; };
+		1DF3F90A21C4F74F00985128 /* BinaryTreeInorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeInorderTraversal.swift; sourceTree = "<group>"; };
 		313621022186B82800E9B9BB /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		313621052186DFEC00E9B9BB /* AddTwoNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers.swift; sourceTree = "<group>"; };
 		313621072188737800E9B9BB /* MedianOfTwoSortedArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedianOfTwoSortedArrays.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				1DF3F90821C4DDB900985128 /* InvertBinaryTree.swift */,
+				1DF3F90A21C4F74F00985128 /* BinaryTreeInorderTraversal.swift */,
 			);
 			name = Tree;
 			path = ../Tree;
@@ -270,6 +273,7 @@
 				1D40A637218EBC4000D2D5FD /* CoinChange.swift in Sources */,
 				313621082188737800E9B9BB /* MedianOfTwoSortedArrays.swift in Sources */,
 				314DE6DA218BF67B001C84FB /* ReverseInteger.swift in Sources */,
+				1DF3F90B21C4F74F00985128 /* BinaryTreeInorderTraversal.swift in Sources */,
 				314DE6E2218C53D0001C84FB /* RegularExpressionMatching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
