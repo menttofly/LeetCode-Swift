@@ -12,7 +12,7 @@ import Foundation
  * Question Link: https://leetcode.com/problems/binary-tree-inorder-traversal/
  * Primary idea: Classic binary tree traversing.
  *
- * Time Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(n)
  */
 class BinaryTreeInorderTraversal {
     func inorderTraversal(_ root: TreeNode?) -> [Int] {

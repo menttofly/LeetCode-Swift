@@ -12,7 +12,7 @@ import Foundation
  * Question Link: https://leetcode.com/problems/reverse-linked-list/
  * Primary idea: While traversing the linked list, use three pointers to store current and previous and next node.
  *
- * Time Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(1)
  */
 class ReverseLinkedList {
     func reverseList(_ head: ListNode?) -> ListNode? {

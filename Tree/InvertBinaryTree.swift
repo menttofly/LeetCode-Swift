@@ -12,7 +12,7 @@ import Foundation
  * Question Link: https://leetcode.com/problems/invert-binary-tree/
  * Primary idea: Pre-Order traversing binary tree, find all non-leaf nodes and exchange it's left and right child nodes.
  *
- * Time Complexity: O(n)
+ * Time Complexity: O(n), Space Complexity: O(1)
  */
 class InvertBinaryTree {
     @discardableResult
