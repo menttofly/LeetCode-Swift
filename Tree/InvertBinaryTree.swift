@@ -23,12 +23,9 @@ class InvertBinaryTree {
         let temp = root?.left
         root?.left = root?.right
         root?.right = temp
-        if let left = root?.left {
-            invertTree(left)
-        }
-        if let right = root?.right {
-            invertTree(right)
-        }
+        
+        invertTree(root?.left)
+        invertTree(root?.right)
         return root
     }
 }
