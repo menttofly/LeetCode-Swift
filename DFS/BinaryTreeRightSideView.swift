@@ -8,7 +8,7 @@
 
 import Foundation
 
-fileprivate class TreeNode {
+class TreeNode {
     public var val: Int
     public var left: TreeNode?
     public var right: TreeNode?
