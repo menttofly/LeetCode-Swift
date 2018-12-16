@@ -22,6 +22,7 @@
 		1DC2129C219B24E400646031 /* SuperEggDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2129B219B24E400646031 /* SuperEggDrop.swift */; };
 		1DDC34B621C662F8008793D8 /* MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC34B521C662F8008793D8 /* MajorityElement.swift */; };
 		1DDC34B821C668D8008793D8 /* BinaryTreeLevelOrderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC34B721C668D8008793D8 /* BinaryTreeLevelOrderTraversal.swift */; };
+		1DDC34BA21C6739F008793D8 /* MaximumDepthOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC34B921C6739F008793D8 /* MaximumDepthOfBinaryTree.swift */; };
 		1DF3F90921C4DDB900985128 /* InvertBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3F90821C4DDB900985128 /* InvertBinaryTree.swift */; };
 		1DF3F90B21C4F74F00985128 /* BinaryTreeInorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3F90A21C4F74F00985128 /* BinaryTreeInorderTraversal.swift */; };
 		1DF3F90D21C4FCFB00985128 /* BalancedBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3F90C21C4FCFB00985128 /* BalancedBinaryTree.swift */; };
@@ -69,6 +70,7 @@
 		1DC2129B219B24E400646031 /* SuperEggDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperEggDrop.swift; sourceTree = "<group>"; };
 		1DDC34B521C662F8008793D8 /* MajorityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElement.swift; sourceTree = "<group>"; };
 		1DDC34B721C668D8008793D8 /* BinaryTreeLevelOrderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeLevelOrderTraversal.swift; sourceTree = "<group>"; };
+		1DDC34B921C6739F008793D8 /* MaximumDepthOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumDepthOfBinaryTree.swift; sourceTree = "<group>"; };
 		1DF3F90821C4DDB900985128 /* InvertBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertBinaryTree.swift; sourceTree = "<group>"; };
 		1DF3F90A21C4F74F00985128 /* BinaryTreeInorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeInorderTraversal.swift; sourceTree = "<group>"; };
 		1DF3F90C21C4FCFB00985128 /* BalancedBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancedBinaryTree.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				1DF3F90821C4DDB900985128 /* InvertBinaryTree.swift */,
 				1D8A156721C574FA0068B03D /* SubtreeOfAnotherTree.swift */,
 				1DF3F91021C52A9100985128 /* ValidateBinarySearchTree.swift */,
+				1DDC34B921C6739F008793D8 /* MaximumDepthOfBinaryTree.swift */,
 			);
 			name = Tree;
 			path = ../Tree;
@@ -294,6 +297,7 @@
 				1DF3F90F21C5265300985128 /* BalancedBinaryTreeDFS.swift in Sources */,
 				1D40A633218CBA4600D2D5FD /* WildcardMatching.swift in Sources */,
 				1D30CA5521764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
+				1DDC34BA21C6739F008793D8 /* MaximumDepthOfBinaryTree.swift in Sources */,
 				1D63678A2191ED4C007C4D17 /* MergeTwoSortedLists.swift in Sources */,
 				1D40A63A218F351100D2D5FD /* BinaryTreeRightSideView.swift in Sources */,
 				1D40A637218EBC4000D2D5FD /* CoinChange.swift in Sources */,
