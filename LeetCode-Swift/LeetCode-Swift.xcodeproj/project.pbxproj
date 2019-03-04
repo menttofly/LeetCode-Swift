@@ -21,6 +21,7 @@
 		1D7CCCD122216EBD00C9B8B9 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */; };
 		1D8A156821C574FA0068B03D /* SubtreeOfAnotherTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A156721C574FA0068B03D /* SubtreeOfAnotherTree.swift */; };
 		1D9537D121763D7B00A2C3AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9537D021763D7B00A2C3AD /* main.swift */; };
+		1DB1A2CE222D628300375700 /* UniquePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2CD222D628300375700 /* UniquePaths.swift */; };
 		1DB528CB21CFD0C000C72819 /* ThreeSumClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB528CA21CFD0C000C72819 /* ThreeSumClosest.swift */; };
 		1DC2129C219B24E400646031 /* SuperEggDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2129B219B24E400646031 /* SuperEggDrop.swift */; };
 		1DD6247A2222CD5700C5E09D /* LetterCombinationsOfAPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD624792222CD5700C5E09D /* LetterCombinationsOfAPhoneNumber.swift */; };
@@ -86,6 +87,7 @@
 		1D8A156721C574FA0068B03D /* SubtreeOfAnotherTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtreeOfAnotherTree.swift; sourceTree = "<group>"; };
 		1D9537CD21763D7B00A2C3AD /* LeetCode-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9537D021763D7B00A2C3AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1DB1A2CD222D628300375700 /* UniquePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniquePaths.swift; sourceTree = "<group>"; };
 		1DB528CA21CFD0C000C72819 /* ThreeSumClosest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumClosest.swift; sourceTree = "<group>"; };
 		1DC2129B219B24E400646031 /* SuperEggDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperEggDrop.swift; sourceTree = "<group>"; };
 		1DD624792222CD5700C5E09D /* LetterCombinationsOfAPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsOfAPhoneNumber.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				1D40A634218E051800D2D5FD /* MaximumSubarray.swift */,
 				314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */,
 				1DC2129B219B24E400646031 /* SuperEggDrop.swift */,
+				1DB1A2CD222D628300375700 /* UniquePaths.swift */,
 				1D40A632218CBA4600D2D5FD /* WildcardMatching.swift */,
 			);
 			name = DP;
@@ -342,6 +345,7 @@
 				1DF519E2222A9A85007A8C9A /* RemoveNthNodeFromEndOfList.swift in Sources */,
 				1DF519F6222C3966007A8C9A /* GroupAnagrams.swift in Sources */,
 				31A0D4C121901146009E357D /* LongestContinuousIncreasingSubsequence.swift in Sources */,
+				1DB1A2CE222D628300375700 /* UniquePaths.swift in Sources */,
 				1DDC34BC21C677E0008793D8 /* MinimumDepthOfBinaryTree.swift in Sources */,
 				1DFD221A21CE726F00537FE8 /* ThreeSum.swift in Sources */,
 				314DE6E0218C48CE001C84FB /* PalindromeNumber.swift in Sources */,
