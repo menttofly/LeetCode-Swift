@@ -14,7 +14,7 @@ import Foundation
  *
  * State Transition Equation: DP(i,j) = DP(i-1,j) + DP(i,j-1)
  *
- * Time Complexity: O(n), Space Complexity: O(n)
+ * Time Complexity: O(n^2), Space Complexity: O(n^2)
  */
 class UniquePaths {
     func uniquePaths(_ m: Int, _ n: Int) -> Int {
