@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2C4E0D222D577B00B0139B /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C4E0C222D577B00B0139B /* MergeIntervals.swift */; };
 		1D30CA5121763FD000D7C0BB /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */; };
 		1D30CA5321764CBD00D7C0BB /* Pow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5221764CBD00D7C0BB /* Pow.swift */; };
 		1D30CA5521764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5421764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D2C4E0C222D577B00B0139B /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
 		1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
 		1D30CA5221764CBD00D7C0BB /* Pow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pow.swift; sourceTree = "<group>"; };
 		1D30CA5421764CFE00D7C0BB /* LongestSubstringWithoutRepeatingCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringWithoutRepeatingCharacters.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				31A0D4C021901146009E357D /* LongestContinuousIncreasingSubsequence.swift */,
 				1DDC34B521C662F8008793D8 /* MajorityElement.swift */,
 				313621072188737800E9B9BB /* MedianOfTwoSortedArrays.swift */,
+				1D2C4E0C222D577B00B0139B /* MergeIntervals.swift */,
 				1DF519E7222ADFB5007A8C9A /* NextPermutation.swift */,
 				1DF519EF222BEDE7007A8C9A /* Permutations.swift */,
 				1DF519F1222BFCA6007A8C9A /* RotateImage.swift */,
@@ -348,6 +351,7 @@
 				1D62103421C2A3CE0013316D /* ReverseLinkedList.swift in Sources */,
 				31A0D4C321913AF7009E357D /* ClimbingStairs.swift in Sources */,
 				1DF519F0222BEDE7007A8C9A /* Permutations.swift in Sources */,
+				1D2C4E0D222D577B00B0139B /* MergeIntervals.swift in Sources */,
 				1D7CCCD122216EBD00C9B8B9 /* LRUCache.swift in Sources */,
 				1D8A156821C574FA0068B03D /* SubtreeOfAnotherTree.swift in Sources */,
 				1DF3F90D21C4FCFB00985128 /* BalancedBinaryTree.swift in Sources */,
