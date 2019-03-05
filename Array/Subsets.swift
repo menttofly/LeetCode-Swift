@@ -26,8 +26,10 @@ class Subsets {
         var result = result
         combinations.append(result)
         for index in start..<nums.count {
+            /// Include the current element to previous subset.
             result.append(nums[index])
             backtracking(&combinations, &nums, result, index + 1)
+            /// Exclude the element and go to next loop
             result.removeLast()
         }
     }
