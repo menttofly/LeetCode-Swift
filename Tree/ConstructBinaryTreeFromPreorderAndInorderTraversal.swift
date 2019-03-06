@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/balanced-binary-tree/
+ * Question Link: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
  * Primary idea: Analyzing the laws of the pre-order sequence and in-order sequence.
  *
  * Time Complexity: O(n), Space Complexity: O(n)
