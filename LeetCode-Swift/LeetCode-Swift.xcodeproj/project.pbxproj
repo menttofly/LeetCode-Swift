@@ -23,6 +23,7 @@
 		1D456D1E2231869700B78931 /* MaximumProductSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D456D1D2231869700B78931 /* MaximumProductSubarray.swift */; };
 		1D52FA4F2233AE08006A4D2B /* IntersectionOfTwoLinkedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA4E2233AE08006A4D2B /* IntersectionOfTwoLinkedLists.swift */; };
 		1D52FA512233B305006A4D2B /* HouseRobber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA502233B305006A4D2B /* HouseRobber.swift */; };
+		1D52FA532233C278006A4D2B /* NumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA522233C278006A4D2B /* NumberOfIslands.swift */; };
 		1D62103421C2A3CE0013316D /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62103321C2A3CE0013316D /* ReverseLinkedList.swift */; };
 		1D63678A2191ED4C007C4D17 /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6367892191ED4C007C4D17 /* MergeTwoSortedLists.swift */; };
 		1D7CCCD122216EBD00C9B8B9 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */; };
@@ -106,6 +107,7 @@
 		1D456D1D2231869700B78931 /* MaximumProductSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumProductSubarray.swift; sourceTree = "<group>"; };
 		1D52FA4E2233AE08006A4D2B /* IntersectionOfTwoLinkedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntersectionOfTwoLinkedLists.swift; sourceTree = "<group>"; };
 		1D52FA502233B305006A4D2B /* HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobber.swift; sourceTree = "<group>"; };
+		1D52FA522233C278006A4D2B /* NumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfIslands.swift; sourceTree = "<group>"; };
 		1D62103321C2A3CE0013316D /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 		1D6367892191ED4C007C4D17 /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				1DF3F90E21C5265300985128 /* BalancedBinaryTreeDFS.swift */,
 				1D40A639218F351100D2D5FD /* BinaryTreeRightSideView.swift */,
 				1D85DAE8223022EB00CDE9DD /* FlattenBinaryTreeToLinkedList.swift */,
+				1D52FA522233C278006A4D2B /* NumberOfIslands.swift */,
 				1DE6DEE6222ED4A2000A9ED5 /* WordSearch.swift */,
 			);
 			name = DFS;
@@ -432,6 +435,7 @@
 				1DF3F90D21C4FCFB00985128 /* BalancedBinaryTree.swift in Sources */,
 				314DE6DE218C2921001C84FB /* StringToInteger.swift in Sources */,
 				1DE6DEE7222ED4A2000A9ED5 /* WordSearch.swift in Sources */,
+				1D52FA532233C278006A4D2B /* NumberOfIslands.swift in Sources */,
 				1DDC34B821C668D8008793D8 /* BinaryTreeLevelOrderTraversal.swift in Sources */,
 				1D40A63C21907F0300D2D5FD /* LongestIncreasingSubsequence.swift in Sources */,
 				1DF519F4222C1C90007A8C9A /* JumpGame.swift in Sources */,
