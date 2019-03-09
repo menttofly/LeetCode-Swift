@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0504C02232CFF5002B3921 /* MinStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0504BF2232CFF5002B3921 /* MinStack.swift */; };
 		1D2C4E0D222D577B00B0139B /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C4E0C222D577B00B0139B /* MergeIntervals.swift */; };
 		1D30CA5121763FD000D7C0BB /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */; };
 		1D30CA5321764CBD00D7C0BB /* Pow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5221764CBD00D7C0BB /* Pow.swift */; };
@@ -87,6 +88,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D0504BF2232CFF5002B3921 /* MinStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinStack.swift; sourceTree = "<group>"; };
 		1D2C4E0C222D577B00B0139B /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
 		1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
 		1D30CA5221764CBD00D7C0BB /* Pow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pow.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */,
+				1D0504BF2232CFF5002B3921 /* MinStack.swift */,
 			);
 			name = Design;
 			path = ../Design;
@@ -427,6 +430,7 @@
 				1DF519F4222C1C90007A8C9A /* JumpGame.swift in Sources */,
 				313621062186DFEC00E9B9BB /* AddTwoNumbers.swift in Sources */,
 				1D40A635218E051800D2D5FD /* MaximumSubarray.swift in Sources */,
+				1D0504C02232CFF5002B3921 /* MinStack.swift in Sources */,
 				1DF519EC222BBFF1007A8C9A /* FindFirstAndLastPositionOfElementInSortedArray.swift in Sources */,
 				1D30CA5121763FD000D7C0BB /* LongestPalindromicSubstring.swift in Sources */,
 				1DE6DEE9222EE275000A9ED5 /* UniqueBinarySearchTrees.swift in Sources */,
