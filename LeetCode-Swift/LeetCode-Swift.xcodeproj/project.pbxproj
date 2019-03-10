@@ -32,6 +32,7 @@
 		1D52FA6222352C05006A4D2B /* LowestCommonAncestorOfABinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6122352C05006A4D2B /* LowestCommonAncestorOfABinarySearchTree.swift */; };
 		1D52FA6422353B9E006A4D2B /* ProductOfArrayExceptSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6322353B9E006A4D2B /* ProductOfArrayExceptSelf.swift */; };
 		1D52FA6622354E99006A4D2B /* SearchA2DMatrixII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6522354E99006A4D2B /* SearchA2DMatrixII.swift */; };
+		1D52FA68223557C7006A4D2B /* PerfectSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA67223557C7006A4D2B /* PerfectSquares.swift */; };
 		1D62103421C2A3CE0013316D /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62103321C2A3CE0013316D /* ReverseLinkedList.swift */; };
 		1D63678A2191ED4C007C4D17 /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6367892191ED4C007C4D17 /* MergeTwoSortedLists.swift */; };
 		1D7CCCD122216EBD00C9B8B9 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */; };
@@ -124,6 +125,7 @@
 		1D52FA6122352C05006A4D2B /* LowestCommonAncestorOfABinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorOfABinarySearchTree.swift; sourceTree = "<group>"; };
 		1D52FA6322353B9E006A4D2B /* ProductOfArrayExceptSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfArrayExceptSelf.swift; sourceTree = "<group>"; };
 		1D52FA6522354E99006A4D2B /* SearchA2DMatrixII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchA2DMatrixII.swift; sourceTree = "<group>"; };
+		1D52FA67223557C7006A4D2B /* PerfectSquares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectSquares.swift; sourceTree = "<group>"; };
 		1D62103321C2A3CE0013316D /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 		1D6367892191ED4C007C4D17 /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				1D456D1D2231869700B78931 /* MaximumProductSubarray.swift */,
 				1D40A634218E051800D2D5FD /* MaximumSubarray.swift */,
 				1DB1A2CF222D69BB00375700 /* MinimumPathSum.swift */,
+				1D52FA67223557C7006A4D2B /* PerfectSquares.swift */,
 				314DE6E1218C53D0001C84FB /* RegularExpressionMatching.swift */,
 				1DC2129B219B24E400646031 /* SuperEggDrop.swift */,
 				1DE6DEE8222EE275000A9ED5 /* UniqueBinarySearchTrees.swift */,
@@ -454,6 +457,7 @@
 				1D62103421C2A3CE0013316D /* ReverseLinkedList.swift in Sources */,
 				1D85DAE9223022EB00CDE9DD /* FlattenBinaryTreeToLinkedList.swift in Sources */,
 				31A0D4C321913AF7009E357D /* ClimbingStairs.swift in Sources */,
+				1D52FA68223557C7006A4D2B /* PerfectSquares.swift in Sources */,
 				1DF519F0222BEDE7007A8C9A /* Permutations.swift in Sources */,
 				1D2C4E0D222D577B00B0139B /* MergeIntervals.swift in Sources */,
 				1D7CCCD122216EBD00C9B8B9 /* LRUCache.swift in Sources */,
