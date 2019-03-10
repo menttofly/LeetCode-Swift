@@ -28,6 +28,8 @@
 		1D52FA5A2233EDBC006A4D2B /* ImplementTriePrefixTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA592233EDBC006A4D2B /* ImplementTriePrefixTree.swift */; };
 		1D52FA5C223437EB006A4D2B /* KthLargestElementInAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA5B223437EB006A4D2B /* KthLargestElementInAnArray.swift */; };
 		1D52FA5E223518F5006A4D2B /* MaximalSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA5D223518F5006A4D2B /* MaximalSquare.swift */; };
+		1D52FA60223528C5006A4D2B /* LowestCommonAncestorOfABinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA5F223528C5006A4D2B /* LowestCommonAncestorOfABinaryTree.swift */; };
+		1D52FA6222352C05006A4D2B /* LowestCommonAncestorOfABinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6122352C05006A4D2B /* LowestCommonAncestorOfABinarySearchTree.swift */; };
 		1D62103421C2A3CE0013316D /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62103321C2A3CE0013316D /* ReverseLinkedList.swift */; };
 		1D63678A2191ED4C007C4D17 /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6367892191ED4C007C4D17 /* MergeTwoSortedLists.swift */; };
 		1D7CCCD122216EBD00C9B8B9 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */; };
@@ -116,6 +118,8 @@
 		1D52FA592233EDBC006A4D2B /* ImplementTriePrefixTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementTriePrefixTree.swift; sourceTree = "<group>"; };
 		1D52FA5B223437EB006A4D2B /* KthLargestElementInAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargestElementInAnArray.swift; sourceTree = "<group>"; };
 		1D52FA5D223518F5006A4D2B /* MaximalSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximalSquare.swift; sourceTree = "<group>"; };
+		1D52FA5F223528C5006A4D2B /* LowestCommonAncestorOfABinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorOfABinaryTree.swift; sourceTree = "<group>"; };
+		1D52FA6122352C05006A4D2B /* LowestCommonAncestorOfABinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestorOfABinarySearchTree.swift; sourceTree = "<group>"; };
 		1D62103321C2A3CE0013316D /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 		1D6367892191ED4C007C4D17 /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
@@ -309,6 +313,8 @@
 				1DDC34B721C668D8008793D8 /* BinaryTreeLevelOrderTraversal.swift */,
 				1DE6DEEA222EEDBE000A9ED5 /* ConstructBinaryTreeFromPreorderAndInorderTraversal.swift */,
 				1DF3F90821C4DDB900985128 /* InvertBinaryTree.swift */,
+				1D52FA6122352C05006A4D2B /* LowestCommonAncestorOfABinarySearchTree.swift */,
+				1D52FA5F223528C5006A4D2B /* LowestCommonAncestorOfABinaryTree.swift */,
 				1DDC34B921C6739F008793D8 /* MaximumDepthOfBinaryTree.swift */,
 				1DDC34BB21C677E0008793D8 /* MinimumDepthOfBinaryTree.swift */,
 				1D8A156721C574FA0068B03D /* SubtreeOfAnotherTree.swift */,
@@ -425,10 +431,12 @@
 				1DF519E2222A9A85007A8C9A /* RemoveNthNodeFromEndOfList.swift in Sources */,
 				1DF519F6222C3966007A8C9A /* GroupAnagrams.swift in Sources */,
 				1D456D1822316C2100B78931 /* LinkedListCycle.swift in Sources */,
+				1D52FA60223528C5006A4D2B /* LowestCommonAncestorOfABinaryTree.swift in Sources */,
 				31A0D4C121901146009E357D /* LongestContinuousIncreasingSubsequence.swift in Sources */,
 				1DB1A2CE222D628300375700 /* UniquePaths.swift in Sources */,
 				1DDC34BC21C677E0008793D8 /* MinimumDepthOfBinaryTree.swift in Sources */,
 				1DFD221A21CE726F00537FE8 /* ThreeSum.swift in Sources */,
+				1D52FA6222352C05006A4D2B /* LowestCommonAncestorOfABinarySearchTree.swift in Sources */,
 				1DB1A2D0222D69BB00375700 /* MinimumPathSum.swift in Sources */,
 				1D85DAF222316A4500CDE9DD /* SingleNumber.swift in Sources */,
 				1D52FA4F2233AE08006A4D2B /* IntersectionOfTwoLinkedLists.swift in Sources */,
