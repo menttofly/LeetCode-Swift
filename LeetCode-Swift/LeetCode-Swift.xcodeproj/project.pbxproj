@@ -34,6 +34,7 @@
 		1D52FA6622354E99006A4D2B /* SearchA2DMatrixII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6522354E99006A4D2B /* SearchA2DMatrixII.swift */; };
 		1D52FA68223557C7006A4D2B /* PerfectSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA67223557C7006A4D2B /* PerfectSquares.swift */; };
 		1D52FA6A22355E77006A4D2B /* FindTheDuplicateNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6922355E77006A4D2B /* FindTheDuplicateNumber.swift */; };
+		1D52FA6C2235658B006A4D2B /* BestTimeToBuyAndSellStockWithCooldown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6B2235658B006A4D2B /* BestTimeToBuyAndSellStockWithCooldown.swift */; };
 		1D62103421C2A3CE0013316D /* ReverseLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62103321C2A3CE0013316D /* ReverseLinkedList.swift */; };
 		1D63678A2191ED4C007C4D17 /* MergeTwoSortedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6367892191ED4C007C4D17 /* MergeTwoSortedLists.swift */; };
 		1D7CCCD122216EBD00C9B8B9 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */; };
@@ -128,6 +129,7 @@
 		1D52FA6522354E99006A4D2B /* SearchA2DMatrixII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchA2DMatrixII.swift; sourceTree = "<group>"; };
 		1D52FA67223557C7006A4D2B /* PerfectSquares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectSquares.swift; sourceTree = "<group>"; };
 		1D52FA6922355E77006A4D2B /* FindTheDuplicateNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheDuplicateNumber.swift; sourceTree = "<group>"; };
+		1D52FA6B2235658B006A4D2B /* BestTimeToBuyAndSellStockWithCooldown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestTimeToBuyAndSellStockWithCooldown.swift; sourceTree = "<group>"; };
 		1D62103321C2A3CE0013316D /* ReverseLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseLinkedList.swift; sourceTree = "<group>"; };
 		1D6367892191ED4C007C4D17 /* MergeTwoSortedLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoSortedLists.swift; sourceTree = "<group>"; };
 		1D7CCCD022216EBD00C9B8B9 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				1DB1A2CD222D628300375700 /* UniquePaths.swift */,
 				1D40A632218CBA4600D2D5FD /* WildcardMatching.swift */,
 				1D85DAEA2230331200CDE9DD /* WordBreak.swift */,
+				1D52FA6B2235658B006A4D2B /* BestTimeToBuyAndSellStockWithCooldown.swift */,
 			);
 			name = DP;
 			path = ../DP;
@@ -480,6 +483,7 @@
 				1D0504C02232CFF5002B3921 /* MinStack.swift in Sources */,
 				1DF519EC222BBFF1007A8C9A /* FindFirstAndLastPositionOfElementInSortedArray.swift in Sources */,
 				1D30CA5121763FD000D7C0BB /* LongestPalindromicSubstring.swift in Sources */,
+				1D52FA6C2235658B006A4D2B /* BestTimeToBuyAndSellStockWithCooldown.swift in Sources */,
 				1DE6DEE9222EE275000A9ED5 /* UniqueBinarySearchTrees.swift in Sources */,
 				1DF3F90921C4DDB900985128 /* InvertBinaryTree.swift in Sources */,
 				1D85DAEB2230331200CDE9DD /* WordBreak.swift in Sources */,
