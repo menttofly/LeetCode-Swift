@@ -52,6 +52,7 @@
 		1DB1A2D2222D777700375700 /* SortColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2D1222D777700375700 /* SortColors.swift */; };
 		1DB528CB21CFD0C000C72819 /* ThreeSumClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB528CA21CFD0C000C72819 /* ThreeSumClosest.swift */; };
 		1DC2129C219B24E400646031 /* SuperEggDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2129B219B24E400646031 /* SuperEggDrop.swift */; };
+		1DC234F82236AB5F00CB2C29 /* TopKFrequentElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC234F72236AB5F00CB2C29 /* TopKFrequentElements.swift */; };
 		1DD6247A2222CD5700C5E09D /* LetterCombinationsOfAPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD624792222CD5700C5E09D /* LetterCombinationsOfAPhoneNumber.swift */; };
 		1DDC34B621C662F8008793D8 /* MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC34B521C662F8008793D8 /* MajorityElement.swift */; };
 		1DDC34B821C668D8008793D8 /* BinaryTreeLevelOrderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC34B721C668D8008793D8 /* BinaryTreeLevelOrderTraversal.swift */; };
@@ -150,6 +151,7 @@
 		1DB1A2D1222D777700375700 /* SortColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortColors.swift; sourceTree = "<group>"; };
 		1DB528CA21CFD0C000C72819 /* ThreeSumClosest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumClosest.swift; sourceTree = "<group>"; };
 		1DC2129B219B24E400646031 /* SuperEggDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperEggDrop.swift; sourceTree = "<group>"; };
+		1DC234F72236AB5F00CB2C29 /* TopKFrequentElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopKFrequentElements.swift; sourceTree = "<group>"; };
 		1DD624792222CD5700C5E09D /* LetterCombinationsOfAPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsOfAPhoneNumber.swift; sourceTree = "<group>"; };
 		1DDC34B521C662F8008793D8 /* MajorityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorityElement.swift; sourceTree = "<group>"; };
 		1DDC34B721C668D8008793D8 /* BinaryTreeLevelOrderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeLevelOrderTraversal.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 				1DB1A2D1222D777700375700 /* SortColors.swift */,
 				1DFD221921CE726F00537FE8 /* ThreeSum.swift */,
 				1DB528CA21CFD0C000C72819 /* ThreeSumClosest.swift */,
+				1DC234F72236AB5F00CB2C29 /* TopKFrequentElements.swift */,
 				313621022186B82800E9B9BB /* TwoSum.swift */,
 			);
 			name = Array;
@@ -470,6 +473,7 @@
 				1D62103421C2A3CE0013316D /* ReverseLinkedList.swift in Sources */,
 				1D85DAE9223022EB00CDE9DD /* FlattenBinaryTreeToLinkedList.swift in Sources */,
 				31A0D4C321913AF7009E357D /* ClimbingStairs.swift in Sources */,
+				1DC234F82236AB5F00CB2C29 /* TopKFrequentElements.swift in Sources */,
 				1D52FA68223557C7006A4D2B /* PerfectSquares.swift in Sources */,
 				1DF519F0222BEDE7007A8C9A /* Permutations.swift in Sources */,
 				1D2C4E0D222D577B00B0139B /* MergeIntervals.swift in Sources */,
