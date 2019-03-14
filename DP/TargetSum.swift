@@ -14,7 +14,7 @@ import Foundation
  *
  * Time Complexity: O(n^2), Space Complexity: O(n)
  */
-class Solution {
+class TargetSum {
     func findTargetSumWays(_ nums: [Int], _ S: Int) -> Int {
         var dp = Array(repeating: [Int: Int](), count: nums.count + 1)
         dp[0][0] = 1
