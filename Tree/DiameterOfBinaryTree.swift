@@ -19,7 +19,7 @@ class DiameterOfBinaryTree {
         guard let root = root else {
             return 0
         }
-        var res = 0
+        var res = 1
         depth(root, &res)
         return res - 1
     }
