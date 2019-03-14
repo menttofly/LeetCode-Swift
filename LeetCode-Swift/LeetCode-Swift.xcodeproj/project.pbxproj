@@ -49,6 +49,7 @@
 		1D8897412239372B004B9BFA /* FindAllAnagramsInAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8897402239372B004B9BFA /* FindAllAnagramsInAString.swift */; };
 		1D88974322396BEF004B9BFA /* FindAllNumbersDisappearedInAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88974222396BEF004B9BFA /* FindAllNumbersDisappearedInAnArray.swift */; };
 		1D8A156821C574FA0068B03D /* SubtreeOfAnotherTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A156721C574FA0068B03D /* SubtreeOfAnotherTree.swift */; };
+		1D8FDEDA223A885000517C0D /* HammingDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8FDED9223A885000517C0D /* HammingDistance.swift */; };
 		1D9537D121763D7B00A2C3AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9537D021763D7B00A2C3AD /* main.swift */; };
 		1DA3BC1C2237F548003F4C6D /* MoveZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1B2237F548003F4C6D /* MoveZeroes.swift */; };
 		1DA3BC1E2237FEAA003F4C6D /* QueueReconstructionByHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1D2237FEAA003F4C6D /* QueueReconstructionByHeight.swift */; };
@@ -156,6 +157,7 @@
 		1D8897402239372B004B9BFA /* FindAllAnagramsInAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAllAnagramsInAString.swift; sourceTree = "<group>"; };
 		1D88974222396BEF004B9BFA /* FindAllNumbersDisappearedInAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAllNumbersDisappearedInAnArray.swift; sourceTree = "<group>"; };
 		1D8A156721C574FA0068B03D /* SubtreeOfAnotherTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtreeOfAnotherTree.swift; sourceTree = "<group>"; };
+		1D8FDED9223A885000517C0D /* HammingDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammingDistance.swift; sourceTree = "<group>"; };
 		1D9537CD21763D7B00A2C3AD /* LeetCode-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9537D021763D7B00A2C3AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1DA3BC1B2237F548003F4C6D /* MoveZeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveZeroes.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				314DE6DF218C48CE001C84FB /* PalindromeNumber.swift */,
 				1D30CA5221764CBD00D7C0BB /* Pow.swift */,
 				314DE6D9218BF67B001C84FB /* ReverseInteger.swift */,
+				1D8FDED9223A885000517C0D /* HammingDistance.swift */,
 			);
 			name = Math;
 			path = ../Math;
@@ -523,6 +526,7 @@
 				1D52FA6E22356CE5006A4D2B /* HouseRobberIII.swift in Sources */,
 				313621062186DFEC00E9B9BB /* AddTwoNumbers.swift in Sources */,
 				1D52FA6622354E99006A4D2B /* SearchA2DMatrixII.swift in Sources */,
+				1D8FDEDA223A885000517C0D /* HammingDistance.swift in Sources */,
 				1D40A635218E051800D2D5FD /* MaximumSubarray.swift in Sources */,
 				1D0504C02232CFF5002B3921 /* MinStack.swift in Sources */,
 				1DF519EC222BBFF1007A8C9A /* FindFirstAndLastPositionOfElementInSortedArray.swift in Sources */,
