@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/3sum/
+ * Question Link: https://leetcode.com/problems/3sum-closest/
  * Primary idea: Firstly sort the array, then iterate it with two pointers.
  *
  * Time Complexity: O(n^2), Space Complexity: O(1)
