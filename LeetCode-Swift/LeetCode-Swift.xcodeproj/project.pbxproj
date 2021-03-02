@@ -11,6 +11,7 @@
 		1D04163925ECBFF600715FA5 /* 04_二维数组中的查找.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D04163825ECBFF600715FA5 /* 04_二维数组中的查找.swift */; };
 		1D04163C25ECC07600715FA5 /* 05_替换空格.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D04163B25ECC07600715FA5 /* 05_替换空格.swift */; };
 		1D04163F25ECC0F200715FA5 /* 06_从尾到头打印链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D04163E25ECC0F200715FA5 /* 06_从尾到头打印链表.swift */; };
+		1D04166325EDE35900715FA5 /* 07_重建二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D04166225EDE35900715FA5 /* 07_重建二叉树.swift */; };
 		1D0504C02232CFF5002B3921 /* MinStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0504BF2232CFF5002B3921 /* MinStack.swift */; };
 		1D2C4E0D222D577B00B0139B /* MergeIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C4E0C222D577B00B0139B /* MergeIntervals.swift */; };
 		1D30CA5121763FD000D7C0BB /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */; };
@@ -132,6 +133,7 @@
 		1D04163825ECBFF600715FA5 /* 04_二维数组中的查找.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "04_二维数组中的查找.swift"; sourceTree = "<group>"; };
 		1D04163B25ECC07600715FA5 /* 05_替换空格.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "05_替换空格.swift"; sourceTree = "<group>"; };
 		1D04163E25ECC0F200715FA5 /* 06_从尾到头打印链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "06_从尾到头打印链表.swift"; sourceTree = "<group>"; };
+		1D04166225EDE35900715FA5 /* 07_重建二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "07_重建二叉树.swift"; sourceTree = "<group>"; };
 		1D0504BF2232CFF5002B3921 /* MinStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinStack.swift; sourceTree = "<group>"; };
 		1D2C4E0C222D577B00B0139B /* MergeIntervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeIntervals.swift; sourceTree = "<group>"; };
 		1D30CA5021763FD000D7C0BB /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				1D04163825ECBFF600715FA5 /* 04_二维数组中的查找.swift */,
 				1D04163B25ECC07600715FA5 /* 05_替换空格.swift */,
 				1D04163E25ECC0F200715FA5 /* 06_从尾到头打印链表.swift */,
+				1D04166225EDE35900715FA5 /* 07_重建二叉树.swift */,
 			);
 			name = Offer;
 			path = ../Offer;
@@ -623,6 +626,7 @@
 				1DC234FC2236CAAC00CB2C29 /* PalindromeLinkedList.swift in Sources */,
 				1DA3BC1C2237F548003F4C6D /* MoveZeroes.swift in Sources */,
 				1DB528CB21CFD0C000C72819 /* ThreeSumClosest.swift in Sources */,
+				1D04166325EDE35900715FA5 /* 07_重建二叉树.swift in Sources */,
 				314DE6E2218C53D0001C84FB /* RegularExpressionMatching.swift in Sources */,
 				1D52FA562233D47C006A4D2B /* CourseSchedule.swift in Sources */,
 				1DDC34B621C662F8008793D8 /* MajorityElement.swift in Sources */,
