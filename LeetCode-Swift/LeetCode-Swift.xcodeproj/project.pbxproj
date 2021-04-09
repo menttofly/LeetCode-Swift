@@ -74,6 +74,7 @@
 		1DB1A2D2222D777700375700 /* sort_colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2D1222D777700375700 /* sort_colors.swift */; };
 		1DB528CB21CFD0C000C72819 /* 3sum_closest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB528CA21CFD0C000C72819 /* 3sum_closest.swift */; };
 		1DBDFAC2261EAC1400CFE2BB /* reverse_linked_list_ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDFAC1261EAC1400CFE2BB /* reverse_linked_list_ii.swift */; };
+		1DBDFAC52620056400CFE2BB /* reverse_nodes_in_k_group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDFAC42620056400CFE2BB /* reverse_nodes_in_k_group.swift */; };
 		1DC2129C219B24E400646031 /* super_egg_drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2129B219B24E400646031 /* super_egg_drop.swift */; };
 		1DC234F82236AB5F00CB2C29 /* top_k_frequent_elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC234F72236AB5F00CB2C29 /* top_k_frequent_elements.swift */; };
 		1DC234FA2236BA3A00CB2C29 /* decode_string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC234F92236BA3A00CB2C29 /* decode_string.swift */; };
@@ -204,6 +205,7 @@
 		1DB1A2D1222D777700375700 /* sort_colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sort_colors.swift; sourceTree = "<group>"; };
 		1DB528CA21CFD0C000C72819 /* 3sum_closest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3sum_closest.swift; sourceTree = "<group>"; };
 		1DBDFAC1261EAC1400CFE2BB /* reverse_linked_list_ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reverse_linked_list_ii.swift; sourceTree = "<group>"; };
+		1DBDFAC42620056400CFE2BB /* reverse_nodes_in_k_group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reverse_nodes_in_k_group.swift; sourceTree = "<group>"; };
 		1DC2129B219B24E400646031 /* super_egg_drop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = super_egg_drop.swift; sourceTree = "<group>"; };
 		1DC234F72236AB5F00CB2C29 /* top_k_frequent_elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = top_k_frequent_elements.swift; sourceTree = "<group>"; };
 		1DC234F92236BA3A00CB2C29 /* decode_string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decode_string.swift; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 				1D62103321C2A3CE0013316D /* reverse_linked_list.swift */,
 				1D456D1B22317BA800B78931 /* sort_list.swift */,
 				1DBDFAC1261EAC1400CFE2BB /* reverse_linked_list_ii.swift */,
+				1DBDFAC42620056400CFE2BB /* reverse_nodes_in_k_group.swift */,
 			);
 			name = LinkedList;
 			path = ../LinkedList;
@@ -564,6 +567,7 @@
 				1DF519E2222A9A85007A8C9A /* remove_nth_node_from_end_of_list.swift in Sources */,
 				1DF519F6222C3966007A8C9A /* group_anagrams.swift in Sources */,
 				1D456D1822316C2100B78931 /* linked_list_cycle.swift in Sources */,
+				1DBDFAC52620056400CFE2BB /* reverse_nodes_in_k_group.swift in Sources */,
 				1D8897412239372B004B9BFA /* find_all_anagrams_in_a_string.swift in Sources */,
 				1D52FA60223528C5006A4D2B /* lowest_common_ancestor_of_a_binary_tree.swift in Sources */,
 				31A0D4C121901146009E357D /* longest_continuous_increasing_subsequence.swift in Sources */,
