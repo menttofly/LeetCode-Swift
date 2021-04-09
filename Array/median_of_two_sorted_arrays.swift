@@ -50,7 +50,7 @@ class MedianOfTwoSortedArrays {
  *
  * Time Complexity: O(m+n), Space Complexity: O(m+n)
  */
-fileprivate class Solution {
+class MedianOfTwoSortedArrays2 {
     func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
         var nums = [Int]()
         var i = 0, j = 0, k = 0

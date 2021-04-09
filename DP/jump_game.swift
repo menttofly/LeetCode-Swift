@@ -37,7 +37,7 @@ class JumpGame {
  * Note: It's decided by previous position's left step and maximum jump length at position i-1.
  * Time Complexity: O(n), Space Complexity: O(n)
  */
-fileprivate class Solution {
+class JumpGame2 {
     func canJump(_ nums: [Int]) -> Bool {
         var dp = Array(repeating: 0, count: nums.count)
         for index in 1..<nums.count {

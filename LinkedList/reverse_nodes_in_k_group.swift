@@ -15,7 +15,7 @@ import Foundation
  * Time Complexity: O(n), Space Complexity: O(1)
  */
 
-class Solution {
+class ReverseNodesInKGroup {
     /// [a, b)
     func reverseBetween(_ head: ListNode?, _ tail: ListNode?) -> ListNode? {
         var pre: ListNode?, cur = head, rear = head

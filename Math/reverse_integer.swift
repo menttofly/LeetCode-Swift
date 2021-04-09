@@ -34,7 +34,7 @@ class ReverseInteger {
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
-fileprivate class Solution {
+class ReverseInteger2 {
     func reverse(_ x: Int) -> Int {
         var num = Int32(x)
         var val: Int32 = 0

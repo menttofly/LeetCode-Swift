@@ -16,18 +16,27 @@ import Foundation
  */
 class ReverseLinkedList {
     func reverseList(_ head: ListNode?) -> ListNode? {
-        var reversed: ListNode?
-        var previous: ListNode?
-        var current = head
+        var pre: ListNode?
+        var current = head, rear = head
         while current != nil {
-            let next = current?.next
-            if next == nil {
-                reversed = current
-            }
-            current?.next = previous
-            previous = current
-            current = next
+            rear = rear?.next
+            current?.next = pre
+            pre = current
+            current = rear
         }
-        return reversed
+        return pre
     }
+    
+    /// 使用递归的方式
+    func reverseListRecusive(_ head: ListNode?) -> ListNode? {
+            guard let _ = head?.next else {
+                return head
+            }
+            
+            let rhead = reverseListRecusive(head?.next)
+            head?.next?.next = head
+            head?.next = nil
+            
+            return rhead
+        }
 }
