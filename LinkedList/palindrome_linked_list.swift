@@ -57,6 +57,9 @@ class PalindromeLinkedList2 {
         
         var res = traverse(right.next)
         res = res && (left!.val == right.val)
+        
+        if !res { return false }
+        
         left = left?.next
         return res
     }
