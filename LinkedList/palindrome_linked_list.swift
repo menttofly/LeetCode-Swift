@@ -41,3 +41,23 @@ class PalindromeLinkedList {
         return true
     }
 }
+
+/// 通过后序遍历技巧，实现链表头指针和尾指针相互比较
+class PalindromeLinkedList2 {
+    var left: ListNode?
+    func isPalindrome(_ head: ListNode?) -> Bool {
+        left = head
+        return traverse(head)
+    }
+    
+    func traverse(_ right: ListNode?) -> Bool {
+        guard let right = right else {
+            return true
+        }
+        
+        var res = traverse(right.next)
+        res = res && (left!.val == right.val)
+        left = left?.next
+        return res
+    }
+}
