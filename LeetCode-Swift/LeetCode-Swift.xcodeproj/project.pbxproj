@@ -71,6 +71,7 @@
 		1DA3BC1E2237FEAA003F4C6D /* queue_reconstruction_by_height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1D2237FEAA003F4C6D /* queue_reconstruction_by_height.swift */; };
 		1DA3BC2022380AFA003F4C6D /* partition_equal_subset_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1F22380AFA003F4C6D /* partition_equal_subset_sum.swift */; };
 		1DA3BC2222381957003F4C6D /* path_sum_iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC2122381957003F4C6D /* path_sum_iii.swift */; };
+		1DA6804626273ACB00B46A49 /* find_duplicate_subtrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */; };
 		1DB1A2CE222D628300375700 /* unique_paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2CD222D628300375700 /* unique_paths.swift */; };
 		1DB1A2D0222D69BB00375700 /* minimum_path_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2CF222D69BB00375700 /* minimum_path_sum.swift */; };
 		1DB1A2D2222D777700375700 /* sort_colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2D1222D777700375700 /* sort_colors.swift */; };
@@ -204,6 +205,7 @@
 		1DA3BC1D2237FEAA003F4C6D /* queue_reconstruction_by_height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queue_reconstruction_by_height.swift; sourceTree = "<group>"; };
 		1DA3BC1F22380AFA003F4C6D /* partition_equal_subset_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partition_equal_subset_sum.swift; sourceTree = "<group>"; };
 		1DA3BC2122381957003F4C6D /* path_sum_iii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = path_sum_iii.swift; sourceTree = "<group>"; };
+		1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = find_duplicate_subtrees.swift; sourceTree = "<group>"; };
 		1DB1A2CD222D628300375700 /* unique_paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unique_paths.swift; sourceTree = "<group>"; };
 		1DB1A2CF222D69BB00375700 /* minimum_path_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimum_path_sum.swift; sourceTree = "<group>"; };
 		1DB1A2D1222D777700375700 /* sort_colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sort_colors.swift; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 				1DDF0C41261D60F5009246FE /* recover_binary_search_tree.swift */,
 				1D051A792621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift */,
 				1D051A7C2621F68100A890D0 /* maximum_binary_tree.swift */,
+				1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */,
 			);
 			name = Tree;
 			path = ../Tree;
@@ -670,6 +673,7 @@
 				314DE6E2218C53D0001C84FB /* regular_expression_matching.swift in Sources */,
 				1D52FA562233D47C006A4D2B /* course_schedule.swift in Sources */,
 				1DDC34B621C662F8008793D8 /* majority_element.swift in Sources */,
+				1DA6804626273ACB00B46A49 /* find_duplicate_subtrees.swift in Sources */,
 				1D52FA5C223437EB006A4D2B /* kth_largest_element_in_an_array.swift in Sources */,
 				1DD6247A2222CD5700C5E09D /* letter_combinations_of_a_phone_number.swift in Sources */,
 				1D52FA6A22355E77006A4D2B /* find_the_duplicate_number.swift in Sources */,
