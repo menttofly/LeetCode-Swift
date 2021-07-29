@@ -11,6 +11,7 @@ import Foundation
 class MitrixPathExist {
     func exist(_ board: [[Character]], _ word: String) -> Bool {
         var board = board, word = Array(word)
+        /// 用来记录是否达到一条路径的叶子结点，visited = true 代表回到节点本身，即上一个就是叶子结点
         var visited = Array(repeating: Array(repeating: false, count: board[0].count), count: board.count)
         for i in 0..<board.count {
             for j in 0..<board[i].count {
