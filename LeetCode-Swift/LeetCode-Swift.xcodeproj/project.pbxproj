@@ -49,6 +49,7 @@
 		1D597715223BE1B600661B0D /* task_scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D597714223BE1B600661B0D /* task_scheduler.swift */; };
 		1D62103421C2A3CE0013316D /* reverse_linked_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62103321C2A3CE0013316D /* reverse_linked_list.swift */; };
 		1D63678A2191ED4C007C4D17 /* merge_two_sorted_lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6367892191ED4C007C4D17 /* merge_two_sorted_lists.swift */; };
+		1D63BE2726B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63BE2626B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift */; };
 		1D64399526B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64399426B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift */; };
 		1D6C011B223BE91700A27946 /* palindromic_substrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6C011A223BE91700A27946 /* palindromic_substrings.swift */; };
 		1D6C011D223BEF1D00A27946 /* jewels_and_stones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6C011C223BEF1D00A27946 /* jewels_and_stones.swift */; };
@@ -185,6 +186,7 @@
 		1D597714223BE1B600661B0D /* task_scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_scheduler.swift; sourceTree = "<group>"; };
 		1D62103321C2A3CE0013316D /* reverse_linked_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reverse_linked_list.swift; sourceTree = "<group>"; };
 		1D6367892191ED4C007C4D17 /* merge_two_sorted_lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merge_two_sorted_lists.swift; sourceTree = "<group>"; };
+		1D63BE2626B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kth_mallest_element_in_a_bst.swift; sourceTree = "<group>"; };
 		1D64399426B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binary_tree_maximum_path_sum.swift; sourceTree = "<group>"; };
 		1D6C011A223BE91700A27946 /* palindromic_substrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palindromic_substrings.swift; sourceTree = "<group>"; };
 		1D6C011C223BEF1D00A27946 /* jewels_and_stones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jewels_and_stones.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 				1D051A7C2621F68100A890D0 /* maximum_binary_tree.swift */,
 				1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */,
 				1D64399426B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift */,
+				1D63BE2626B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift */,
 			);
 			name = Tree;
 			path = ../Tree;
@@ -571,6 +574,7 @@
 			files = (
 				1D52FA70223575D8006A4D2B /* counting_bits.swift in Sources */,
 				1DF3F91321C52FC600985128 /* container_with_most_water.swift in Sources */,
+				1D63BE2726B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift in Sources */,
 				1D456D1A223178B900B78931 /* linked_list_cycle_ii.swift in Sources */,
 				1D85DAEF22314D5400CDE9DD /* best_time_to_buy_and_sell_stock.swift in Sources */,
 				313621032186B82800E9B9BB /* two_sum.swift in Sources */,
