@@ -20,12 +20,12 @@ class ValidateBinarySearchTree {
     }
     
     func isValidBST(_ root: TreeNode?, _ minVal: Int64, _ maxVal: Int64) -> Bool {
-        if root == nil {
+        guard let root = root else {
             return true
         }
-        if root!.val <= minVal || root!.val >= maxVal {
+        if root.val <= minVal || root.val >= maxVal {
             return false
         }
-        return isValidBST(root?.left, minVal, Int64(root!.val)) && isValidBST(root?.right, Int64(root!.val), maxVal)
+        return isValidBST(root.left, minVal, Int64(root.val)) && isValidBST(root.right, Int64(root.val), maxVal)
     }
 }
