@@ -50,6 +50,7 @@
 		1D62103421C2A3CE0013316D /* reverse_linked_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62103321C2A3CE0013316D /* reverse_linked_list.swift */; };
 		1D63678A2191ED4C007C4D17 /* merge_two_sorted_lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6367892191ED4C007C4D17 /* merge_two_sorted_lists.swift */; };
 		1D63BE2726B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63BE2626B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift */; };
+		1D63BE2A26B98E6B00DFE603 /* search_in_a_binary_search_tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63BE2926B98E6B00DFE603 /* search_in_a_binary_search_tree.swift */; };
 		1D64399526B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64399426B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift */; };
 		1D6C011B223BE91700A27946 /* palindromic_substrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6C011A223BE91700A27946 /* palindromic_substrings.swift */; };
 		1D6C011D223BEF1D00A27946 /* jewels_and_stones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6C011C223BEF1D00A27946 /* jewels_and_stones.swift */; };
@@ -187,6 +188,7 @@
 		1D62103321C2A3CE0013316D /* reverse_linked_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reverse_linked_list.swift; sourceTree = "<group>"; };
 		1D6367892191ED4C007C4D17 /* merge_two_sorted_lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merge_two_sorted_lists.swift; sourceTree = "<group>"; };
 		1D63BE2626B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kth_mallest_element_in_a_bst.swift; sourceTree = "<group>"; };
+		1D63BE2926B98E6B00DFE603 /* search_in_a_binary_search_tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = search_in_a_binary_search_tree.swift; sourceTree = "<group>"; };
 		1D64399426B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binary_tree_maximum_path_sum.swift; sourceTree = "<group>"; };
 		1D6C011A223BE91700A27946 /* palindromic_substrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palindromic_substrings.swift; sourceTree = "<group>"; };
 		1D6C011C223BEF1D00A27946 /* jewels_and_stones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jewels_and_stones.swift; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 				1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */,
 				1D64399426B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift */,
 				1D63BE2626B97EEB00DFE603 /* kth_mallest_element_in_a_bst.swift */,
+				1D63BE2926B98E6B00DFE603 /* search_in_a_binary_search_tree.swift */,
 			);
 			name = Tree;
 			path = ../Tree;
@@ -603,6 +606,7 @@
 				1DB1A2D0222D69BB00375700 /* minimum_path_sum.swift in Sources */,
 				1D8FDEDC223A93DA00517C0D /* target_sum.swift in Sources */,
 				1D85DAF222316A4500CDE9DD /* single_number.swift in Sources */,
+				1D63BE2A26B98E6B00DFE603 /* search_in_a_binary_search_tree.swift in Sources */,
 				1D88973F22393097004B9BFA /* path_sum.swift in Sources */,
 				1D52FA4F2233AE08006A4D2B /* intersection_of_two_linked_lists.swift in Sources */,
 				314DE6E0218C48CE001C84FB /* palindrome_number.swift in Sources */,
