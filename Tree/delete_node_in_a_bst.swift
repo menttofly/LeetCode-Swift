@@ -37,6 +37,7 @@ class DeleteBSTNode {
         return root
     }
     
+    /// 返回 BST 中的最小值
     func bstMinNode(_ root: TreeNode) -> TreeNode {
         var minNode = root
         while minNode.left != nil {
