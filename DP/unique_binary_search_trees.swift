@@ -12,7 +12,7 @@ import Foundation
  * Question Link: https://leetcode.com/problems/unique-binary-search-trees/
  * Primary idea: DP(i) represent the number of unique BST, and the root value can be any number in (1...n).
  * Note: 结果为选择任意一个数作为节点后，其左右子树的乘积就是一个选择的 BST 数量，全部相加即为结果
- * G(n) = G(0) * G(n-1) + G(1) * G(n-2) + … + G(n-1) * G(0) 
+ * G(n) = G(0) * G(n-1) + G(1) * G(n-2) + … + G(n-1) * G(0)
  *
  * State Transition Equation: DP(i) = sum{DP(j, i-j-1), j in [0..<i]}
  *
@@ -60,5 +60,5 @@ class UniqueBinarySearchTrees {
             
         memo[lo][hi] = res
         return res
-        }
+    }
 }
