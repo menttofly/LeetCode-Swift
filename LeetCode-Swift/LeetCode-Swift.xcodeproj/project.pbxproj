@@ -57,6 +57,7 @@
 		1D6C011B223BE91700A27946 /* palindromic_substrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6C011A223BE91700A27946 /* palindromic_substrings.swift */; };
 		1D6C011D223BEF1D00A27946 /* jewels_and_stones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6C011C223BEF1D00A27946 /* jewels_and_stones.swift */; };
 		1D7CCCD122216EBD00C9B8B9 /* lru_cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7CCCD022216EBD00C9B8B9 /* lru_cache.swift */; };
+		1D857ECF26BAE56C0073E895 /* all_paths_from_source_to_target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D857ECE26BAE56C0073E895 /* all_paths_from_source_to_target.swift */; };
 		1D85DAE9223022EB00CDE9DD /* flatten_binary_tree_to_linked_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D85DAE8223022EB00CDE9DD /* flatten_binary_tree_to_linked_list.swift */; };
 		1D85DAEB2230331200CDE9DD /* word_break.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D85DAEA2230331200CDE9DD /* word_break.swift */; };
 		1D85DAED2231440300CDE9DD /* symmetric_tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D85DAEC2231440300CDE9DD /* symmetric_tree.swift */; };
@@ -198,6 +199,7 @@
 		1D6C011A223BE91700A27946 /* palindromic_substrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palindromic_substrings.swift; sourceTree = "<group>"; };
 		1D6C011C223BEF1D00A27946 /* jewels_and_stones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jewels_and_stones.swift; sourceTree = "<group>"; };
 		1D7CCCD022216EBD00C9B8B9 /* lru_cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lru_cache.swift; sourceTree = "<group>"; };
+		1D857ECE26BAE56C0073E895 /* all_paths_from_source_to_target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = all_paths_from_source_to_target.swift; sourceTree = "<group>"; };
 		1D85DAE8223022EB00CDE9DD /* flatten_binary_tree_to_linked_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flatten_binary_tree_to_linked_list.swift; sourceTree = "<group>"; };
 		1D85DAEA2230331200CDE9DD /* word_break.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word_break.swift; sourceTree = "<group>"; };
 		1D85DAEC2231440300CDE9DD /* symmetric_tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = symmetric_tree.swift; sourceTree = "<group>"; };
@@ -333,6 +335,15 @@
 			path = ../Design;
 			sourceTree = "<group>";
 		};
+		1D857ECD26BAE56C0073E895 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				1D857ECE26BAE56C0073E895 /* all_paths_from_source_to_target.swift */,
+			);
+			name = Graph;
+			path = ../Graph;
+			sourceTree = "<group>";
+		};
 		1D85DAF02231661600CDE9DD /* Backtracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,15 +360,16 @@
 		1D9537C421763D7B00A2C3AD = {
 			isa = PBXGroup;
 			children = (
-				1D04163225ECBE0C00715FA5 /* Offer */,
 				313621012186B74800E9B9BB /* Array */,
 				1D85DAF02231661600CDE9DD /* Backtracking */,
 				1D7CCCCF22216EA200C9B8B9 /* Design */,
 				1D40A638218F34EA00D2D5FD /* DFS */,
 				1D9537D921763DF200A2C3AD /* DP */,
+				1D857ECD26BAE56C0073E895 /* Graph */,
 				1D9537CF21763D7B00A2C3AD /* LeetCode-Swift */,
 				313621042186DFD400E9B9BB /* LinkedList */,
 				1D9537D721763DF200A2C3AD /* Math */,
+				1D04163225ECBE0C00715FA5 /* Offer */,
 				1D9537CE21763D7B00A2C3AD /* Products */,
 				1D9537D821763DF200A2C3AD /* String */,
 				1DF3F90721C4DD8700985128 /* Tree */,
@@ -678,6 +690,7 @@
 				1DDF0C3C261D5FF8009246FE /* 11_旋转数组的最小数字.swift in Sources */,
 				1D051A7D2621F68100A890D0 /* maximum_binary_tree.swift in Sources */,
 				1DF519F2222BFCA6007A8C9A /* rotate_image.swift in Sources */,
+				1D857ECF26BAE56C0073E895 /* all_paths_from_source_to_target.swift in Sources */,
 				1D63678A2191ED4C007C4D17 /* merge_two_sorted_lists.swift in Sources */,
 				1D40A63A218F351100D2D5FD /* binary_tree_right_side_view.swift in Sources */,
 				1D04163C25ECC07600715FA5 /* 05_替换空格.swift in Sources */,
