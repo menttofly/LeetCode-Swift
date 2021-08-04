@@ -104,6 +104,7 @@
 		1DE6DEE7222ED4A2000A9ED5 /* word_search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE6DEE6222ED4A2000A9ED5 /* word_search.swift */; };
 		1DE6DEE9222EE275000A9ED5 /* unique_binary_search_trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE6DEE8222EE275000A9ED5 /* unique_binary_search_trees.swift */; };
 		1DE6DEEB222EEDBE000A9ED5 /* construct_binary_tree_from_preorder_and_inorder_traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE6DEEA222EEDBE000A9ED5 /* construct_binary_tree_from_preorder_and_inorder_traversal.swift */; };
+		1DECA31226BA8F78009EDE0E /* unique_binary_search_trees_ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DECA31126BA8F78009EDE0E /* unique_binary_search_trees_ii.swift */; };
 		1DF3F90921C4DDB900985128 /* invert_binary_tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3F90821C4DDB900985128 /* invert_binary_tree.swift */; };
 		1DF3F90B21C4F74F00985128 /* binary_tree_inorder_traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3F90A21C4F74F00985128 /* binary_tree_inorder_traversal.swift */; };
 		1DF3F90D21C4FCFB00985128 /* balanced_binary_tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3F90C21C4FCFB00985128 /* balanced_binary_tree.swift */; };
@@ -245,6 +246,7 @@
 		1DE6DEE6222ED4A2000A9ED5 /* word_search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word_search.swift; sourceTree = "<group>"; };
 		1DE6DEE8222EE275000A9ED5 /* unique_binary_search_trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unique_binary_search_trees.swift; sourceTree = "<group>"; };
 		1DE6DEEA222EEDBE000A9ED5 /* construct_binary_tree_from_preorder_and_inorder_traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = construct_binary_tree_from_preorder_and_inorder_traversal.swift; sourceTree = "<group>"; };
+		1DECA31126BA8F78009EDE0E /* unique_binary_search_trees_ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unique_binary_search_trees_ii.swift; sourceTree = "<group>"; };
 		1DF3F90821C4DDB900985128 /* invert_binary_tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invert_binary_tree.swift; sourceTree = "<group>"; };
 		1DF3F90A21C4F74F00985128 /* binary_tree_inorder_traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binary_tree_inorder_traversal.swift; sourceTree = "<group>"; };
 		1DF3F90C21C4FCFB00985128 /* balanced_binary_tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = balanced_binary_tree.swift; sourceTree = "<group>"; };
@@ -465,6 +467,7 @@
 				1D63BE2926B98E6B00DFE603 /* search_in_a_binary_search_tree.swift */,
 				1D63BE2C26B9919200DFE603 /* insert_into_a_binary_search_tree.swift */,
 				1D63BE2F26B99AE000DFE603 /* delete_node_in_a_bst.swift */,
+				1DECA31126BA8F78009EDE0E /* unique_binary_search_trees_ii.swift */,
 			);
 			name = Tree;
 			path = ../Tree;
@@ -682,6 +685,7 @@
 				1D64399526B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift in Sources */,
 				1D40A637218EBC4000D2D5FD /* coin_change.swift in Sources */,
 				1D909A6C269D34B600A381B8 /* set_matrix_zeroes.swift in Sources */,
+				1DECA31226BA8F78009EDE0E /* unique_binary_search_trees_ii.swift in Sources */,
 				313621082188737800E9B9BB /* median_of_two_sorted_arrays.swift in Sources */,
 				1DF519EE222BDD07007A8C9A /* combination_sum.swift in Sources */,
 				1DF519E8222ADFB5007A8C9A /* next_permutation.swift in Sources */,
