@@ -90,6 +90,7 @@
 		1DC234F82236AB5F00CB2C29 /* top_k_frequent_elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC234F72236AB5F00CB2C29 /* top_k_frequent_elements.swift */; };
 		1DC234FA2236BA3A00CB2C29 /* decode_string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC234F92236BA3A00CB2C29 /* decode_string.swift */; };
 		1DC234FC2236CAAC00CB2C29 /* palindrome_linked_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC234FB2236CAAC00CB2C29 /* palindrome_linked_list.swift */; };
+		1DC27B3726BC3C9000EB5862 /* maximum_sum_bst_in_binary_tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC27B3626BC3C9000EB5862 /* maximum_sum_bst_in_binary_tree.swift */; };
 		1DD6247A2222CD5700C5E09D /* letter_combinations_of_a_phone_number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD624792222CD5700C5E09D /* letter_combinations_of_a_phone_number.swift */; };
 		1DDC34B621C662F8008793D8 /* majority_element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC34B521C662F8008793D8 /* majority_element.swift */; };
 		1DDC34B821C668D8008793D8 /* binary_tree_level_order_traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC34B721C668D8008793D8 /* binary_tree_level_order_traversal.swift */; };
@@ -233,6 +234,7 @@
 		1DC234F72236AB5F00CB2C29 /* top_k_frequent_elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = top_k_frequent_elements.swift; sourceTree = "<group>"; };
 		1DC234F92236BA3A00CB2C29 /* decode_string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decode_string.swift; sourceTree = "<group>"; };
 		1DC234FB2236CAAC00CB2C29 /* palindrome_linked_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palindrome_linked_list.swift; sourceTree = "<group>"; };
+		1DC27B3626BC3C9000EB5862 /* maximum_sum_bst_in_binary_tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maximum_sum_bst_in_binary_tree.swift; sourceTree = "<group>"; };
 		1DD624792222CD5700C5E09D /* letter_combinations_of_a_phone_number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letter_combinations_of_a_phone_number.swift; sourceTree = "<group>"; };
 		1DDC34B521C662F8008793D8 /* majority_element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = majority_element.swift; sourceTree = "<group>"; };
 		1DDC34B721C668D8008793D8 /* binary_tree_level_order_traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binary_tree_level_order_traversal.swift; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 				1D63BE2C26B9919200DFE603 /* insert_into_a_binary_search_tree.swift */,
 				1D63BE2F26B99AE000DFE603 /* delete_node_in_a_bst.swift */,
 				1DECA31126BA8F78009EDE0E /* unique_binary_search_trees_ii.swift */,
+				1DC27B3626BC3C9000EB5862 /* maximum_sum_bst_in_binary_tree.swift */,
 			);
 			name = Tree;
 			path = ../Tree;
@@ -630,6 +633,7 @@
 				1D63BE2A26B98E6B00DFE603 /* search_in_a_binary_search_tree.swift in Sources */,
 				1D88973F22393097004B9BFA /* path_sum.swift in Sources */,
 				1D52FA4F2233AE08006A4D2B /* intersection_of_two_linked_lists.swift in Sources */,
+				1DC27B3726BC3C9000EB5862 /* maximum_sum_bst_in_binary_tree.swift in Sources */,
 				314DE6E0218C48CE001C84FB /* palindrome_number.swift in Sources */,
 				31C53EFE218AF60C00F340E2 /* zigzag_conversion.swift in Sources */,
 				1DDF0C42261D60F5009246FE /* recover_binary_search_tree.swift in Sources */,
