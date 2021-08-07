@@ -19,7 +19,6 @@ class AllPathsSourceTarget {
     
     func allPathsSourceTarget(_ graph: [[Int]]) -> [[Int]] {
         var path = [Int]()
-        path.append(0)
         dfs(graph, 0, &path)
         return res
     }
