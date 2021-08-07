@@ -20,12 +20,17 @@ class BinaryTreeLevelOrderTraversal {
             return []
         }
         var queue = [root], result = [[Int]]()
+        let arr: [String] = ["#"]
+        if arr.popLast() == "#" {
+            
+        }
         while !queue.isEmpty {
             var list = [Int]()
             for _ in 0..<queue.count {  /// In the same level.
                 let node = queue.removeFirst()
                 list.append(node.val)
                 /// Put left node in queue in case of miss child node's info.
+                /// Next level
                 if let left = node.left {
                     queue.append(left)
                 }
