@@ -347,6 +347,7 @@
 				1DD60B2726BFFB3100358D71 /* maximum_frequency_stack.swift */,
 				1DD60B2A26C1682B00358D71 /* priority_queue.swift */,
 				1D93C4F026C39EFA00D2BB72 /* find_median_from_data_stream.swift */,
+				1D93C4F226C3D2F100D2BB72 /* next_greater_element_i.swift */,
 			);
 			name = Design;
 			path = ../Design;
@@ -535,7 +536,6 @@
 				1DC234F72236AB5F00CB2C29 /* top_k_frequent_elements.swift */,
 				313621022186B82800E9B9BB /* two_sum.swift */,
 				1D909A6B269D34B600A381B8 /* set_matrix_zeroes.swift */,
-				1D93C4F226C3D2F100D2BB72 /* next_greater_element_i.swift */,
 			);
 			name = Array;
 			path = ../Array;
