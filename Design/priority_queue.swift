@@ -76,7 +76,7 @@ struct Heap<T> {
         
         /// index 如果为最后一个元素，直接删除就行
         if index != size - 1 {
-            nodes.swapAt(index, size - 1)         /// 将最后一个元素和被删除元素交换，保持完全二叉树的性质
+            nodes.swapAt(index, size - 1)         /// 将待删除元素交换到最后一个元素的位置，保持完全二叉树的性质，且此时该元素已经不属于堆
             shiftDown(from: index, to: size - 1)  /// 如果新元素和子节点破坏堆属性则下沉（注意交换后实际上堆大小为 size - 1）
             shiftUp(index)                        /// 如果新元素和父节点破坏堆属性则上浮
         }
