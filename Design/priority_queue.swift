@@ -9,7 +9,7 @@
 import Foundation
 
 /// 堆数据结构
-class Heap<T> {
+struct Heap<T> {
     /// 存储堆节点的数组
     var nodes = [T]()
     /// 排序规则，决定是 max-heap 还是 min-heap
@@ -34,7 +34,7 @@ class Heap<T> {
     
     /// 构建堆，从倒数第一个非叶子节点往前遍历，
     /// - Parameter items: 用于生成堆的数组
-    private func buildHeap(from items:[T]) {
+    private mutating func buildHeap(from items:[T]) {
         nodes = items
         for i in stride(from: nodes.count / 2 - 1, through: 0, by: -1) {
             shiftDown(i)
@@ -43,7 +43,7 @@ class Heap<T> {
     
     /// 往堆插入元素
     /// - Parameter val: 待插入元素
-    func insert(_ val: T) {
+    mutating func insert(_ val: T) {
         /// 先添加到尾部，如果不符合堆属性，则上浮该元素
         nodes.append(val)
         shiftUp(nodes.count - 1)
@@ -51,7 +51,7 @@ class Heap<T> {
     
     /// 删除堆顶元素
     /// - Returns: 堆顶元素
-    func remove() -> T? {
+    mutating func remove() -> T? {
         guard !nodes.isEmpty else {
             return nil
         }
@@ -69,7 +69,7 @@ class Heap<T> {
     /// 删除堆中任意一个节点
     /// - Parameter index: 待删除节点的索引
     /// - Returns: 被删除的元素
-    func remove(at index: Int) -> T? {
+    mutating func remove(at index: Int) -> T? {
         guard index < size else {
             return nil
         }
@@ -94,7 +94,7 @@ class Heap<T> {
     
     /// 对指定索引处的节点之行上浮操作
     /// - Parameter index: 节点索引
-    func shiftUp(_ index: Int) {
+    mutating func shiftUp(_ index: Int) {
         let val = nodes[index]
         var index = index, parentIndex = self.parentIndex(of: index)
         
@@ -109,7 +109,7 @@ class Heap<T> {
     
     /// 对指定索引index 对应的元素执行下沉操作，直到满足堆属性（通常用来构建堆）
     /// - Parameter index: 需要下沉的节点索引
-    func shiftDown(_ index: Int) {
+    mutating func shiftDown(_ index: Int) {
         shiftDown(from: index, to: nodes.count)
     }
     
@@ -117,7 +117,7 @@ class Heap<T> {
     /// - Parameters:
     ///   - start: 需要开始下沉的节点索引
     ///   - end: 开区间，结束位置为 end - 1
-    func shiftDown(from start: Int, to end: Int)  {
+    mutating func shiftDown(from start: Int, to end: Int)  {
         let val = nodes[start]
         var index = start, childIndex = leftChildIndex(of: index)
         
