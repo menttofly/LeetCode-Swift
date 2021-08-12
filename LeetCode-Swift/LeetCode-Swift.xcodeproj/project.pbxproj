@@ -78,6 +78,7 @@
 		1D93C4F126C39EFA00D2BB72 /* find_median_from_data_stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D93C4F026C39EFA00D2BB72 /* find_median_from_data_stream.swift */; };
 		1D93C4F326C3D2F100D2BB72 /* next_greater_element_i.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D93C4F226C3D2F100D2BB72 /* next_greater_element_i.swift */; };
 		1D93C4F526C4E18300D2BB72 /* daily_temperatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D93C4F426C4E18300D2BB72 /* daily_temperatures.swift */; };
+		1D93C4F726C4F29400D2BB72 /* next_greater_element_ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D93C4F626C4F29400D2BB72 /* next_greater_element_ii.swift */; };
 		1D9537D121763D7B00A2C3AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9537D021763D7B00A2C3AD /* main.swift */; };
 		1DA3BC1C2237F548003F4C6D /* move_zeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1B2237F548003F4C6D /* move_zeroes.swift */; };
 		1DA3BC1E2237FEAA003F4C6D /* queue_reconstruction_by_height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1D2237FEAA003F4C6D /* queue_reconstruction_by_height.swift */; };
@@ -228,6 +229,7 @@
 		1D93C4F026C39EFA00D2BB72 /* find_median_from_data_stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = find_median_from_data_stream.swift; sourceTree = "<group>"; };
 		1D93C4F226C3D2F100D2BB72 /* next_greater_element_i.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = next_greater_element_i.swift; sourceTree = "<group>"; };
 		1D93C4F426C4E18300D2BB72 /* daily_temperatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily_temperatures.swift; sourceTree = "<group>"; };
+		1D93C4F626C4F29400D2BB72 /* next_greater_element_ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = next_greater_element_ii.swift; sourceTree = "<group>"; };
 		1D9537CD21763D7B00A2C3AD /* LeetCode-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9537D021763D7B00A2C3AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1DA3BC1B2237F548003F4C6D /* move_zeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = move_zeroes.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				1DD60B2A26C1682B00358D71 /* priority_queue.swift */,
 				1D93C4F026C39EFA00D2BB72 /* find_median_from_data_stream.swift */,
 				1D93C4F226C3D2F100D2BB72 /* next_greater_element_i.swift */,
+				1D93C4F626C4F29400D2BB72 /* next_greater_element_ii.swift */,
 				1D93C4F426C4E18300D2BB72 /* daily_temperatures.swift */,
 			);
 			name = Design;
@@ -630,6 +633,7 @@
 				1D30CA5321764CBD00D7C0BB /* powx_n.swift in Sources */,
 				1D56183426B27E1E00732597 /* 13_机器人的运动范围.swift in Sources */,
 				1D9537D121763D7B00A2C3AD /* main.swift in Sources */,
+				1D93C4F726C4F29400D2BB72 /* next_greater_element_ii.swift in Sources */,
 				1D04163925ECBFF600715FA5 /* 04_二维数组中的查找.swift in Sources */,
 				1DDF0C2D261D5EF2009246FE /* 10_I-斐波那契数列.swift in Sources */,
 				1D8FDEE2223AB68E00517C0D /* subarray_sum_equals_k.swift in Sources */,
