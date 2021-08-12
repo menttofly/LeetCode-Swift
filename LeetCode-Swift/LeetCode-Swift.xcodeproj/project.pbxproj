@@ -15,6 +15,8 @@
 		1D0504C02232CFF5002B3921 /* min_stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0504BF2232CFF5002B3921 /* min_stack.swift */; };
 		1D051A7A2621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D051A792621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift */; };
 		1D051A7D2621F68100A890D0 /* maximum_binary_tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D051A7C2621F68100A890D0 /* maximum_binary_tree.swift */; };
+		1D2ADB7826C56A470097578E /* sliding_window_maximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2ADB7726C56A470097578E /* sliding_window_maximum.swift */; };
+		1D2ADB7B26C56AC50097578E /* queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2ADB7A26C56AC50097578E /* queue.swift */; };
 		1D2C4E0D222D577B00B0139B /* merge_intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C4E0C222D577B00B0139B /* merge_intervals.swift */; };
 		1D30CA5121763FD000D7C0BB /* longest_palindromic_substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5021763FD000D7C0BB /* longest_palindromic_substring.swift */; };
 		1D30CA5321764CBD00D7C0BB /* powx_n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D30CA5221764CBD00D7C0BB /* powx_n.swift */; };
@@ -166,6 +168,8 @@
 		1D0504BF2232CFF5002B3921 /* min_stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = min_stack.swift; sourceTree = "<group>"; };
 		1D051A792621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = populating_next_right_pointers_in_each_node.swift; sourceTree = "<group>"; };
 		1D051A7C2621F68100A890D0 /* maximum_binary_tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maximum_binary_tree.swift; sourceTree = "<group>"; };
+		1D2ADB7726C56A470097578E /* sliding_window_maximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliding_window_maximum.swift; sourceTree = "<group>"; };
+		1D2ADB7A26C56AC50097578E /* queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queue.swift; sourceTree = "<group>"; };
 		1D2C4E0C222D577B00B0139B /* merge_intervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merge_intervals.swift; sourceTree = "<group>"; };
 		1D30CA5021763FD000D7C0BB /* longest_palindromic_substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = longest_palindromic_substring.swift; sourceTree = "<group>"; };
 		1D30CA5221764CBD00D7C0BB /* powx_n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = powx_n.swift; sourceTree = "<group>"; };
@@ -354,6 +358,8 @@
 				1D93C4F226C3D2F100D2BB72 /* next_greater_element_i.swift */,
 				1D93C4F626C4F29400D2BB72 /* next_greater_element_ii.swift */,
 				1D93C4F426C4E18300D2BB72 /* daily_temperatures.swift */,
+				1D2ADB7726C56A470097578E /* sliding_window_maximum.swift */,
+				1D2ADB7A26C56AC50097578E /* queue.swift */,
 			);
 			name = Design;
 			path = ../Design;
@@ -697,6 +703,7 @@
 				313621062186DFEC00E9B9BB /* add_two_numbers.swift in Sources */,
 				1D52FA6622354E99006A4D2B /* search_a_2d_matrix_ii.swift in Sources */,
 				1D8FDEDA223A885000517C0D /* hamming_distance.swift in Sources */,
+				1D2ADB7826C56A470097578E /* sliding_window_maximum.swift in Sources */,
 				1D40A635218E051800D2D5FD /* maximum_subarray.swift in Sources */,
 				1D0504C02232CFF5002B3921 /* min_stack.swift in Sources */,
 				1DF519EC222BBFF1007A8C9A /* find_first_and_last_position_of_element_in_sorted_array.swift in Sources */,
@@ -717,6 +724,7 @@
 				1DF519EA222AED94007A8C9A /* search_in_rotated_sorted_array.swift in Sources */,
 				1DDF0C3F261D6029009246FE /* 12_矩阵中的路径.swift in Sources */,
 				1DE6DEE5222EB818000A9ED5 /* subsets.swift in Sources */,
+				1D2ADB7B26C56AC50097578E /* queue.swift in Sources */,
 				1D456D1C22317BA800B78931 /* sort_list.swift in Sources */,
 				1D40A633218CBA4600D2D5FD /* wildcard_matching.swift in Sources */,
 				1D30CA5521764CFE00D7C0BB /* longest_substring_without_repeating_characters.swift in Sources */,

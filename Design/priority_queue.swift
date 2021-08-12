@@ -11,9 +11,9 @@ import Foundation
 /// 堆数据结构
 struct Heap<T> {
     /// 存储堆节点的数组
-    var nodes = [T]()
+    private var nodes = [T]()
     /// 排序规则，决定是 max-heap 还是 min-heap
-    let order: (T, T) -> Bool
+    private let order: (T, T) -> Bool
     /// 堆大小
     var size: Int {
         return nodes.count
