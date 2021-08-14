@@ -82,6 +82,7 @@
 		1D93C4F526C4E18300D2BB72 /* daily_temperatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D93C4F426C4E18300D2BB72 /* daily_temperatures.swift */; };
 		1D93C4F726C4F29400D2BB72 /* next_greater_element_ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D93C4F626C4F29400D2BB72 /* next_greater_element_ii.swift */; };
 		1D9537D121763D7B00A2C3AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9537D021763D7B00A2C3AD /* main.swift */; };
+		1D9909B326C7754600141C05 /* advantage_shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9909B226C7754600141C05 /* advantage_shuffle.swift */; };
 		1DA3BC1C2237F548003F4C6D /* move_zeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1B2237F548003F4C6D /* move_zeroes.swift */; };
 		1DA3BC1E2237FEAA003F4C6D /* queue_reconstruction_by_height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1D2237FEAA003F4C6D /* queue_reconstruction_by_height.swift */; };
 		1DA3BC2022380AFA003F4C6D /* partition_equal_subset_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1F22380AFA003F4C6D /* partition_equal_subset_sum.swift */; };
@@ -236,6 +237,7 @@
 		1D93C4F626C4F29400D2BB72 /* next_greater_element_ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = next_greater_element_ii.swift; sourceTree = "<group>"; };
 		1D9537CD21763D7B00A2C3AD /* LeetCode-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9537D021763D7B00A2C3AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1D9909B226C7754600141C05 /* advantage_shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = advantage_shuffle.swift; sourceTree = "<group>"; };
 		1DA3BC1B2237F548003F4C6D /* move_zeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = move_zeroes.swift; sourceTree = "<group>"; };
 		1DA3BC1D2237FEAA003F4C6D /* queue_reconstruction_by_height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queue_reconstruction_by_height.swift; sourceTree = "<group>"; };
 		1DA3BC1F22380AFA003F4C6D /* partition_equal_subset_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partition_equal_subset_sum.swift; sourceTree = "<group>"; };
@@ -548,6 +550,7 @@
 				1DC234F72236AB5F00CB2C29 /* top_k_frequent_elements.swift */,
 				313621022186B82800E9B9BB /* two_sum.swift */,
 				1D909A6B269D34B600A381B8 /* set_matrix_zeroes.swift */,
+				1D9909B226C7754600141C05 /* advantage_shuffle.swift */,
 			);
 			name = Array;
 			path = ../Array;
@@ -765,6 +768,7 @@
 				1DA6804626273ACB00B46A49 /* find_duplicate_subtrees.swift in Sources */,
 				1D52FA5C223437EB006A4D2B /* kth_largest_element_in_an_array.swift in Sources */,
 				1DD6247A2222CD5700C5E09D /* letter_combinations_of_a_phone_number.swift in Sources */,
+				1D9909B326C7754600141C05 /* advantage_shuffle.swift in Sources */,
 				1D52FA6A22355E77006A4D2B /* find_the_duplicate_number.swift in Sources */,
 				1D6C011D223BEF1D00A27946 /* jewels_and_stones.swift in Sources */,
 			);
