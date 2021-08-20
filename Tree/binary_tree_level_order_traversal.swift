@@ -20,10 +20,6 @@ class BinaryTreeLevelOrderTraversal {
             return []
         }
         var queue = [root], result = [[Int]]()
-        let arr: [String] = ["#"]
-        if arr.popLast() == "#" {
-            
-        }
         while !queue.isEmpty {
             var list = [Int]()
             for _ in 0..<queue.count {  /// In the same level.
