@@ -34,6 +34,9 @@ class FindAllAnagramsInAString {
             if let value = hash[s[right]], value >= 1 {
                 count -= 1
             }
+            
+            /// 可能使在 p 串中的字符次数小于 1，但是后面 left 指针移动会重新增长次数
+            /// < 0 时代表窗口中的字符已经够多，超出需要的
             hash[s[right], default: 0] -= 1
             right += 1
             
@@ -45,8 +48,9 @@ class FindAllAnagramsInAString {
             
             /// 当窗口大小和 p 长度一样时，移动 left 指针缩小窗口，以发现下一个匹配项
             if right - left == p.count {
-                /// s[left] 字符就在原始的 hash 中，即在 p 中，其次数不会小于 0
+                /// 如果 value >= 0，则表示 s[left] 字符就在原始的 hash 中，即在 p 中，因为其次数不会小于 0
                 if let value = hash[s[left]], value >= 0 {
+                    /// 此时 left 对应字符是需要的字符，因为在 p 串中
                     /// 由于将 left 踢出窗口，所以 count 计数需要加 1，表示满足条件字符又减少一个
                     count += 1
                 }
