@@ -19,7 +19,7 @@ class MinWindow {
         let s = [Character](s)
         var window = [Character: Int]()
         var target = [Character: Int]()
-        for c in [Character](t) {
+        for c in t {
             target[c] = (target[c] ?? 0) + 1
         }
         
@@ -38,7 +38,7 @@ class MinWindow {
                 }
             }
             
-            while valid == t.count {
+            while valid == target.count {
                 if right - left < len {
                     start = left
                     len = right - start
@@ -54,6 +54,6 @@ class MinWindow {
             }
         }
         
-        return len == Int.max ? "" : String(s[start...start + len])
+        return len == Int.max ? "" : String(s[start..<start + len])
     }
 }
