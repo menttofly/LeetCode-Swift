@@ -35,7 +35,7 @@ class CheckInclusion {
             hash[s[right], default: 0] -= 1
             right += 1
             
-            /// 当 count = 0，表示已发现一个 p 的同母异位词子串
+            /// 当 count = 0，表示已发现一个 p 的一种组合子串
             /// 窗口的 left 指针就是该子串的起始索引
             if count == 0 {
                 return true
