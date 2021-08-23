@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
- * Primary idea: 使用快慢指针，从 nums[0...slow] 之间就是不重复的元素
+ * Primary idea: 使用快慢指针，在 nums[0...slow] 之间的就是不重复的元素
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
@@ -24,6 +24,7 @@ class RemoveDuplicates {
         while fast != nums.count {
             /// fast 和 slow 的值不一样时，更新 slow 指针，并将 nums[slow] 的值设定为 nums[fast]
             if nums[slow] != nums[fast] {
+                /// 因为第一个元素必选，所以要先 slow + 1 再赋值
                 slow += 1
                 nums[slow] = nums[fast]
             }

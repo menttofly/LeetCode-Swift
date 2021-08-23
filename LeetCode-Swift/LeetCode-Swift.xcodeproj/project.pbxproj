@@ -94,6 +94,7 @@
 		1DA3BC2022380AFA003F4C6D /* partition_equal_subset_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC1F22380AFA003F4C6D /* partition_equal_subset_sum.swift */; };
 		1DA3BC2222381957003F4C6D /* path_sum_iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC2122381957003F4C6D /* path_sum_iii.swift */; };
 		1DA6804626273ACB00B46A49 /* find_duplicate_subtrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */; };
+		1DB02F4B26D360B600036264 /* remove_element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB02F4A26D360B600036264 /* remove_element.swift */; };
 		1DB1A2CE222D628300375700 /* unique_paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2CD222D628300375700 /* unique_paths.swift */; };
 		1DB1A2D0222D69BB00375700 /* minimum_path_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2CF222D69BB00375700 /* minimum_path_sum.swift */; };
 		1DB1A2D2222D777700375700 /* sort_colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2D1222D777700375700 /* sort_colors.swift */; };
@@ -255,6 +256,7 @@
 		1DA3BC1F22380AFA003F4C6D /* partition_equal_subset_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partition_equal_subset_sum.swift; sourceTree = "<group>"; };
 		1DA3BC2122381957003F4C6D /* path_sum_iii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = path_sum_iii.swift; sourceTree = "<group>"; };
 		1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = find_duplicate_subtrees.swift; sourceTree = "<group>"; };
+		1DB02F4A26D360B600036264 /* remove_element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remove_element.swift; sourceTree = "<group>"; };
 		1DB1A2CD222D628300375700 /* unique_paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unique_paths.swift; sourceTree = "<group>"; };
 		1DB1A2CF222D69BB00375700 /* minimum_path_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimum_path_sum.swift; sourceTree = "<group>"; };
 		1DB1A2D1222D777700375700 /* sort_colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sort_colors.swift; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 				1D9909B526CD4ED000141C05 /* two_sum_ii_input_array_is_sorted.swift */,
 				1D45D51F26D12C6F002394D0 /* remove_duplicate_letters.swift */,
 				1D4B50B226D2822800A9672B /* remove_duplicates_from_sorted_array.swift */,
+				1DB02F4A26D360B600036264 /* remove_element.swift */,
 			);
 			name = Array;
 			path = ../Array;
@@ -756,6 +759,7 @@
 				1D30CA5521764CFE00D7C0BB /* longest_substring_without_repeating_characters.swift in Sources */,
 				1DDC34BA21C6739F008793D8 /* maximum_depth_of_binary_tree.swift in Sources */,
 				1DDF0C3C261D5FF8009246FE /* 11_旋转数组的最小数字.swift in Sources */,
+				1DB02F4B26D360B600036264 /* remove_element.swift in Sources */,
 				1D051A7D2621F68100A890D0 /* maximum_binary_tree.swift in Sources */,
 				1DF519F2222BFCA6007A8C9A /* rotate_image.swift in Sources */,
 				1D857ECF26BAE56C0073E895 /* all_paths_from_source_to_target.swift in Sources */,
