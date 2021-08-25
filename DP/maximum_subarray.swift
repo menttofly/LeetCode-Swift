@@ -12,7 +12,7 @@ import Foundation
  * Question Link: https://leetcode.com/problems/maximum-subarray/
  * Primary idea: sum[i] means num[x...i] which is the largest contiguous subsequence ending in i, then find the max sum[i]
  *
- * State Transition Equation: sum[i] = sum[i-1] + nums[i]
+ * State Transition Equation: dp[i] = max(nums[i], num[i] + dp[i-1])
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
