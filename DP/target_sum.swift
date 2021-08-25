@@ -48,4 +48,33 @@ class TargetSum {
         }
         return dp[S] ?? 0
     }
+    
+    /**
+     * Question Link: https://leetcode.com/problems/target-sum/
+     * Primary idea: DP[N][S] 表示从前 N 个元素中选择，若凑成背包重量为 S 则最多有 DP[N][S] 种可能
+     *
+     * Time Complexity: O(n^2), Space Complexity: O(n)
+     */
+    func findTargetSumWaysBackpack(_ nums: [Int], _ S: Int) -> Int {
+        var dp = Array(repeating: Array(repeating: 0, count: S + 1), count: nums.count + 1)
+        /// base case，当背包重量为 0 时，选择都不装就是唯一的解法
+        for i in 0...nums.count {
+            dp[i][0] = 1
+        }
+        
+        /// i 代表第 i 个物品，即 nums[i - 1]
+        for i in 1...nums.count {
+            for j in 0...S {
+                if j >= nums[i - 1] {
+                    /// 两种选择，不放入背包和放入背包，nums[i - 1] 为第 i 个物品
+                    dp[i][j] = dp[i - 1][j] + dp[i - 1][j - nums[i - 1]]
+                } else {
+                    /// 背包空间不足，只能选择不装物品 i
+                    dp[i][j] = dp[i - 1][j]
+                }
+            }
+        }
+        
+        return dp[nums.count][S]
+    }
 }

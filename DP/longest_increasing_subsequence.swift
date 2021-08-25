@@ -37,4 +37,22 @@ class LongestIncreasingSubsequence {
         }
         return result
     }
+    
+    /// 精简代码
+    func lengthOfLIS1(_ nums: [Int]) -> Int {
+        if nums.count == 0 {
+            return 0
+        }
+        var dp = Array(repeating: 1, count: nums.count)
+        var result = 1
+        for i in 0..<nums.count {
+            for j in 0..<i {
+                if nums[i] > nums[j] {
+                    dp[i] = max(dp[i], dp[j] + 1)
+                }
+            }
+            result = max(result, dp[i])
+        }
+        return result
+    }
 }
