@@ -17,26 +17,28 @@ import Foundation
 class MinDistance {
     func minDistance(_ word1: String, _ word2: String) -> Int {
         let word1 = [Character](word1), word2 = [Character](word2)
-        if word1.count == 0 {
-            return word2.count
-        } else if (word2.count == 0) {
-            return word1.count
+        let len1 = word1.count, len2 = word2.count
+        
+        if len1 == 0 {
+            return len2
+        } else if (len2 == 0) {
+            return len1
         }
         
-        var dp = Array(repeating: Array(repeating: 0, count: word2.count + 1), count: word1.count + 1)
+        var dp = Array(repeating: Array(repeating: 0, count: len2 + 1), count: len1 + 1)
         
         /// base case
         /// i 从 1 开始，因为 word[0...0) 没有意义
-        for i in 1...word1.count {
+        for i in 1...len1 {
             dp[i][0] = i
         }
         
-        for j in 1...word2.count {
+        for j in 1...len2 {
             dp[0][j] = j
         }
         
-        for i in 1...word1.count {
-            for j in 1...word2.count {
+        for i in 1...len1 {
+            for j in 1...len2 {
                 if word1[i - 1] == word2[j - 1] {
                     dp[i][j] = dp[i - 1][j - 1]
                 } else {
@@ -45,6 +47,6 @@ class MinDistance {
             }
         }
         
-        return dp[word1.count][word2.count]
+        return dp[len1][len2]
     }
 }
