@@ -58,15 +58,17 @@ class PartitionEqualSubsetSum {
             return false
         }
         /// Turn this question to check whether the sum of part elements in array can equal to target.
-        /// 状态压缩版
+        /// 状态压缩版，从二维数组矩阵的形状理解，dp[i][w] 需要的状态都是上一行 dp[i-1][..] 得到的，再之前的都不会再使用到
+        /// 所以只需要一个一维数组记录矩阵中 i-1 这一行的数据即可
         let target = sum / 2
         var dp = Array(repeating: false, count: target + 1)
         dp[0] = true
         for num in nums {
-            var i = target
-            while i >= num {
-                dp[i] = dp[i] || dp[i - num]
-                i -= 1
+            var w = target
+            /// 从后往前遍历，避免上一行的结果在本次循环中被冲掉，可以保证上一行结果只被用一次
+            while w >= num {
+                dp[w] = dp[w] || dp[w - num]
+                w -= 1
             }
         }
         return dp[target]
