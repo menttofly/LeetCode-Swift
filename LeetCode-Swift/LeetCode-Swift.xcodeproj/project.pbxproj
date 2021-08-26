@@ -96,6 +96,7 @@
 		1DA3BC2222381957003F4C6D /* path_sum_iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3BC2122381957003F4C6D /* path_sum_iii.swift */; };
 		1DA6804626273ACB00B46A49 /* find_duplicate_subtrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */; };
 		1DADD41B26D6161900528C8F /* edit_distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADD41A26D6161900528C8F /* edit_distance.swift */; };
+		1DADD95F26D73A8F00528C8F /* longest_palindromic_subsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADD95E26D73A8F00528C8F /* longest_palindromic_subsequence.swift */; };
 		1DB02F4B26D360B600036264 /* remove_element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB02F4A26D360B600036264 /* remove_element.swift */; };
 		1DB1A2CE222D628300375700 /* unique_paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2CD222D628300375700 /* unique_paths.swift */; };
 		1DB1A2D0222D69BB00375700 /* minimum_path_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1A2CF222D69BB00375700 /* minimum_path_sum.swift */; };
@@ -260,6 +261,7 @@
 		1DA3BC2122381957003F4C6D /* path_sum_iii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = path_sum_iii.swift; sourceTree = "<group>"; };
 		1DA6804526273ACB00B46A49 /* find_duplicate_subtrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = find_duplicate_subtrees.swift; sourceTree = "<group>"; };
 		1DADD41A26D6161900528C8F /* edit_distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edit_distance.swift; sourceTree = "<group>"; };
+		1DADD95E26D73A8F00528C8F /* longest_palindromic_subsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = longest_palindromic_subsequence.swift; sourceTree = "<group>"; };
 		1DB02F4A26D360B600036264 /* remove_element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remove_element.swift; sourceTree = "<group>"; };
 		1DB1A2CD222D628300375700 /* unique_paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unique_paths.swift; sourceTree = "<group>"; };
 		1DB1A2CF222D69BB00375700 /* minimum_path_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimum_path_sum.swift; sourceTree = "<group>"; };
@@ -479,26 +481,27 @@
 			children = (
 				1D52FA6B2235658B006A4D2B /* best_time_to_buy_and_sell_stock_with_cooldown.swift */,
 				31A0D4C221913AF7009E357D /* climbing_stairs.swift */,
-				1D40A636218EBC4000D2D5FD /* coin_change.swift */,
 				1D52FA502233B305006A4D2B /* house_robber.swift */,
 				1DF519F3222C1C90007A8C9A /* jump_game.swift */,
-				1D40A63B21907F0300D2D5FD /* longest_increasing_subsequence.swift */,
-				1D30CA5021763FD000D7C0BB /* longest_palindromic_substring.swift */,
 				1D52FA5D223518F5006A4D2B /* maximal_square.swift */,
 				1D456D1D2231869700B78931 /* maximum_product_subarray.swift */,
-				1D40A634218E051800D2D5FD /* maximum_subarray.swift */,
 				1DB1A2CF222D69BB00375700 /* minimum_path_sum.swift */,
 				1DA3BC1F22380AFA003F4C6D /* partition_equal_subset_sum.swift */,
 				1D52FA67223557C7006A4D2B /* perfect_squares.swift */,
 				314DE6E1218C53D0001C84FB /* regular_expression_matching.swift */,
 				1DC2129B219B24E400646031 /* super_egg_drop.swift */,
-				1D8FDEDB223A93DA00517C0D /* target_sum.swift */,
 				1DE6DEE8222EE275000A9ED5 /* unique_binary_search_trees.swift */,
 				1DB1A2CD222D628300375700 /* unique_paths.swift */,
 				1D40A632218CBA4600D2D5FD /* wildcard_matching.swift */,
 				1D85DAEA2230331200CDE9DD /* word_break.swift */,
+				1D40A636218EBC4000D2D5FD /* coin_change.swift */,
+				1D40A634218E051800D2D5FD /* maximum_subarray.swift */,
+				1D40A63B21907F0300D2D5FD /* longest_increasing_subsequence.swift */,
 				1DADD41A26D6161900528C8F /* edit_distance.swift */,
 				1D40961326D693D500D3782B /* longest_common_subsequence.swift */,
+				1D30CA5021763FD000D7C0BB /* longest_palindromic_substring.swift */,
+				1DADD95E26D73A8F00528C8F /* longest_palindromic_subsequence.swift */,
+				1D8FDEDB223A93DA00517C0D /* target_sum.swift */,
 			);
 			name = DP;
 			path = ../DP;
@@ -750,6 +753,7 @@
 				1DF3F90921C4DDB900985128 /* invert_binary_tree.swift in Sources */,
 				1D85DAEB2230331200CDE9DD /* word_break.swift in Sources */,
 				1DF3F90F21C5265300985128 /* balanced_binary_tree_dfs.swift in Sources */,
+				1DADD95F26D73A8F00528C8F /* longest_palindromic_subsequence.swift in Sources */,
 				1D6C011B223BE91700A27946 /* palindromic_substrings.swift in Sources */,
 				1D597713223BD45800661B0D /* shortest_unsorted_continuous_subarray.swift in Sources */,
 				1D051A7A2621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift in Sources */,
