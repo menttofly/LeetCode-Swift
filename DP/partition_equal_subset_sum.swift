@@ -62,15 +62,16 @@ class PartitionEqualSubsetSum {
         /// 所以只需要一个一维数组记录矩阵中 i-1 这一行的数据即可
         let target = sum / 2
         var dp = Array(repeating: false, count: target + 1)
+        /// base case，背包空间为 0，相当于装满
         dp[0] = true
+        
         for num in nums {
-            var w = target
             /// 从后往前遍历，避免上一行的结果在本次循环中被冲掉，可以保证上一行结果只被用一次
-            while w >= num {
+            for w in stride(from: target, through: num, by: -1) {
                 dp[w] = dp[w] || dp[w - num]
-                w -= 1
             }
         }
+        
         return dp[target]
     }
 }

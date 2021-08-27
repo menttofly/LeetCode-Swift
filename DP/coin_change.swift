@@ -24,9 +24,9 @@ class CoinChange {
         var dp = Array(repeating: amount + 1, count: amount + 1)
         dp[0] = 0
         for i in 1...amount {
-            for j in 0..<coins.count {
-                if coins[j] <= i, dp[i - coins[j]] + 1 < dp[i] {
-                    dp[i] = dp[i - coins[j]] + 1
+            for coin in coins {
+                if coin <= i {
+                    dp[i] = min(dp[i], dp[i - coin] + 1)
                 }
             }
         }
