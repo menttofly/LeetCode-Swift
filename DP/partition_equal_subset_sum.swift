@@ -11,7 +11,7 @@ import Foundation
 class PartitionEqualSubsetSum {
     /**
      * Question Link: https://leetcode.com/problems/partition-equal-subset-sum/
-     * Primary idea: DP[i][w] 表示对于 i 个物品，当背包容量为 w 时，是否可以恰好装满（等于目标和）
+     * Primary idea: DP[i][w] 表示对于 i 个物品，当背包容量为 w 时，是否可以恰好装满（等于目标和）=> 0 1 背包，不能重复选择
      *
      * Time Complexity: O(n^2), Space Complexity: O(n^2)
      */
