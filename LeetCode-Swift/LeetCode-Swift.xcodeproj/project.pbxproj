@@ -16,6 +16,7 @@
 		1D051A7A2621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D051A792621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift */; };
 		1D051A7D2621F68100A890D0 /* maximum_binary_tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D051A7C2621F68100A890D0 /* maximum_binary_tree.swift */; };
 		1D15B22826DA2C9900013BFD /* non_overlapping_intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D15B22726DA2C9900013BFD /* non_overlapping_intervals.swift */; };
+		1D15B22B26DA31CE00013BFD /* minimum_number_of_arrows_to_burst_balloons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D15B22A26DA31CE00013BFD /* minimum_number_of_arrows_to_burst_balloons.swift */; };
 		1D2ADB7826C56A470097578E /* sliding_window_maximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2ADB7726C56A470097578E /* sliding_window_maximum.swift */; };
 		1D2ADB7B26C56AC50097578E /* queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2ADB7A26C56AC50097578E /* queue.swift */; };
 		1D2C4E0D222D577B00B0139B /* merge_intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C4E0C222D577B00B0139B /* merge_intervals.swift */; };
@@ -182,6 +183,7 @@
 		1D051A792621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = populating_next_right_pointers_in_each_node.swift; sourceTree = "<group>"; };
 		1D051A7C2621F68100A890D0 /* maximum_binary_tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maximum_binary_tree.swift; sourceTree = "<group>"; };
 		1D15B22726DA2C9900013BFD /* non_overlapping_intervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = non_overlapping_intervals.swift; sourceTree = "<group>"; };
+		1D15B22A26DA31CE00013BFD /* minimum_number_of_arrows_to_burst_balloons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimum_number_of_arrows_to_burst_balloons.swift; sourceTree = "<group>"; };
 		1D2ADB7726C56A470097578E /* sliding_window_maximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliding_window_maximum.swift; sourceTree = "<group>"; };
 		1D2ADB7A26C56AC50097578E /* queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queue.swift; sourceTree = "<group>"; };
 		1D2C4E0C222D577B00B0139B /* merge_intervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merge_intervals.swift; sourceTree = "<group>"; };
@@ -508,6 +510,7 @@
 				1D40A636218EBC4000D2D5FD /* coin_change.swift */,
 				1DADD96026D8984A00528C8F /* coin_change_ii.swift */,
 				1D15B22726DA2C9900013BFD /* non_overlapping_intervals.swift */,
+				1D15B22A26DA31CE00013BFD /* minimum_number_of_arrows_to_burst_balloons.swift */,
 			);
 			name = DP;
 			path = ../DP;
@@ -734,6 +737,7 @@
 				1D63BE3026B99AE000DFE603 /* delete_node_in_a_bst.swift in Sources */,
 				1D52FA6422353B9E006A4D2B /* product_of_array_except_self.swift in Sources */,
 				1D4B50B326D2822800A9672B /* remove_duplicates_from_sorted_array.swift in Sources */,
+				1D15B22B26DA31CE00013BFD /* minimum_number_of_arrows_to_burst_balloons.swift in Sources */,
 				1D52FA532233C278006A4D2B /* number_of_islands.swift in Sources */,
 				1DDC34B821C668D8008793D8 /* binary_tree_level_order_traversal.swift in Sources */,
 				1D04163425ECBFB300715FA5 /* 03_数组中重复的数字.swift in Sources */,
