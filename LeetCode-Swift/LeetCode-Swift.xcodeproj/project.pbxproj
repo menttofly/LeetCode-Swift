@@ -15,6 +15,7 @@
 		1D0504C02232CFF5002B3921 /* min_stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0504BF2232CFF5002B3921 /* min_stack.swift */; };
 		1D051A7A2621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D051A792621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift */; };
 		1D051A7D2621F68100A890D0 /* maximum_binary_tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D051A7C2621F68100A890D0 /* maximum_binary_tree.swift */; };
+		1D15B22826DA2C9900013BFD /* non_overlapping_intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D15B22726DA2C9900013BFD /* non_overlapping_intervals.swift */; };
 		1D2ADB7826C56A470097578E /* sliding_window_maximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2ADB7726C56A470097578E /* sliding_window_maximum.swift */; };
 		1D2ADB7B26C56AC50097578E /* queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2ADB7A26C56AC50097578E /* queue.swift */; };
 		1D2C4E0D222D577B00B0139B /* merge_intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C4E0C222D577B00B0139B /* merge_intervals.swift */; };
@@ -180,6 +181,7 @@
 		1D0504BF2232CFF5002B3921 /* min_stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = min_stack.swift; sourceTree = "<group>"; };
 		1D051A792621DF5700A890D0 /* populating_next_right_pointers_in_each_node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = populating_next_right_pointers_in_each_node.swift; sourceTree = "<group>"; };
 		1D051A7C2621F68100A890D0 /* maximum_binary_tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maximum_binary_tree.swift; sourceTree = "<group>"; };
+		1D15B22726DA2C9900013BFD /* non_overlapping_intervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = non_overlapping_intervals.swift; sourceTree = "<group>"; };
 		1D2ADB7726C56A470097578E /* sliding_window_maximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliding_window_maximum.swift; sourceTree = "<group>"; };
 		1D2ADB7A26C56AC50097578E /* queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = queue.swift; sourceTree = "<group>"; };
 		1D2C4E0C222D577B00B0139B /* merge_intervals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merge_intervals.swift; sourceTree = "<group>"; };
@@ -505,6 +507,7 @@
 				1D8FDEDB223A93DA00517C0D /* target_sum.swift */,
 				1D40A636218EBC4000D2D5FD /* coin_change.swift */,
 				1DADD96026D8984A00528C8F /* coin_change_ii.swift */,
+				1D15B22726DA2C9900013BFD /* non_overlapping_intervals.swift */,
 			);
 			name = DP;
 			path = ../DP;
@@ -736,6 +739,7 @@
 				1D04163425ECBFB300715FA5 /* 03_数组中重复的数字.swift in Sources */,
 				1D52FA5A2233EDBC006A4D2B /* implement_trie_prefix_tree.swift in Sources */,
 				1D63BE2D26B9919200DFE603 /* insert_into_a_binary_search_tree.swift in Sources */,
+				1D15B22826DA2C9900013BFD /* non_overlapping_intervals.swift in Sources */,
 				1DD60B2526BEDBD200358D71 /* count_complete_tree_nodes.swift in Sources */,
 				1D40A63C21907F0300D2D5FD /* longest_increasing_subsequence.swift in Sources */,
 				1DF519F4222C1C90007A8C9A /* jump_game.swift in Sources */,
