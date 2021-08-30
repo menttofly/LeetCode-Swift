@@ -32,6 +32,7 @@ class RegularExpressionMatching {
                     /// None macth, a* count zero time
                     let none = dp[i][j - 2]
                     /// One or more macth, a* count at least one time
+                    /// 为什么dp[i - 1][j] 中 j 不动？因为 '*' 前面都字符 p[j - 2] 可以匹配一次或多次
                     let onemore = (i > 0 && (s[i - 1] == p[j - 2] || p[j - 2] == ".") && dp[i - 1][j])
                     dp[i][j] = none || onemore
                 } else {
