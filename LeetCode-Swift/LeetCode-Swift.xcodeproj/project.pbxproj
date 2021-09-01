@@ -585,8 +585,6 @@
 				1DB1A2D1222D777700375700 /* sort_colors.swift */,
 				1D8FDEE1223AB68E00517C0D /* subarray_sum_equals_k.swift */,
 				1D597714223BE1B600661B0D /* task_scheduler.swift */,
-				1DFD221921CE726F00537FE8 /* 3sum.swift */,
-				1DB528CA21CFD0C000C72819 /* 3sum_closest.swift */,
 				1DC234F72236AB5F00CB2C29 /* top_k_frequent_elements.swift */,
 				313621022186B82800E9B9BB /* two_sum.swift */,
 				1D909A6B269D34B600A381B8 /* set_matrix_zeroes.swift */,
@@ -595,6 +593,8 @@
 				1D45D51F26D12C6F002394D0 /* remove_duplicate_letters.swift */,
 				1D4B50B226D2822800A9672B /* remove_duplicates_from_sorted_array.swift */,
 				1DB02F4A26D360B600036264 /* remove_element.swift */,
+				1DFD221921CE726F00537FE8 /* 3sum.swift */,
+				1DB528CA21CFD0C000C72819 /* 3sum_closest.swift */,
 			);
 			name = Array;
 			path = ../Array;
