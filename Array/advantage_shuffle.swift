@@ -25,7 +25,7 @@ class AdvantageCount {
         var res = Array(repeating: 0, count: nums1.count)
         var left = 0, right = res.count - 1
         
-        /// 记录索引以便在对应的位置放置 num1 的最值
+        /// 记录索引以便在原始位置放置 num1 的最值
         /// left 和 right 不断移动，因为使用后的最值不能再次使用
         for (i, val) in tuples {
             if sorted[left] > val {

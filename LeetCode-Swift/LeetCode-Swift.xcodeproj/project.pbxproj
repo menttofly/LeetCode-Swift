@@ -150,6 +150,7 @@
 		1DF519F2222BFCA6007A8C9A /* rotate_image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF519F1222BFCA6007A8C9A /* rotate_image.swift */; };
 		1DF519F4222C1C90007A8C9A /* jump_game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF519F3222C1C90007A8C9A /* jump_game.swift */; };
 		1DF519F6222C3966007A8C9A /* group_anagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF519F5222C3966007A8C9A /* group_anagrams.swift */; };
+		1DFD144626DFCB92002A27C0 /* best_time_to_buy_and_sell_stock_ii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD144526DFCB92002A27C0 /* best_time_to_buy_and_sell_stock_ii.swift */; };
 		1DFD221A21CE726F00537FE8 /* 3sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD221921CE726F00537FE8 /* 3sum.swift */; };
 		313621032186B82800E9B9BB /* two_sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313621022186B82800E9B9BB /* two_sum.swift */; };
 		313621062186DFEC00E9B9BB /* add_two_numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313621052186DFEC00E9B9BB /* add_two_numbers.swift */; };
@@ -320,6 +321,7 @@
 		1DF519F1222BFCA6007A8C9A /* rotate_image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rotate_image.swift; sourceTree = "<group>"; };
 		1DF519F3222C1C90007A8C9A /* jump_game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jump_game.swift; sourceTree = "<group>"; };
 		1DF519F5222C3966007A8C9A /* group_anagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = group_anagrams.swift; sourceTree = "<group>"; };
+		1DFD144526DFCB92002A27C0 /* best_time_to_buy_and_sell_stock_ii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = best_time_to_buy_and_sell_stock_ii.swift; sourceTree = "<group>"; };
 		1DFD221921CE726F00537FE8 /* 3sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3sum.swift; sourceTree = "<group>"; };
 		313621022186B82800E9B9BB /* two_sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = two_sum.swift; sourceTree = "<group>"; };
 		313621052186DFEC00E9B9BB /* add_two_numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = add_two_numbers.swift; sourceTree = "<group>"; };
@@ -564,6 +566,10 @@
 		313621012186B74800E9B9BB /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				1DB528CA21CFD0C000C72819 /* 3sum_closest.swift */,
+				1DFD221921CE726F00537FE8 /* 3sum.swift */,
+				1D9909B226C7754600141C05 /* advantage_shuffle.swift */,
+				1DFD144526DFCB92002A27C0 /* best_time_to_buy_and_sell_stock_ii.swift */,
 				1D85DAEE22314D5400CDE9DD /* best_time_to_buy_and_sell_stock.swift */,
 				1DF3F91221C52FC600985128 /* container_with_most_water.swift */,
 				1D88974222396BEF004B9BFA /* find_all_numbers_disappeared_in_an_array.swift */,
@@ -578,23 +584,20 @@
 				1DF519E7222ADFB5007A8C9A /* next_permutation.swift */,
 				1D52FA6322353B9E006A4D2B /* product_of_array_except_self.swift */,
 				1DA3BC1D2237FEAA003F4C6D /* queue_reconstruction_by_height.swift */,
+				1D45D51F26D12C6F002394D0 /* remove_duplicate_letters.swift */,
+				1D4B50B226D2822800A9672B /* remove_duplicates_from_sorted_array.swift */,
+				1DB02F4A26D360B600036264 /* remove_element.swift */,
 				1DF519F1222BFCA6007A8C9A /* rotate_image.swift */,
 				1D52FA6522354E99006A4D2B /* search_a_2d_matrix_ii.swift */,
 				1DF519E9222AED94007A8C9A /* search_in_rotated_sorted_array.swift */,
+				1D909A6B269D34B600A381B8 /* set_matrix_zeroes.swift */,
 				1D597712223BD45800661B0D /* shortest_unsorted_continuous_subarray.swift */,
 				1DB1A2D1222D777700375700 /* sort_colors.swift */,
 				1D8FDEE1223AB68E00517C0D /* subarray_sum_equals_k.swift */,
 				1D597714223BE1B600661B0D /* task_scheduler.swift */,
 				1DC234F72236AB5F00CB2C29 /* top_k_frequent_elements.swift */,
-				313621022186B82800E9B9BB /* two_sum.swift */,
-				1D909A6B269D34B600A381B8 /* set_matrix_zeroes.swift */,
-				1D9909B226C7754600141C05 /* advantage_shuffle.swift */,
 				1D9909B526CD4ED000141C05 /* two_sum_ii_input_array_is_sorted.swift */,
-				1D45D51F26D12C6F002394D0 /* remove_duplicate_letters.swift */,
-				1D4B50B226D2822800A9672B /* remove_duplicates_from_sorted_array.swift */,
-				1DB02F4A26D360B600036264 /* remove_element.swift */,
-				1DFD221921CE726F00537FE8 /* 3sum.swift */,
-				1DB528CA21CFD0C000C72819 /* 3sum_closest.swift */,
+				313621022186B82800E9B9BB /* two_sum.swift */,
 			);
 			name = Array;
 			path = ../Array;
@@ -800,6 +803,7 @@
 				1D52FA5E223518F5006A4D2B /* maximal_square.swift in Sources */,
 				1D8BEE3226BE68D5003FF083 /* serialize_and_deserialize_binary_tree.swift in Sources */,
 				1D64399526B39FC900DD0A0B /* binary_tree_maximum_path_sum.swift in Sources */,
+				1DFD144626DFCB92002A27C0 /* best_time_to_buy_and_sell_stock_ii.swift in Sources */,
 				1D40A637218EBC4000D2D5FD /* coin_change.swift in Sources */,
 				1D93C4F526C4E18300D2BB72 /* daily_temperatures.swift in Sources */,
 				1D909A6C269D34B600A381B8 /* set_matrix_zeroes.swift in Sources */,
