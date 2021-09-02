@@ -10,19 +10,18 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/container-with-most-water/
- * Primary idea: Use two pointer form an interval, then move pointer at short line unless they meet. Referance Bucket Effect.
+ * Primary idea: 使用左右双指针, 移动高度叫小的指针指到相遇，由于木桶效应能容纳的水取决于较短的木板
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
 class ContainerWithMostWater {
     func maxArea(_ height: [Int]) -> Int {
-        var left = 0, right = height.count - 1, max = 0
+        var left = 0, right = height.count - 1, water = 0
         while left < right {
             let len = right - left
             let val = len * min(height[left], height[right])
-            if val > max {
-                max = val
-            }
+            water = max(water, val)
+            
             /// Keep bigger height[index] as one side of interval.
             if height[left] < height[right] {
                 left += 1
@@ -30,6 +29,7 @@ class ContainerWithMostWater {
                 right -= 1
             }
         }
-        return max
+        
+        return water
     }
 }

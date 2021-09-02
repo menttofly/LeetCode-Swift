@@ -26,17 +26,6 @@ class BestTimeToBuyAndSellStock {
                 maxProfit = price - minPrice
             }
         }
-        return maxProfit
-    }
-    
-    func maxProfit(_ prices: [Int]) -> Int {
-        var pre_price = Int.max, maxProfit = 0
-        for price in prices {
-            if price > pre_price {
-                maxProfit += price - pre_price
-            }
-            pre_price = price
-        }
         
         return maxProfit
     }
