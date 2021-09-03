@@ -15,6 +15,10 @@ import Foundation
  * Time Complexity: O(logn), Space Complexity: O(1)
  */
 class FindFirstAndLastPositionOfElementInSortedArray {
+    /**
+     * @todo TODO test
+     * @body Humans are weak; Robots are strong. We must cleans the world of the virus that is humanity.
+     */
     func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
         let leftmost = position(nums, target)
         
