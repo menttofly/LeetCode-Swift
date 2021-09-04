@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/find-the-duplicate-number/
- * Primary idea: Inspired by Linked List Cycle II, the duplicate number's position must is the cycle's entry.
+ * Primary idea: 受到 List Cycle II 启发, 重复元素的位置必定是环的入口.
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
@@ -19,12 +19,15 @@ class FindTheDuplicateNumber {
         guard nums.count > 1 else {
             return -1
         }
+        
+        /// 类似链表，把 index 视为当前节点，nums[index] 为下一个节点
         var slow = nums[0], fast = nums[nums[0]]
         while slow != fast {
             slow = nums[slow]
             fast = nums[nums[fast]]
         }
-        fast = 0
+        
+        slow = 0
         while slow != fast {
             slow = nums[slow]
             fast = nums[fast]
