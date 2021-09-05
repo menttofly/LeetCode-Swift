@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
- * Primary idea: 使用快慢指针，在 nums[0...slow] 之间的就是不重复的元素
+ * Primary idea: 原地修改数组，使用快慢指针，在 nums[0..slow] 之间的就是不重复的元素
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */

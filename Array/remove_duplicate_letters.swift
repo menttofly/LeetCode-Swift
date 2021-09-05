@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/remove-duplicate-letters/
- * Primary idea: 用栈记录无重复的字符，exist 字典用于字符去重，单调栈用于保持字典序
+ * Primary idea: 数组去重，用栈记录无重复的字符，exist 字典用于字符去重，单调栈用于保持字典序
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
