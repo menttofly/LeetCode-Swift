@@ -10,24 +10,31 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/majority-element/
- * Primary idea: Neutralize when the elements are different, the majority element must survive at last.
+ * Primary idea: 消除不同的元素，最后留下来的就是出现超过一半的元素
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
 class MajorityElement {
     func majorityElement(_ nums: [Int]) -> Int {
-        var majority = 0, times = 0
+        /// 当前元素
+        var majority = 0
+        /// 当前元素出现次数
+        var times = 0
+        
         for i in 0..<nums.count {
-            let elem = nums[i]
             if times == 0 {
-                majority = elem
+                /// 更新当前元素
+                majority = nums[i]
                 times = 1
-            } else if elem == majority {
+            } else if nums[i] == majority {
+                /// 和当前元素相同时增加 times
                 times += 1
             } else {
+                /// 和当前元素不同时减少 times
                 times -= 1
             }
         }
+        
         return majority
     }
 }
