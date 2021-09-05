@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/kth-largest-element-in-an-array/
- * Primary idea: Use partition func in quick sort algorithm, let divide position approach to kth constantly.
+ * Primary idea: 使用快速排序的 partition 算法, 让 divide 的位置不断逼近第 k 大元素
  *
  * Time Complexity: O(nlogn), Space Complexity: O(1)
  */
@@ -19,6 +19,7 @@ class KthLargestElementInAnArray {
         var left = 0, right = nums.count - 1, kth = -1, nums = nums
         while true {
             let divide = partition(&nums, left, right)
+            /// 不断划分，让 divide 逼近第 k 个元素（k-1）
             if divide == k - 1 {
                 kth = nums[divide]
                 break
@@ -34,20 +35,26 @@ class KthLargestElementInAnArray {
         return kth
     }
     
+    /// 快速排序 partition 算法，划分为 [left..l), l, (l..right] 三部分
+    /// 返回索引 l
     private func partition(_ nums: inout [Int], _ left: Int, _ right: Int) -> Int {
         var l = left, r = right
+        /// 选择第一个元素作为枢纽元
         let pivot = nums[left]
+        
         while l < r {
-            while nums[r] <= pivot && l < r {
+            /// 跳过小等于 pivot 的元素，寻找第一个大于 pivot 的元素
+            while l < r && nums[r] <= pivot {
                 r -= 1
             }
-            while nums[l] >= pivot && l < r {
+            /// 跳过大等于 pivot 的元素，寻找第一个小于 pivot 的元素
+            while l < r && nums[l] >= pivot {
                 l += 1
             }
-            if l < r {
-                nums.swapAt(l, r)
-            }
+            /// 交换 l 和 r 的元素到各自子集中
+            nums.swapAt(l, r)
         }
+        /// 恢复枢纽元的位置，划分后 [left..l) 都大于 pivot，(l..right] 都小于 pivot
         nums.swapAt(left, l)
         return l
     }
