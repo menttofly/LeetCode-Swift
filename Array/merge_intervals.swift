@@ -30,7 +30,7 @@ class MergeIntervals {
             if interval[0] > previous[1] {
                 res.append(interval)
             } else {
-                /// 区间相交，当前区间 end 大于前一区间 end，并合并区间
+                /// 区间相交，当前区间 end 大于前一区间 end，则合并区间
                 /// [[1,4],[2,5]] this case.
                 if interval[1] > previous[1] {
                     previous[1] = interval[1]
