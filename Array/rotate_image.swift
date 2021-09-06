@@ -17,6 +17,7 @@ import Foundation
 class RotateImage {
     func rotate(_ matrix: inout [[Int]]) {
         /// Let's swap matrix lower left corner to upper right corner first.
+        /// 将矩阵中轴对称线下方的交换到上方
         for i in 0..<matrix.count {
             for j in 0..<i {
                 swap(&matrix, i, j)

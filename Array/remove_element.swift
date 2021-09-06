@@ -31,9 +31,9 @@ class RemoveElement {
     /// 单指针，遍历过程中的 i 就相当于 fast 指针，begin 相当于 slow 指针
     func removeElement1(_ nums: inout [Int], _ val: Int) -> Int {
         var begin = 0
-        for (idx, value) in nums.enumerated() {
-            if value != val {
-                nums[begin] = nums[idx]
+        for (_, num) in nums.enumerated() {
+            if num != val {
+                nums[begin] = num
                 begin += 1
             }
         }
