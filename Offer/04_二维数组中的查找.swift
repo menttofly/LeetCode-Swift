@@ -9,6 +9,7 @@
 import Foundation
 
 class FindNumberIn2DArray {
+    /// 每行都是排序的，所以可以对每行进行二分搜索
     func findNumberIn2DArray(_ matrix: [[Int]], _ target: Int) -> Bool {
         if matrix.isEmpty || matrix[0].isEmpty {
             return false
