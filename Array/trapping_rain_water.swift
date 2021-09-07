@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/trapping-rain-water/
- * Primary idea: 左右双指针
+ * Primary idea: 经典接雨水问题，使用左右双指针解法
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
