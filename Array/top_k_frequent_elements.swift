@@ -10,35 +10,38 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/top-k-frequent-elements/
- * Primary idea: Hash table and bucket sort, you can also done it with min-heap.
+ * Primary idea: 字典存储每个数字出现次数，然后把次数作为下标，数字为值放到 bucket 数组中，从后往前遍历依次获取 k 个最频繁的数字
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class TopKFrequentElements {
     func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
+        /// 如果数组元素都相同，下标就是 nums.count，数组大小需为 nums.count + 1
         var buckets = Array(repeating: [Int](), count: nums.count + 1)
-        var map = [Int: Int]()
+        var hash = [Int: Int]()
         
-        /// Put (num, frequency) into a hash table.
+        /// 保存 (num, frequency) 的映射关系
         for num in nums {
-            map[num] = map[num] != nil ? map[num]! + 1 : 1
+            hash[num, default: 0] += 1
         }
         
-        /// Put the number which have same frequency into one bucket, and frequency used as index in buckets array.
-        for (num, frequency) in map {
-            buckets[frequency].append(num)
+        /// 按出现频率作为 buckets 数组索引入桶，频率相同放入同一个下标的桶中
+        for (num, freq) in hash {
+            buckets[freq].append(num)
         }
         
         var topk = [Int]()
-        /// Most frequent elements must at the end, so traversing from back to front.
+        /// 从后往前数字出现频率递减，所以倒序遍历 buckets 数组
         for bucket in buckets.reversed() {
             if !bucket.isEmpty {
                 topk.append(contentsOf: bucket)
             }
+            /// 已经足够 k 个 most frequent elements
             if topk.count >= k {
                 break
             }
         }
+        
         return topk
     }
 }
