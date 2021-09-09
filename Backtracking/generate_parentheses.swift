@@ -38,11 +38,12 @@ class GenerateParentheses {
         if open < close {
             return
         }
-        /// 先放 '(' ，数量不超过 pair
+        /// 尝试所有括号选项，即 '(' 和 ')'
+        /// 选择放 '(' ，数量不超过 pair
         if open < pair {
             backtracking(pair, open + 1, close, combine + "(", &res)
         }
-        /// 再放 ')' ，数量不超过 pair
+        /// 选择放 ')' ，数量不超过 pair
         if close < pair {
             backtracking(pair, open, close + 1, combine + ")", &res)
         }

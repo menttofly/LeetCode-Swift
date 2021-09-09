@@ -27,7 +27,7 @@ class CombinationSum {
         if target == 0 {
             res.append(combine); return
         }
-        /// 需要的数字小于 0，说明 combine 和超过原有的目标值，丢弃
+        /// 需要的数字小于 0，说明 combine 和超过原有的目标值，剪纸丢弃
         if target < 0 {
             return
         }
