@@ -10,27 +10,41 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/generate-parentheses/
- * Primary idea: Add brackets when it will remain a valid sequence through backtracking. Drawing the process of recursion to understand.
+ * Primary idea: Add brackets when it will remain a valid sequence through backtracking.
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class GenerateParentheses {
     func generateParenthesis(_ n: Int) -> [String] {
-        var combinations = [String]()
-        backtracking(n, 0, 0, "", &combinations)
-        return combinations
+        var res = [String]()
+        backtracking(n, 0, 0, "", &res)
+        return res
     }
     
-    private func backtracking(_ max: Int, _ open: Int, _ close: Int, _ result: String, _ combinations: inout [String]) -> Void {
-        if result.count >= max * 2 {
-            combinations.append(result)
+    /// 基于当前的开闭括号数量，组合新的 valid 括号，画出递归树分析
+    /// - Parameters:
+    ///   - pair: 括号对的数量
+    ///   - open: 当前使用了几个 '('
+    ///   - close: 当前使用了几个 ')'
+    ///   - combine: 当前括号组合
+    ///   - res: 结果集
+    private func backtracking(_ pair: Int, _ open: Int, _ close: Int, _ combine: String, _ res: inout [String]) {
+        /// base case
+        /// 括号总数量达到 2n
+        if combine.count >= pair * 2 {
+            res.append(combine); return
+        }
+        /// 左括号数量比右括号少，不满足条件，剪枝
+        if open < close {
             return
         }
-        if open < max {
-            backtracking(max, open + 1, close, result + "(", &combinations)
+        /// 先放 '(' ，数量不超过 pair
+        if open < pair {
+            backtracking(pair, open + 1, close, combine + "(", &res)
         }
-        if close < open {
-            backtracking(max, open, close + 1, result + ")", &combinations)
+        /// 再放 ')' ，数量不超过 pair
+        if close < pair {
+            backtracking(pair, open, close + 1, combine + ")", &res)
         }
     }
 }

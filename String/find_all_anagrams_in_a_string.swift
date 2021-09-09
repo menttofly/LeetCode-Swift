@@ -11,6 +11,7 @@ import Foundation
 /**
  * Question Link: https://leetcode.com/problems/find-all-anagrams-in-a-string/
  * Primary idea: 哈希表记录待满足的字符串，及次数信息，并使用固定窗口大小滑动，及左右指针间距为窗口大小时，left 指针就需要滑动
+ *
  * Note: labuladong 的通用框架适合窗口大小不固定的问题，本题属于固定窗口，所以不用内层循环而是 if 判断窗口大小
  *
  * Time Complexity: O(n), Space Complexity: O(n)
