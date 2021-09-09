@@ -26,7 +26,7 @@ class GenerateParentheses {
     ///   - pair: 括号对的数量
     ///   - open: 当前使用了几个 '('
     ///   - close: 当前使用了几个 ')'
-    ///   - combine: 当前括号组合
+    ///   - combine: 从根节点到叶节点路径，即括号组合字符串
     ///   - res: 结果集
     private func backtracking(_ pair: Int, _ open: Int, _ close: Int, _ combine: String, _ res: inout [String]) {
         /// base case
@@ -34,7 +34,7 @@ class GenerateParentheses {
         if combine.count >= pair * 2 {
             res.append(combine); return
         }
-        /// 左括号数量比右括号少，不满足条件，剪枝
+        /// 左括号数量比右括号少，不满足条件，剪枝该叶节点
         if open < close {
             return
         }
