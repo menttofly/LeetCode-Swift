@@ -19,27 +19,36 @@ class LetterCombinationsOfAPhoneNumber {
         if digits.isEmpty {
             return []
         }
-        let dict: [Character: String] = ["2":"abc", "3":"def", "4":"ghi", "5":"jkl", "6":"mno", "7":"pqrs", "8":"tuv", "9":"wxyz"]
         
-        /// Get all letters match to the digits
-        var letters: [String] = []
-        for digit in digits {
-            if let s = dict[digit] {
-                letters.append(s)
-            }
+        /// 号码和字母的映射关系
+        let dict: [Character: String] = ["2": "abc", "3": "def", "4": "ghi", "5": "jkl",
+                                         "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"]
+        /// 得到数字代表的所有字母串，如 "abc" "def"
+        var letters = [String]()
+        for num in digits {
+            letters.append(dict[num]!)
         }
-        var combinations: [String] = []
-        backtracking(letters, 0, "", &combinations)
-        return combinations
+        
+        var res: [String] = []
+        backtracking(letters, 0, "", &res)
+        return res
     }
     
-    private func backtracking(_ letters: [String], _ index: Int, _ result: String, _ combinations: inout [String]) -> Void {
+    /// 使用递归树，对于当前 index 对应的字母串，选择所有的字母。如 "abc" 中选取任一字母 'a' 'b' 'c'，统计所有的字母组合
+    /// - Parameters:
+    ///   - letters: 字母串数组
+    ///   - index: 当前位置，或者树中的层，每层只能选择对应顺序的字母串
+    ///   - combine: 当前组合的结果
+    ///   - res: 答案
+    private func backtracking(_ letters: [String], _ index: Int, _ combine: String, _ res: inout [String]) {
+        /// 到达叶子节点
         if index >= letters.count {
-            combinations.append(result)
+            res.append(combine)
             return
         }
+        /// 当前位置的字母串，尝试每种字母
         for letter in letters[index] {
-            backtracking(letters, index + 1, result + String(letter), &combinations)
+            backtracking(letters, index + 1, combine + String(letter), &res)
         }
     }
 }

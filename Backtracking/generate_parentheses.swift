@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/generate-parentheses/
- * Primary idea: Add brackets when it will remain a valid sequence through backtracking.
+ * Primary idea: 在保持括号有效的情况下，放置左右括号.
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
