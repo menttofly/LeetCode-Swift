@@ -33,10 +33,8 @@ class CombinationSum {
         }
         /// 从当前树节点开始，尝试每个可选项，并且下一个可选项的索引不能小于 start，否则会重复
         for i in start..<candidates.count {
-            var combine = combine
-            combine.append(candidates[i])
-            /// 用减法，更新剩余的 target
-            backtracking(candidates, target - candidates[i], combine, i, &res)
+            /// 用减法，更新剩余的 target，同时更新 combine
+            backtracking(candidates, target - candidates[i], combine + [candidates[i]], i, &res)
         }
     }
 }

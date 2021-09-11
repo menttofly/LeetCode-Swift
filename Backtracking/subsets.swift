@@ -16,21 +16,25 @@ import Foundation
  */
 class Subsets {
     func subsets(_ nums: [Int]) -> [[Int]] {
-        var nums = nums.sorted()  /// Sort is not required.
-        var combinations = [[Int]]()
-        backtracking(&combinations, &nums, [], 0)
-        return combinations
+        var nums = nums
+        var res = [[Int]]()
+        backtracking(&res, &nums, [], 0)
+        return res
     }
     
-    private func backtracking(_ combinations: inout [[Int]], _ nums: inout [Int], _ result: [Int], _ start: Int) -> Void {
-        var result = result
-        combinations.append(result)
-        for index in start..<nums.count {
-            /// Include the current element to previous subset.
-            result.append(nums[index])
-            backtracking(&combinations, &nums, result, index + 1)
-            /// Exclude the element and go to next loop
-            result.removeLast()
+    /// 回溯法遍历递归树，在树进入下一层时尝试所有的选择，树的深度每增加一层可选择区间的下界 start 都会右移
+    /// @warning 和常规回溯问题有所不同，不必在到达叶节点才保存结果，而是每次到下一层时收集上一层结果，因为要求的是 subset 子集
+    /// - Parameters:
+    ///   - res: 结果集合
+    ///   - nums: 所有的数字
+    ///   - sets: 经过一系列选择后到达的路径，即当前数字的组合，非引用类型不需要撤销选择（引用类型需要撤销）
+    ///   - start: 可选择区间的下界，也可以代表树当前的层级
+    private func backtracking(_ res: inout [[Int]], _ nums: inout [Int], _ sets: [Int], _ start: Int) {
+        /// 保存当前 sets
+        res.append(sets)
+        /// 从 [start..count) 区间中选取
+        for i in start..<nums.count {
+            backtracking(&res, &nums, sets + [nums[i]], i + 1)
         }
     }
 }

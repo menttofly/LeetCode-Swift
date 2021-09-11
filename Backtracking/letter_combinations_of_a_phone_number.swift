@@ -40,15 +40,15 @@ class LetterCombinationsOfAPhoneNumber {
     ///   - index: 当前位置，或者树中的层，每层只能选择对应顺序的字母串
     ///   - combine: 当前组合的结果
     ///   - res: 答案
-    private func backtracking(_ letters: [String], _ index: Int, _ combine: String, _ res: inout [String]) {
+    private func backtracking(_ letters: [String], _ level: Int, _ combine: String, _ res: inout [String]) {
         /// 到达叶子节点
-        if index >= letters.count {
+        if level >= letters.count {
             res.append(combine)
             return
         }
         /// 当前位置的字母串，尝试每种字母
-        for letter in letters[index] {
-            backtracking(letters, index + 1, combine + String(letter), &res)
+        for letter in letters[level] {
+            backtracking(letters, level + 1, combine + String(letter), &res)
         }
     }
 }
