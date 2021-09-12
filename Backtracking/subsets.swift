@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/subsets/
- * Primary idea: Make decision on each index recusively, include or exclude element to a subset.
+ * Primary idea: 回溯法，在递归树每层尝试所有选择，将数字放入 subset 子集中，并直接添加 subset 到结果 res 中，不需要到叶节点才保存
  *
  * Time Complexity: O(2^n), Space Complexity: O(2^n)
  */
