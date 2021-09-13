@@ -97,6 +97,7 @@ class LRUCache {
     }
 }
 
+/// 节点定义
 class LRUNode {
     var val: Int
     var key: Int = 0
