@@ -615,12 +615,12 @@
 				1D456D1722316C2100B78931 /* linked_list_cycle.swift */,
 				1D6367892191ED4C007C4D17 /* merge_two_sorted_lists.swift */,
 				1DC234FB2236CAAC00CB2C29 /* palindrome_linked_list.swift */,
+				1D88431426D34E29006B4BCF /* remove_duplicates_from_sorted_list.swift */,
 				1DF519E1222A9A85007A8C9A /* remove_nth_node_from_end_of_list.swift */,
 				1DBDFAC1261EAC1400CFE2BB /* reverse_linked_list_ii.swift */,
 				1D62103321C2A3CE0013316D /* reverse_linked_list.swift */,
 				1DBDFAC42620056400CFE2BB /* reverse_nodes_in_k_group.swift */,
 				1D456D1B22317BA800B78931 /* sort_list.swift */,
-				1D88431426D34E29006B4BCF /* remove_duplicates_from_sorted_list.swift */,
 			);
 			name = LinkedList;
 			path = ../LinkedList;
