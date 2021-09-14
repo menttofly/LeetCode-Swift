@@ -21,27 +21,29 @@ class TreeNode {
 
 /**
  * Question Link: https://leetcode.com/problems/binary-tree-right-side-view/
- * Primary idea: Always visit the right subtree first by Depth-first Search, then store the first node we visited at each depth
+ * Primary idea: 总是通过 dfs 先访问右子树，然后在每一层存储第一个节点（右侧节点）
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class BinaryTreeRightSideView {
-    private func rightSideView(_ root: TreeNode?) -> [Int] {
-        var result = [Int]()
-        if root != nil {
-            rightSideDFS(root, 0, &result)
-        }
-        return result
+    func rightSideView(_ root: TreeNode?) -> [Int] {
+        var res = [Int]()
+        dfs(root, 0, &res)
+        return res
     }
-    private func rightSideDFS(_ node: TreeNode?, _ depth: Int, _ result: inout [Int]) -> Void {
-        if let val = node?.val, result.count <= depth {
-            result.append(val)
+    
+    private func dfs(_ node: TreeNode?, _ depth: Int, _ res: inout [Int]) -> Void {
+        /// 保证每一层只保存一个最右侧节点
+        if let val = node?.val, res.count <= depth {
+            res.append(val)
         }
+        
         if let right = node?.right {
-            rightSideDFS(right, depth + 1, &result)
+            dfs(right, depth + 1, &res)
         }
+        
         if let left = node?.left {
-            rightSideDFS(left, depth + 1, &result)
+            dfs(left, depth + 1, &res)
         }
     }
 }
