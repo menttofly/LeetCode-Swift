@@ -51,7 +51,7 @@ class CourseSchedule {
         if visited[index] == -1 {
             return true
         }
-        /// 该顶点已被访问过
+        /// 避免重复递归，比如 1->2->3，2->3
         if visited[index] == 1 {
             return false
         }

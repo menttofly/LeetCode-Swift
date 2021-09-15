@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/word-search/
- * Primary idea: Compare the character on board to word by DFS.
+ * Primary idea: 通过 dfs 判断某条路径是否可以组成 word
  *
  * Time Complexity: O(M!N!), Space Complexity: O(MN)
  */
@@ -21,6 +21,7 @@ class WordSearch {
         }
         let word = Array(word)
         var board = board
+        /// 判断是否在当前 dfs 路径中
         var visited = Array(repeating: Array(repeating: false, count: board[0].count), count: board.count)
         for i in 0..<board.count {
             for j in 0..<board[i].count {
@@ -32,21 +33,25 @@ class WordSearch {
         return false
     }
     
-    /// index point to the position that next position to last matched character.
+    /// 从矩阵 (row, col) 开始深度优先搜索，经过的路径是否可以组成 word
+    /// - Parameters:
+    ///   - index: 当前已经匹配 word 的字母数量
+    /// - Returns: 是否有这样一条路径可以
     func dfs(_ board: inout [[Character]], _ visited: inout [[Bool]], _ word: [Character], _ row: Int, _ col: Int, _ index: Int) -> Bool {
-        /// The word is same as the string that combined by the characters on some path.
+        /// 已匹配的字符数量和 word 长度相同，代表可以找到这样一条路径
         if index == word.count {
             return true
         }
         if row < 0 || col < 0 || row >= board.count || col >= board[0].count {
             return false
         }
-        /// This position has been visited or it's character is not equal to
+        /// 当前 dfs 路径中该节点被访问过，或者当前字符和 word 中 index 处字符不同
         if visited[row][col] || board[row][col] != word[index] {
             return false
         }
+        /// 标记该节点已访问
         visited[row][col] = true
-        /// DFS the four direction of current position.
+        /// 对当前位置的 4 个方向进行 dfs 搜索
         if dfs(&board, &visited, word, row - 1, col, index + 1) {
             return true
         }
@@ -59,8 +64,9 @@ class WordSearch {
         if dfs(&board, &visited, word, row, col + 1, index + 1) {
             return true
         }
-        /// After recursion back, reset the point to not visited.
+        /// dfs 返回（递归返回原先树的层级），重置该位置状态为未访问
         visited[row][col] = false
+        
         return false
     }
 }

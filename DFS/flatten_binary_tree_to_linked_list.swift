@@ -10,40 +10,34 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
- * Primary idea: Assuming a binary tree has flatten it's left and right subtree, then flatten it to a linked list with DFS.
+ * Primary idea: 后序遍历，先获取 root 的左右子树拉平后的链表，再根据要求将左链表接到右链表上
  *
- * Time Complexity: O(nlogn), Space Complexity: O(1)
+ * Time Complexity: O(nlogn), Space Complexity: O(n)
  */
 class FlattenBinaryTreeToLinkedList {
-    func flatten(_ root: TreeNode?) {
-        dfs(root)
-    }
     
-    @discardableResult
-    /// Return the tail node after flatten the tree.
-    private func dfs(_ root: TreeNode?) -> TreeNode? {
-        if root == nil {
-            return nil
+    /// 以 root 为根的树拉平成一条链表
+    /// - Parameter root: 根节点
+    func flatten(_ root: TreeNode?) {
+        guard let root = root else {
+            return
         }
-        /// Flatten root node's left and right subtree.
-        let leftTail = dfs(root?.left)
-        let rightTrail = dfs(root?.right)
         
-        /// If left subtree exsists, then insert left flatten subtree to right part.
-        if root?.left != nil {
-            let temp = root?.right
-            root?.right = root?.left
-            root?.left = nil
-            leftTail?.right = temp
+        flatten(root.left)
+        flatten(root.right)
+        /// 拉平后的左、右链表
+        let left = root.left, right = root.right
+        /// 置空左链表
+        root.left = nil
+        /// 将左链表接到 root 的右子树上
+        root.right = left
+        
+        /// 找到当前右子树最后一个节点
+        var p: TreeNode? = root
+        while p?.right != nil {
+            p = p?.right
         }
-        /// After left subtree merge to right part, right trail is the tail for root's parent node.
-        if let right = rightTrail {
-            return right
-        }
-        /// There is no right subtree.
-        if let left = leftTail {
-            return left
-        }
-        return root
+        /// 将原来的右子树接到左链表上
+        p?.right = right
     }
 }

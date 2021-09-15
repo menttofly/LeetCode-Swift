@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/number-of-islands/
- * Primary idea: DFS a land's adjacent to make all land become water, then we find a island and make it sink.
+ * Primary idea: 对于数字1，通过 dfs 将 4 个方向 1 都置为 0（将 land 变成 water），直到遇到 0 停止，一次 dfs 结束代表发现一个岛
  *
  * Time Complexity: O(mn), Space Complexity: O(1)
  */
@@ -19,26 +19,39 @@ class NumberOfIslands {
         if grid.isEmpty || grid[0].isEmpty {
             return 0
         }
-        var grid = grid, count = 0
+        
+        var grid = grid, islands = 0
         for i in 0..<grid.count {
             for j in 0..<grid[i].count {
+                /// 发现一块 land
                 if grid[i][j] == "1" {
+                    /// 通过 dfs 将所有接壤的 land(1) 变成 water(0)，直到遇到 water
                     dfs(&grid, i, j)
-                    count += 1
+                    /// island 数量加一
+                    islands += 1
                 }
             }
         }
-        return count
+        
+        return islands
     }
     
-    func dfs(_ grid: inout [[Character]], _ row: Int, _ col: Int) -> Void {
+    /// 将矩阵中当前位置 (row, col) 接邻的 land 变成 water
+    /// - Parameters:
+    ///   - grid: 矩阵
+    ///   - row: 行
+    ///   - col: 列
+    func dfs(_ grid: inout [[Character]], _ row: Int, _ col: Int) {
         if row < 0 || col < 0 || row >= grid.count || col >= grid[0].count {
             return
         }
-        if grid[row][col] != "1" {
+        /// 遇到 water，结束 dfs 返回
+        if grid[row][col] == "0" {
             return
         }
+        /// 将 land 变成 water
         grid[row][col] = "0"
+        /// 上、下、左、右，四个方向遍历
         dfs(&grid, row - 1, col)
         dfs(&grid, row + 1, col)
         dfs(&grid, row, col - 1)
