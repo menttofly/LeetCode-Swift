@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/climbing-stairs/
- * Primary idea: DP(n) represent the number of ways to jump on n steps
+ * Primary idea: DP(n) 代表有 n 个台阶的楼梯，有多少中不同的跳跃方式到达楼顶
  *
  * State Transition Equation: DP(n) = DP(n-1) + DP(n-2), n > 1
  *
@@ -20,15 +20,17 @@ import Foundation
  */
 class ClimbingStairs {
     func climbStairs(_ n: Int) -> Int {
-        if n == 1 {
-            return 1
-        }
+        if n == 1 { return 1 }
+        
         var dp = Array(repeating: 1, count: n + 1)
+        /// base case
         dp[1] = 1
-        dp[2] = 2
+        
         for i in 2...n {
+            /// 最后一次跳跃跳，分别跳 1 级合和 2 级
             dp[i] = dp[i - 1] + dp[i - 2]
         }
+        
         return dp[n]
     }
 }
