@@ -24,11 +24,8 @@ class CoinChangeII {
         var dp = Array(repeating: Array(repeating: 0, count: amount + 1), count: len + 1)
         /// base case，背包容量为 0 时，只有一种凑法（什么都不放）
         dp[0][0] = 1
-//        for i in 0...len {
-//            dp[i][0] = 1
-//        }
         
-        for i in 1...len {
+        for i in stride(from: 1, through: len, by: 1) {
             /// base case，背包容量为 0 时，只有一种凑法（什么都不放）
             dp[i][0] = 1
             
@@ -37,7 +34,7 @@ class CoinChangeII {
                     /// 背包空间不足，只能选择不放入背包
                     dp[i][w] = dp[i - 1][w]
                 } else {
-                    /// 第 i 个硬币 coin[i-1] 选择不放入背包，则继承 dp[i - 1][w] 的结果
+                    /// 第 i 个硬币 coin[i-1] 选择不放入背包，则继承 dp[i - 1][w] 的结果，用前 i-1 枚硬币凑出价值 w
                     /// 第 i 个硬币选择放入背包，则更新背包容量。同时硬币可重复选择，所以是 dp[i][w - coins[i - 1]]
                     /// 可凑成 w 的结果为两种情况之和
                     dp[i][w] = dp[i - 1][w] + dp[i][w - coins[i - 1]]
