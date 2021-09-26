@@ -22,16 +22,19 @@ class LCS {
         /// dp[i][j] 代表 s1[0..i) 和 s2[0..j) 之间的 LCS 长度
         /// dp[len1][len2] 就表示 s1[0..len1) 和 s2[0..len2) 的 LCS 长度
         var dp = Array(repeating: Array(repeating: 0, count: len2 + 1), count: len1 + 1)
+        
         for i in 1...len1 {
             for j in 1...len2 {
                 if s1[i - 1] == s2[j - 1] {
                     dp[i][j] = dp[i - 1][j - 1] + 1
                 } else {
-                    /// s2[j-1] 或 s1[i-1] 至少有一个不在 LCS 中
+                    /// s2[j-1] 不在 LCS 中，LCS 为 s1[0..i)、s2[0..j-1)
+                    /// s1[i-1] 不在 LCS 中，LCS 为 s1[0..i-1)、s2[0..j)
                     dp[i][j] = max(dp[i][j - 1], dp[i - 1][j])
                 }
             }
         }
+        
         return dp[len1][len2]
     }
 }

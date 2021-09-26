@@ -16,7 +16,7 @@ import Foundation
  */
 class JumpGameII {
     func jump(_ nums: [Int]) -> Int {
-        var jums = 0
+        var jumps = 0
         /// [curBegin, curEnd] 代表可选择的跳跃区间
         var curEnd = 0
         /// [curBegin, curEnd] 中所有选择后能够跳到的最远位置
@@ -26,11 +26,12 @@ class JumpGameII {
             curFarthest = max(curFarthest, i + nums[i])
             /// 当 i 到达 curEnd 时，代表前一位置可跳跃区间都处理过，开始下一次跳跃
             if i == curEnd {
-                jums += 1
+                jumps += 1
+                /// 更新 curEnd
                 curEnd = curFarthest
             }
         }
         
-        return jums
+        return jumps
     }
 }

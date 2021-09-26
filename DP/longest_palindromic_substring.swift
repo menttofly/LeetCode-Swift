@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/longest-palindromic-substring/
- * Primary idea: Define DP[i][j] to record whether a substring is palindromic or not by Dynamic Programming
+ * Primary idea: DP[i][j] 代表 s[i..j] 是否构成回文字符串
  *
  * State Transition Equation: DP(i,j) = (DP(i+1,j−1) and Si == Sj)
  *
@@ -19,24 +19,27 @@ import Foundation
 class LongestPalindromicSubstring {
     func longestPalindrome(_ s: String) -> String {
         let count = s.count
-        if s.isEmpty || count == 1 {
-            return s
-        }
+        if s.isEmpty || count == 1 { return s }
+        
         var dp = Array(repeating: Array(repeating: false, count: count), count: count)
-        let chars = [Character](s)
+        let s = [Character](s)
+        
         for i in 0..<count {
             for j in 0..<count {
-                if i >= j {   /// A string has only one character, or empty is a palindromic string
+                if i >= j {
+                    /// 空串、单个字符就是回文字符串
                     dp[i][j] = true
                 }
             }
         }
+        
         var start = 0, end = 0, max = 1
         for len in 1..<count {
             for i in 0..<count - len {
                 let j = i + len
-                if chars[i] == chars[j] {
-                    dp[i][j] = dp[i + 1][j - 1]   /// Transfer state to previous one
+                if s[i] == s[j] {
+                    /// 如果首尾字符相同，则 s[i..j] 是否回文取决于 s[i+1..j-1]
+                    dp[i][j] = dp[i + 1][j - 1]
                     if dp[i][j] && len + 1 > max {
                         max = len + 1
                         start = i
@@ -45,6 +48,7 @@ class LongestPalindromicSubstring {
                 }
             }
         }
-        return String(chars[start...end])
+        
+        return String(s[start...end])
     }
 }

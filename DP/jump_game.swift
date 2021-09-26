@@ -10,21 +10,24 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/jump-game/
- * Primary idea: Only interested to the furthest position we can reach, so use greedy algorithm.
+ * Primary idea: 贪心算法，每次计算当前位置可跳跃的最远距离，并和之前的 furthest 对比
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
 class JumpGame {
     func canJump(_ nums: [Int]) -> Bool {
+        /// 能跳跃的最远距离
         var furthest = 0
+        
         for (index, num) in nums.enumerated() {
-            /// If index > furthest, that means can't reach the current index position.
-            if index > furthest || furthest >= nums.count - 1 {
+            /// 如果 furthest < index，表示无法到达当前 index 位置
+            if furthest < index || furthest >= nums.count - 1 {
                 break
             }
-            /// (index + num) means the furthest position jump from current position.
+            /// index + num 代表从当前位置 index 能跳跃的最远距离
             furthest = max(furthest, index + num)
         }
+        
         return furthest >= nums.count - 1
     }
 }
