@@ -10,15 +10,17 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/maximum-subarray/
- * Primary idea: sum[i] means num[x...i] which is the largest contiguous subsequence ending in i, then find the max sum[i]
+ * Primary idea: dp[i] 以 nums[i] 结尾的最大连续子数组和
  *
  * State Transition Equation: dp[i] = max(nums[i], num[i] + dp[i-1])
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
 class MaximumSubarray {
+    /// 状态压缩版
     func maxSubArray(_ nums: [Int]) -> Int {
         var sum = 0, max = Int.min
+        
         for num in nums {
             sum += num
             if sum > max {
@@ -28,6 +30,7 @@ class MaximumSubarray {
                 sum = 0
             }
         }
+        
         return max
     }
 }

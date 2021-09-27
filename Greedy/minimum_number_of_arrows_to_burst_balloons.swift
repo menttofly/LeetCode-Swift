@@ -27,7 +27,7 @@ class FindMinArrowShots {
         
         for point in points {
             let start = point[0]
-            /// 当前区间 start 必须大于一个区间的 end，因为相等的时候箭头碰到就会爆，相当于重叠区间
+            /// 当前区间 start 必须大于前一个区间的 end，因为相等的时候箭头碰到就会爆，相当于重叠区间
             if start > preEnd {
                 count += 1
                 preEnd = point[1]

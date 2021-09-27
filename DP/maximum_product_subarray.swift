@@ -10,9 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/maximum-product-subarray/
- * Primary idea: The maximum product subarray dicided by both max/min product subarray end with A[i].
- *
- * State Transition Equation: MAX[i] = max{max(MAX[i-1], MIN(i-1)), A[i-1]}
+ * Primary idea: MAX[i] 表示以 nums[i] 结尾最大乘积子数组，MIN[i] 表示以 nums[i] 结尾最小乘积子数组
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
@@ -21,13 +19,19 @@ class MaximumProductSubarray {
         if nums.isEmpty {
             return 0
         }
-        var result = nums[0], dpmax = nums[0], dpmin = nums[0]
+        
+        /// nums[i] 存在负数，dp[min] * nums[i] 可能负负得正，取得最大值
+        var dpmax = nums[0], dpmin = nums[0]
+        var res = nums[0]
+        
         for i in 1..<nums.count {
+            /// 保存更新前的 dpmax
             let temp = dpmax
-            dpmax = max(max(dpmax * nums[i], dpmin * nums[i]), nums[i])
-            dpmin = min(min(temp * nums[i], dpmin * nums[i]), nums[i])
-            result = max(dpmax, result)
+            dpmax = max(dpmax * nums[i], dpmin * nums[i], nums[i])
+            dpmin = min(temp * nums[i], dpmin * nums[i], nums[i])
+            res = max(res, dpmax)
         }
-        return result
+        
+        return res
     }
 }
