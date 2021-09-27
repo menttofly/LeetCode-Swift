@@ -527,10 +527,10 @@
 		1DB83F212701815A00138314 /* Greedy */ = {
 			isa = PBXGroup;
 			children = (
+				1DB83F232701815A00138314 /* jump_game_ii.swift */,
+				1DB83F222701815A00138314 /* jump_game.swift */,
 				1DB83F2A2701886A00138314 /* minimum_number_of_arrows_to_burst_balloons.swift */,
 				1DB83F272701870600138314 /* non_overlapping_intervals.swift */,
-				1DB83F222701815A00138314 /* jump_game.swift */,
-				1DB83F232701815A00138314 /* jump_game_ii.swift */,
 			);
 			name = Greedy;
 			path = ../Greedy;

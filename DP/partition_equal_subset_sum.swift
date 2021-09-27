@@ -57,7 +57,6 @@ class PartitionEqualSubsetSum {
         if sum % 2 == 1 {
             return false
         }
-        /// Turn this question to check whether the sum of part elements in array can equal to target.
         /// 状态压缩版，从二维数组矩阵的形状理解，dp[i][w] 需要的状态都是上一行 dp[i-1][..] 得到的，再之前的都不会再使用到
         /// 所以只需要一个一维数组记录矩阵中 i-1 这一行的数据即可
         let target = sum / 2

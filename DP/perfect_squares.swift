@@ -27,6 +27,7 @@ class PerfectSquares {
                 j += 1
             }
         }
+        
         return dp[n]
     }
 }

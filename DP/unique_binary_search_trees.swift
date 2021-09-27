@@ -10,11 +10,12 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/unique-binary-search-trees/
- * Primary idea: DP(i) represent the number of unique BST, and the root value can be any number in (1...n).
+ * Primary idea: DP(i) 表示 [1..i] 区间的数字组成 unique BST 的数量
+ *
  * Note: 结果为选择任意一个数作为节点后，其左右子树的乘积就是一个选择的 BST 数量，全部相加即为结果
  * G(n) = G(0) * G(n-1) + G(1) * G(n-2) + … + G(n-1) * G(0)
  *
- * State Transition Equation: DP(i) = sum{DP(j, i-j-1), j in [0..<i]}
+ * State Transition Equation: DP(i) = sum{DP(j, i-j-1), j in [0..i)}
  *
  * Time Complexity: O(n^2), Space Complexity: O(n)
  */
@@ -23,7 +24,8 @@ class UniqueBinarySearchTrees {
     func numTrees(_ n: Int) -> Int {
         var dp = Array(repeating: 0, count: n + 1)
         dp[0] = 1
-        for i in 1...n {  /// The number of tree nodes.
+        /// 每个数都可以作为 root 节点
+        for i in 1...n {
             for j in 0..<i {  /// The number set as root node. (j + 1)
                 dp[i] += dp[j] * dp[i - j - 1]
             }
