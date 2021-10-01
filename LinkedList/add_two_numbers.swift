@@ -18,7 +18,7 @@ public class ListNode {
 
 /**
  * Question Link: https://leetcode.com/problems/add-two-numbers/
- * Primary idea: Keep track of the carry using a variable and simulate digits-by-digits sum starting from the head of list
+ * Primary idea: 使用 sum 变量记录记录和，然后使用余数作为新链表当前和，同时在下一次计算中处理进位
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
@@ -30,23 +30,26 @@ class AddTwoNumbers {
         if l2 == nil {
             return l1
         }
-        let list = ListNode(0);   /// As the head node
+        
+        let list: ListNode? = ListNode(0);   /// As the head node
         var p1 = l1, p2 = l2, pcur = list
         var sum = 0
         
         while p1 != nil || p2 != nil {
-            sum /= 10;
+            sum /= 10;   /// 加上之前的进位
             sum += p1?.val ?? 0
             sum += p2?.val ?? 0
             
-            pcur.next = ListNode(sum % 10)
-            pcur = pcur.next!
-            p1 = p1?.next ?? nil
-            p2 = p2?.next ?? nil
+            pcur?.next = ListNode(sum % 10)
+            pcur = pcur?.next
+            p1 = p1?.next
+            p2 = p2?.next
         }
-        if sum / 10 > 0 {   /// Processing carry
-            pcur.next = ListNode(sum / 10)
+        /// 处理进位
+        if sum / 10 > 0 {
+            pcur?.next = ListNode(sum / 10)
         }
-        return list.next
+        
+        return list?.next
     }
 }
