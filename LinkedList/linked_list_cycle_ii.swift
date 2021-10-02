@@ -16,7 +16,7 @@ import Foundation
  */
 class LinkedListCycleII {
     func detectCycle(_ head: ListNode?) -> ListNode? {
-        if (head == nil || head?.next == nil) {
+        if head == nil || head?.next == nil {
             return nil;
         }
         

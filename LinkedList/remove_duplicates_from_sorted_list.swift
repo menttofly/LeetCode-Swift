@@ -24,7 +24,7 @@ class DeleteDuplicates {
         var fast: ListNode? = head
         while fast != nil {
             if fast!.val != slow!.val {
-                /// 把当前 slow 的 next 指向 下一个不重复的元素 fast
+                /// 把当前 slow 的 next 指向下一个不重复元素 fast
                 slow?.next = fast
                 /// slow 指针前进
                 slow = slow?.next
