@@ -10,25 +10,28 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/merge-two-sorted-lists/
- * Primary idea: Inspired by Merge Sort
+ * Primary idea: 归并排序中 Merge 的实现思路
  *
  * Time Complexity: O(min(m,n)), Space Complexity: O(1)
  */
 class MergeTwoSortedLists {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         let list = ListNode(0)   /// Use as dummy node
-        var ls1 = l1, ls2 = l2, ptr = list
-        while ls1 != nil && ls2 != nil {
-            if ls1!.val < ls2!.val {
-                ptr.next = ls1
-                ls1 = ls1?.next
+        var p1 = l1, p2 = l2, ptr = list
+        
+        while p1 != nil && p2 != nil {
+            if p1!.val < p2!.val {
+                ptr.next = p1
+                p1 = p1?.next
             } else {
-                ptr.next = ls2
-                ls2 = ls2?.next
+                ptr.next = p2
+                p2 = p2?.next
             }
+            
             ptr = ptr.next!
         }
-        ptr.next = ls1 ?? ls2
+        /// 剩余部分
+        ptr.next = p1 ?? p2
         return list.next
     }
 }

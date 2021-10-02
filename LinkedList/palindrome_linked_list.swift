@@ -21,23 +21,24 @@ class PalindromeLinkedList {
         if head == nil {
             return false
         }
+        /// 使用快慢指针查找中心点
         var slow = head, fast = head
-        while fast != nil && fast?.next != nil {
+        while fast != nil {
             fast = fast?.next?.next
             slow = slow?.next
         }
-        if fast != nil {
-            slow = slow?.next
-        }
-        slow = reverser.reverseList(slow)
+        /// 从 slow 开始反转链表
+        var reversed = reverser.reverseList(slow)
+        /// 将前面和后面反转的部分进行比较
         var begin = head
-        while slow != nil {
-            if begin!.val != slow!.val {
+        while reversed != nil {
+            if begin!.val != reversed!.val {
                 return false
             }
-            slow = slow?.next
+            reversed = reversed?.next
             begin = begin?.next
         }
+        
         return true
     }
 }

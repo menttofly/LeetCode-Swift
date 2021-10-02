@@ -21,7 +21,7 @@ class LinkedListCycle {
         }
         
         var fast = head, slow = head
-        while fast != nil && slow != nil {
+        while fast != nil {
             fast = fast?.next?.next  /// 每次走两步
             slow = slow?.next        /// 每次走一步
             if fast === slow {
