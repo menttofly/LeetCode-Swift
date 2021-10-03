@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/powx-n/
- * Primary idea: Law of power operation
+ * Primary idea: 幂运算规则，逐个相乘需要 n 次，优化后只需 log(n) 次
  *
  * Time Complexity: O(log(n)), Space Complexity: O(1)
  */
@@ -29,8 +29,10 @@ class Pow {
             return 1 / myPow(x, -n)
         }
         if n % 2 == 1 {
+            /// x^5 = x * (x^2)^2
             return x * myPow(x * x, n >> 1)
         } else {
+            /// x^4 = (x^2)^2
             return myPow(x * x, n >> 1)
         }
     }

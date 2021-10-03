@@ -29,11 +29,14 @@ class HammingDistance {
     
     /// Use this to count number of 1 in bit value.
     func countBitOne(_ x: Int, _ y: Int) -> Int {
+        /// 异或运算后，x 和 y 比特位不同的，结果中对应比特位为 1
         var res = 0, xor = x ^ y
         while xor > 0 {
-            res += 1
+            /// x & x - 1 可以消除 x 比特位中最后一个 1
             xor &= xor - 1
+            res += 1
         }
+        
         return res
     }
 }

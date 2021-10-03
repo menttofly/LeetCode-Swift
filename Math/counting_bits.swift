@@ -15,20 +15,19 @@ import Foundation
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class CountingBits {
-    func countBits(_ num: Int) -> [Int] {
-        if num == 0 {
-            return [0]
-        }
-        var results = [0]
-        for i in 1...num {
+    func countBits(_ n: Int) -> [Int] {
+        var res = Array(repeating: 0, count: n + 1)
+        
+        for i in 0...n {
             if i % 2 == 0 {
-                /// The number is even, it's bits 1's number equal to results[i / 2]
-                results.append(results[i / 2])
+                /// i 是 偶数，比特位中 1 的数量和 res[i / 2] 相同
+                res[i] = res[i / 2]
             } else {
-                /// The number is odd, it's bits 1's number equal to results[i / 2] + 1
-                results.append(results[i / 2] + 1)
+                /// i 是奇数，比特位中 1 的数量和 res[i / 2] + 1 相同
+                res[i] = res[i / 2] + 1
             }
         }
-        return results
+        
+        return res
     }
 }

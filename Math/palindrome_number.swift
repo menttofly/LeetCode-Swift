@@ -22,12 +22,14 @@ class PalindromeNumber {
         if x < 10 {
             return true
         }
-        var reverse = 0, num = x
-        while num > reverse {
-            reverse = reverse * 10 + num % 10
+        /// 从尾部翻转一半
+        var reversed = 0, num = x
+        while num > reversed {
+            reversed = reversed * 10 + num % 10
             num /= 10
         }
-        return num == reverse || num == reverse / 10
+        
+        return num == reversed || num == reversed / 10
     }
 }
 
