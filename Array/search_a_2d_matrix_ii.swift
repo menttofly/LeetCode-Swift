@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/search-a-2d-matrix-ii/
- * Primary idea: Search target from top-right, and exclude row or colume by compareing current value with target.
+ * Primary idea: 从右上角开始搜索，当前值比 target 大，row + 1，否则 col - 1
  *
  * Time Complexity: O(m+n), Space Complexity: O(1)
  */
@@ -19,6 +19,7 @@ class SearchA2DMatrixII {
         if matrix.isEmpty || matrix[0].isEmpty {
             return false
         }
+        
         var row = 0, col = matrix[0].count - 1
         while row < matrix.count && col >= 0 {
             if target == matrix[row][col] {
@@ -31,6 +32,7 @@ class SearchA2DMatrixII {
                 col -= 1
             }
         }
+        
         return false
     }
 }

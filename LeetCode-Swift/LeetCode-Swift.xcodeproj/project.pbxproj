@@ -53,7 +53,6 @@
 		1D52FA6C2235658B006A4D2B /* best_time_to_buy_and_sell_stock_with_cooldown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6B2235658B006A4D2B /* best_time_to_buy_and_sell_stock_with_cooldown.swift */; };
 		1D52FA6E22356CE5006A4D2B /* house_robber_iii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6D22356CE5006A4D2B /* house_robber_iii.swift */; };
 		1D52FA70223575D8006A4D2B /* counting_bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52FA6F223575D8006A4D2B /* counting_bits.swift */; };
-		1D56183426B27E1E00732597 /* 13_机器人的运动范围.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56183326B27E1E00732597 /* 13_机器人的运动范围.swift */; };
 		1D597713223BD45800661B0D /* shortest_unsorted_continuous_subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D597712223BD45800661B0D /* shortest_unsorted_continuous_subarray.swift */; };
 		1D597715223BE1B600661B0D /* task_scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D597714223BE1B600661B0D /* task_scheduler.swift */; };
 		1D62103421C2A3CE0013316D /* reverse_linked_list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62103321C2A3CE0013316D /* reverse_linked_list.swift */; };
@@ -224,7 +223,6 @@
 		1D52FA6B2235658B006A4D2B /* best_time_to_buy_and_sell_stock_with_cooldown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = best_time_to_buy_and_sell_stock_with_cooldown.swift; sourceTree = "<group>"; };
 		1D52FA6D22356CE5006A4D2B /* house_robber_iii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = house_robber_iii.swift; sourceTree = "<group>"; };
 		1D52FA6F223575D8006A4D2B /* counting_bits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = counting_bits.swift; sourceTree = "<group>"; };
-		1D56183326B27E1E00732597 /* 13_机器人的运动范围.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "13_机器人的运动范围.swift"; sourceTree = "<group>"; };
 		1D597712223BD45800661B0D /* shortest_unsorted_continuous_subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortest_unsorted_continuous_subarray.swift; sourceTree = "<group>"; };
 		1D597714223BE1B600661B0D /* task_scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_scheduler.swift; sourceTree = "<group>"; };
 		1D62103321C2A3CE0013316D /* reverse_linked_list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reverse_linked_list.swift; sourceTree = "<group>"; };
@@ -361,7 +359,6 @@
 				1DDF0C37261D5FA9009246FE /* 10_II-青蛙跳台阶问题.swift */,
 				1DDF0C3B261D5FF8009246FE /* 11_旋转数组的最小数字.swift */,
 				1DDF0C3E261D6029009246FE /* 12_矩阵中的路径.swift */,
-				1D56183326B27E1E00732597 /* 13_机器人的运动范围.swift */,
 			);
 			name = Offer;
 			path = ../Offer;
@@ -700,7 +697,6 @@
 				1D85DAEF22314D5400CDE9DD /* best_time_to_buy_and_sell_stock.swift in Sources */,
 				313621032186B82800E9B9BB /* two_sum.swift in Sources */,
 				1D30CA5321764CBD00D7C0BB /* powx_n.swift in Sources */,
-				1D56183426B27E1E00732597 /* 13_机器人的运动范围.swift in Sources */,
 				1D9537D121763D7B00A2C3AD /* main.swift in Sources */,
 				1D93C4F726C4F29400D2BB72 /* next_greater_element_ii.swift in Sources */,
 				1D04163925ECBFF600715FA5 /* 04_二维数组中的查找.swift in Sources */,

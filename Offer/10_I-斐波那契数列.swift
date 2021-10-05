@@ -19,6 +19,7 @@ class FibonacciSequence {
             pre = cur
             cur = sum
         }
+        
         return cur
     }
 }

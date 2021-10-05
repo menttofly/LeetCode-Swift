@@ -19,6 +19,7 @@ class FindRepeatNumber {
                 hash[num] = 1
             }
         }
+        
         return res
     }
 }

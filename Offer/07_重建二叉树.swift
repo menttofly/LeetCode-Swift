@@ -22,7 +22,7 @@ class RebuildBinaryTree {
         if s1 > e1 { return nil }
 
         let node = TreeNode(preorder[s1]); var find = s2
-        while find < inorder.count && inorder[find] != node.val {
+        while find <= e2 && inorder[find] != node.val {
             find += 1
         }
 
