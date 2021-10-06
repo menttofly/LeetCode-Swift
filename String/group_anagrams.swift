@@ -19,7 +19,7 @@ class GroupAnagrams {
         var res = [String: [String]]()
         for str in strs {
             /// 同母异位词排序后为相同的字符串
-            let sorted = Array(str).sorted()
+            let sorted = str.sorted()
             /// 作为字典的 key
             let key = String(sorted)
             if res.index(forKey: key) == nil {

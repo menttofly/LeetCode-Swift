@@ -16,7 +16,7 @@ import Foundation
  */
 class JewelsAndStones {
     func numJewelsInStones(_ J: String, _ S: String) -> Int {
-        let jewels = Array(J).reduce(into: [:]) { res, next in
+        let jewels = J.reduce(into: [:]) { res, next in
             res[next] = true
         }
         
