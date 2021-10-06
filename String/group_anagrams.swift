@@ -10,23 +10,25 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/group-anagrams/
- * Primary idea: Store sorted string key and list value in hash table.
+ * Primary idea: 同母异位词排序后相同，可以作为哈希的 key，字符串保存到 key 对应的 value 数组
  *
  * Time Complexity: O(nklogk), Space Complexity: O(n)
  */
 class GroupAnagrams {
     func groupAnagrams(_ strs: [String]) -> [[String]] {
-        var result = [String: [String]]()
+        var res = [String: [String]]()
         for str in strs {
-            var characters = Array(str)
-            characters.sort()
-            
-            let key = String(characters)
-            if result.index(forKey: key) == nil {
-                result[key] = []
+            /// 同母异位词排序后为相同的字符串
+            let sorted = Array(str).sorted()
+            /// 作为字典的 key
+            let key = String(sorted)
+            if res.index(forKey: key) == nil {
+                res[key] = []
             }
-            result[key]?.append(str)
+            
+            res[key]?.append(str)
         }
-        return Array(result.values)
+        
+        return Array(res.values)
     }
 }
