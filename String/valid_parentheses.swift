@@ -10,21 +10,20 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/valid-parentheses/
- * Primary idea: Push character into stack if it's open brackets, and pop element when meet close brackets while traversing string.
+ * Primary idea: 遇到开括号入栈，遇到闭括号时和栈顶开括号比较，若字典中开括号 key 对应的闭括号与当前一致，则有效继续比较全部字符
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class ValidParentheses {
     func isValid(_ s: String) -> Bool {
-        let pattern: [Character: Character] = ["(":")", "[":"]", "{":"}"]
-        let characters = [Character](s)
+        let pattern: [Character: Character] = ["(": ")", "[": "]", "{": "}"]
+        let s = [Character](s)
         var stack = [Character]()
         
-        for char in characters {
+        for char in s {
             if char == "(" || char == "[" || char == "{" {
                 stack.append(char)
-            }
-            if char == ")" || char == "]" || char == "}" {
+            } else {
                 if let top = stack.popLast(), pattern[top] == char {
                     continue
                 } else {
@@ -32,6 +31,7 @@ class ValidParentheses {
                 }
             }
         }
+        /// 最终栈空才代表 valid，单个字符如 '[' 不是 valid，且没有出栈行为栈不为空
         return stack.isEmpty
     }
 }

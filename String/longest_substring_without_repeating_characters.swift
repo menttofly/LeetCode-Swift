@@ -16,22 +16,21 @@ import Foundation
  */
 class LongestSubstringWithoutRepeatingCharacters {
     func lengthOfLongestSubstring(_ s: String) -> Int {
-        if s.isEmpty {
-            return 0
-        }
-        let characters = [Character](s)
+        if s.isEmpty { return 0 }
+        
+        let s = [Character](s)
         var hash = [Character: Int]()
-        var start = -1, max = 1
+        var start = -1, res = 1   /// res 至少为 1，代表单字符
 
-        for (i, char) in characters.enumerated() {
+        for (i, char) in s.enumerated() {
             if let index = hash[char], index > start {
                 start = index
             }
+            /// 记录当前字符的索引
             hash[char] = i
-            if i - start > max {
-                max = i - start
-            }
+            res = max(res, i - start)
         }
-        return max
+        
+        return res
     }
 }

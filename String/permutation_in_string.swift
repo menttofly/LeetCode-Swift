@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/permutation-in-string/
- * Primary idea: 固定窗口大小的滑动窗口
+ * Primary idea: 固定窗口大小的滑动窗口，和 Group Anagrams 几乎完全相同
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
