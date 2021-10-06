@@ -22,11 +22,12 @@ class BinaryTreeInorderTraversal {
     }
     
     func inorderTraversal(_ root: TreeNode?, _ nodes: inout [Int]) {
-        if root == nil {
+        guard let root = root else {
             return
         }
-        inorderTraversal(root?.left, &nodes)
-        nodes.append(root!.val)
-        inorderTraversal(root?.right, &nodes)
+        
+        inorderTraversal(root.left, &nodes)
+        nodes.append(root.val)
+        inorderTraversal(root.right, &nodes)
     }
 }

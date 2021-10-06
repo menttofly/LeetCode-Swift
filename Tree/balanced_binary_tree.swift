@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/balanced-binary-tree/
- * Primary idea: Recording depth of current node when traversing. Firstly judge left and right sub-tree's is balace or not, then current node.
+ * Primary idea: 后序遍历框架，递归时记录左右子树深度。先判断左右子树是否平衡，再判断当前 root 节点是否平衡（左右子树深度差不超过一）
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
@@ -21,17 +21,18 @@ class BalancedBinaryTree {
     }
     
     func isBalanced(_ root: TreeNode?, depth: inout Int) -> Bool {
-        if root == nil {
-            depth = 0
-            return true
+        guard let root = root else {
+            depth = 0; return true
         }
+        
         var leftDepth = 0, rightDepth = 0
-        if isBalanced(root?.left, depth: &leftDepth) && isBalanced(root?.right, depth: &rightDepth) {
+        if isBalanced(root.left, depth: &leftDepth) && isBalanced(root.right, depth: &rightDepth) {
             if abs(leftDepth - rightDepth) < 2 {
                 depth = max(leftDepth, rightDepth) + 1
                 return true
             }
         }
+        
         return false
     }
 }
@@ -43,11 +44,12 @@ class BalancedBinaryTreeTuple {
     }
     
     func isBalancedTree(_ root: TreeNode?) -> (Bool, Int) {
-        if root == nil {
+        guard let root = root else {
             return (true, 0)
         }
-        let left = isBalancedTree(root?.left)
-        let right = isBalancedTree(root?.right)
+        
+        let left = isBalancedTree(root.left)
+        let right = isBalancedTree(root.right)
         
         if left.0 && right.0 {
             if abs(left.1 - right.1) < 2 {
@@ -55,6 +57,7 @@ class BalancedBinaryTreeTuple {
                 return (true, depth)
             }
         }
+        
         return (false, -1)
     }
 }
