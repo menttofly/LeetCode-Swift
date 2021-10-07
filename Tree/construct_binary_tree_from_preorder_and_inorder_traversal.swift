@@ -10,7 +10,7 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
- * Primary idea: Analyzing the laws of the pre-order sequence and in-order sequence.
+ * Primary idea: 根据先序遍历特征，定位当前 root 节点，然后在中序遍历中定位 root，以此分割左右子树
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
@@ -24,17 +24,19 @@ class ConstructBinaryTreeFromPreorderAndInorderTraversal {
     }
     
     private func build(_ preorder: inout [Int], _ inorder: inout [Int], _ ps: Int, _ pe: Int, _ ins: Int, _ ine: Int) -> TreeNode? {
-        if ps > pe {  /// If ps = pe means that there is only one node in the sequence.
+        if ps > pe {  /// 如果 ps = pe 则表示序列中只剩下一个节点
             return nil
         }
+        /// 从先序序列中获取当前 root 节点
         let root = TreeNode(preorder[ps])
-        var divide = ins
-        /// Find the root node in inorder sequence, which is divide.
-        while divide <= ine && inorder[divide] != root.val {
-            divide += 1
+        var pos = ins
+        /// 定位 root 节点在中序序列中的位置
+        while pos <= ine && inorder[pos] != root.val {
+            pos += 1
         }
-        root.left = build(&preorder, &inorder, ps + 1, ps + divide - ins, ins, divide - 1)
-        root.right = build(&preorder, &inorder, ps + divide - ins + 1, pe, divide + 1, ine)
+        
+        root.left = build(&preorder, &inorder, ps + 1, ps + pos - ins, ins, pos - 1)
+        root.right = build(&preorder, &inorder, ps + pos - ins + 1, pe, pos + 1, ine)
         return root
     }
 }

@@ -10,22 +10,24 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/invert-binary-tree/
- * Primary idea: Pre-Order traversing binary tree, find all non-leaf nodes and exchange it's left and right child nodes.
+ * Primary idea: 寻找所有非叶子节点，将其左右子树互相调换
  *
  * Time Complexity: O(n), Space Complexity: O(1)
  */
 class InvertBinaryTree {
     @discardableResult
     func invertTree(_ root: TreeNode?) -> TreeNode? {
-        guard root != nil else {
+        guard let root = root else {
             return nil
         }
-        let temp = root?.left
-        root?.left = root?.right
-        root?.right = temp
         
-        invertTree(root?.left)
-        invertTree(root?.right)
+        let temp = root.left
+        root.left = root.right
+        root.right = temp
+        
+        invertTree(root.left)
+        invertTree(root.right)
+        
         return root
     }
 }

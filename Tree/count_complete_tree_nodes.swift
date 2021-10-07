@@ -19,7 +19,7 @@ class CountCompleteBinaryTreeNodes {
         guard let root = root else {
             return 0
         }
-        
+        /// 获取 root 左右子树的深度
         var lNode: TreeNode? = root, rNode: TreeNode? = root
         var lh = 0, rh = 0
         while lNode != nil {

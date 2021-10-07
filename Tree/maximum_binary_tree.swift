@@ -23,7 +23,7 @@ class MaximumBinaryTree {
         if lo > hi {
             return nil
         }
-        
+        /// 获取 nums[lo..hi] 中的最大值
         var index = -1, maxVal = Int.min
         for i in lo...hi {
             if maxVal < nums[i] {

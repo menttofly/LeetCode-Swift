@@ -15,13 +15,16 @@ import Foundation
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class FindDuplicateSubtrees {
-    var res = [TreeNode](), cache = [String: Int]()
+    var res = [TreeNode](), hash = [String: Int]()
     
     func findDuplicateSubtrees(_ root: TreeNode?) -> [TreeNode?] {
         traverse(root)
         return res
     }
     
+    /// 将二叉树以字符串的形式表示
+    /// - Parameter root: 当前 root 节点
+    /// - Returns: 代表树的字符串
     @discardableResult
     func traverse(_ root: TreeNode?) -> String {
         guard let root = root else {
@@ -32,11 +35,12 @@ class FindDuplicateSubtrees {
         let right = traverse(root.right)
         let tree = "\(left),\(right),\(root.val)"
     
-        if let num = cache[tree] {
-            if num == 1 { res.append(root) }
-            cache[tree] = num + 1
+        if let count = hash[tree] {
+            /// 重复多次，也只需要添加一次
+            if count == 1 { res.append(root) }
+            hash[tree] = count + 1
         } else {
-            cache[tree] = 1
+            hash[tree] = 1
         }
         
         return tree

@@ -10,12 +10,13 @@ import Foundation
 
 /**
  * Question Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
- * Primary idea: 二叉树中序遍历结果是有序的
+ * Primary idea: 二叉树中序遍历结果是有序的，检查当前 rank，如果等于 k 则找到 kth 元素
  *
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class KthSmallest {
     var res = 0, rank = 0
+    
     func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int {
         kthSmallestElement(root, k)
         return res
@@ -25,12 +26,14 @@ class KthSmallest {
         guard let root = root else {
             return
         }
+        
         kthSmallestElement(root.left, k)
         rank += 1
         if rank == k {
             res = root.val
             return
         }
+        
         kthSmallestElement(root.right, k)
     }
 }

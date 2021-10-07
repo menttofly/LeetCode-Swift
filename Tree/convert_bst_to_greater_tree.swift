@@ -20,11 +20,17 @@ class ConvertBSTToGreaterTree {
         return convertBST(root, &sum)
     }
     
+    /// 将 root 节点的 val 设置为右子树的累加和，即大于 root 所有节点的 val 之和
+    /// - Parameters:
+    ///   - root: 当前根节点
+    ///   - sum: 累加和
+    /// - Returns: 当前 root 节点
     @discardableResult
     func convertBST(_ root: TreeNode?, _ sum: inout Int) -> TreeNode? {
         guard let root = root else {
             return nil
         }
+        /// 先递归右子树，获取右子树累加和
         convertBST(root.right, &sum)
         sum += root.val
         root.val = sum

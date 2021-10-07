@@ -16,14 +16,19 @@ import Foundation
  */
 class InsertIntoBST {
     func insertIntoBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {
+        /// val 不在树中，创建新的节点，值为 val
         guard let root = root else {
             return TreeNode(val)
         }
-        if root.val < val {
-            root.right = insertIntoBST(root.right, val)
-        } else if (root.val > val) {
+        
+        if val < root.val {
+            /// 在右子树中搜索
             root.left = insertIntoBST(root.left, val)
+        } else if val > root.val {
+            /// 在左子树中搜索
+            root.right = insertIntoBST(root.right, val)
         }
+        
         return root
     }
 }

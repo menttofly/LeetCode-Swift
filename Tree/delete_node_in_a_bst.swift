@@ -19,12 +19,13 @@ class DeleteBSTNode {
         guard let root = root else {
             return nil
         }
+        
         if root.val == key {
             /// 待删除节点为叶子节点，或 left、right 中只有一个有值
             if root.left == nil { return root.right }
             if root.right == nil { return root.left }
             
-            /// 待删除节点左右子节点都有值
+            /// 待删除节点左右子节点都有值，则从右子树寻找最小值
             let minNode = bstMinNode(root.right!)
             root.val = minNode.val
             root.right = deleteNode(root.right, minNode.val)
