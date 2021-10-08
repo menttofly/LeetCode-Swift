@@ -15,7 +15,7 @@ import Foundation
  * Time Complexity: O(n), Space Complexity: O(1)
  */
 class RecoverBinarySearchTree {
-    var first: TreeNode? = nil, second: TreeNode? = nil, pre = TreeNode(Int.min)
+    var first: TreeNode?, second: TreeNode?, pre = TreeNode(Int.min)
     
     func recoverTree(_ root: TreeNode?) {
         traverse(root)

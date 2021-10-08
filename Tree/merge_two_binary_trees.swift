@@ -19,6 +19,7 @@ class MergeTwoBinaryTrees {
         guard let t1 = t1 else {
             return t2
         }
+        
         guard let t2 = t2 else {
             return t1
         }

@@ -16,27 +16,37 @@ import Foundation
  */
 class SubtreeOfAnotherTree {
     func isSubtree(_ s: TreeNode?, _ t: TreeNode?) -> Bool {
+        /// 都为空节点，返回 true
         if s == nil && t == nil {
             return true
         }
+        /// 有一个为空，返回 false
         guard let s = s, let t = t else {
             return false
         }
-        let result = isSubtree(s.left, t) || isSubtree(s.right, t)
-        return result || isMatch(s, t)
+        
+        let res = isSubtree(s.left, t) || isSubtree(s.right, t)
+        return res || isMatch(s, t)
     }
     
-    /// Require tree's structure exactly match.
+    /// 判断 s 和 t 是否完全一致
+    /// - Parameters:
+    ///   - s: 二叉树
+    ///   - t: 二叉树
+    /// - Returns: 匹配结果
     func isMatch(_ s: TreeNode?, _ t: TreeNode?) -> Bool {
         if s == nil && t == nil {
             return true
         }
+        
         guard let s = s, let t = t else {
             return false
         }
+        
         if s.val != t.val {
             return false
         }
+        
         return isMatch(s.left, t.left) && isMatch(s.right, t.right)
     }
 }

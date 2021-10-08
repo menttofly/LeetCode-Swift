@@ -33,7 +33,7 @@ class BinaryTreeCodec {
         return deserialize(&nodes)
     }
     
-    /// 根据二叉树序列化后的数组构建二叉树（因为有代表空节点的 '#'，所以不需要其它便利顺序也能构建）
+    /// 根据二叉树序列化后的数组构建二叉树（因为有代表空节点的 '#'，所以不需要其它遍历顺序也能构建）
     /// - Parameter nodes: 二叉树序列化后的字符数组
     /// - Returns: 二叉树根节点
     func deserialize(_ nodes: inout [String]) -> TreeNode? {
@@ -41,14 +41,15 @@ class BinaryTreeCodec {
             return nil
         }
         
-        let lastNode = nodes.popLast()
+        let lastNode = nodes.removeLast()
         if lastNode == "#" {
             return nil
         }
         
-        let root = TreeNode(Int(lastNode!)!)
+        let root = TreeNode(Int(lastNode)!)
         root.right = deserialize(&nodes)
         root.left = deserialize(&nodes)
+        
         return root
     }
 }

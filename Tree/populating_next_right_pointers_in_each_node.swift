@@ -34,6 +34,10 @@ class PopulatingNextRightPointersInEachNode {
         return root
     }
     
+    /// 连接 node1 和 node2，并连接其子节点
+    /// - Parameters:
+    ///   - node1: 节点 1
+    ///   - node2: 节点 2
     func connectBetween(_ node1: Node?, _ node2: Node?) {
         guard let node1 = node1, let node2 = node2 else {
             return

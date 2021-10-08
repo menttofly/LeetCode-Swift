@@ -19,11 +19,14 @@ class SearchBST {
         guard let root = root else {
             return nil
         }
+        
         if root.val == val {
             return root
         } else if root.val < val {
+            /// 在 root 的右子树中搜索
             return searchBST(root.right, val)
         } else {
+            /// 在 root 的左子树中搜索
             return searchBST(root.left, val)
         }
     }

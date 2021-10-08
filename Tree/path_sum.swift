@@ -19,10 +19,11 @@ class PathSum {
         guard let root = root else {
             return false
         }
-        /// Root is a leaf node.
+        /// root 是叶子节点，并且存储的值 val 和 sum 相等，代表该路径存在
         if root.left == nil && root.right == nil && root.val == sum {
             return true
         }
+        /// 从左右子树寻找和为 sum - root.val 的路径
         return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val)
     }
 }

@@ -19,11 +19,11 @@ class MinimumDepthOfBinaryTree {
         guard let root = root else {
             return 0
         }
-
+        /// 左子树不存在，则返回右子树深度
         guard let left = root.left else {
             return minDepth(root.right) + 1
         }
-
+        /// 右子树不存在，则返回左子树深度
         guard let right = root.right else {
             return minDepth(root.left) + 1
         }
