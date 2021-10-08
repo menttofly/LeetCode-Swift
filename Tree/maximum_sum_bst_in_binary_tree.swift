@@ -31,10 +31,10 @@ class MaxSumBST {
         guard let root = root else {
             return (true, Int.max, Int.min, 0)
         }
-        
+        /// 后序遍历
         let left = traverse(root.left, &maxSum)
         let right = traverse(root.right, &maxSum)
-        
+        /// 左右子树为 BST，且以 root 为根结点的树为 BST
         if left.0 && right.0, root.val > left.2 && root.val < right.1 {
             let minVal = min(left.1, root.val)
             let maxVal = max(right.2, root.val)
