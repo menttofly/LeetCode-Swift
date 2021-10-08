@@ -22,10 +22,10 @@ class InsertIntoBST {
         }
         
         if val < root.val {
-            /// 在右子树中搜索
+            /// 在左子树中搜索
             root.left = insertIntoBST(root.left, val)
         } else if val > root.val {
-            /// 在左子树中搜索
+            /// 在右子树中搜索
             root.right = insertIntoBST(root.right, val)
         }
         
