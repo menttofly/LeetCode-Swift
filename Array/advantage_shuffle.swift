@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/advantage-shuffle/
+ * Question Link: https://leetcode.com/problems/advantage-shuffle/ (870)
  * Primary idea: 以 nums2 参照，对两个数组排序，如果 nums1 中的最大值 max(nums1) > nums2[i]（i 是 nums2 的索引），res[i] = max(nums1)
  *
  * Note: 这是一个贪心算法。labuladong 使用优先队列排序 nums2，没有必要代码也比较冗余

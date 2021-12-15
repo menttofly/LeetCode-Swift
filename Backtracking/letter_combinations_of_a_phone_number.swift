@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+ * Question Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/ (17)
  * Primary idea: Backtracking to find all solutions by exploring all potential candidates.
  *
  * Time Complexity: O(n), Space Complexity: O(n)

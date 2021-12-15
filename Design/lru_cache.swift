@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/lru-cache/
+ * Question Link: https://leetcode.com/problems/lru-cache/ (146)
  * Primary idea: 使用哈希表快速访问元素 node，双向链表实现 LRU 淘汰策略
  *
  * Time Complexity: O(1), Space Complexity: O(n)

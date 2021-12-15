@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/longest-continuous-increasing-subsequence/
+ * Question Link: https://leetcode.com/problems/longest-continuous-increasing-subsequence/ (674)
  * Primary idea: 遍历数组，用 start 记录 CIS 的起始索引，如果 CIS 条件被破坏，则更新 start 为当前索引
  *
  * Time Complexity: O(n), Space Complexity: O(1)
@@ -25,6 +25,7 @@ class LongestContinuousIncreasingSubsequence {
             }
             res = max(res, i - start + 1)
         }
+        
         return res
     }
 }

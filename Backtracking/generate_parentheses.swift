@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/generate-parentheses/
+ * Question Link: https://leetcode.com/problems/generate-parentheses/ (22)
  * Primary idea: 在保持括号有效的情况下，放置左右括号.
  *
  * Time Complexity: O(n), Space Complexity: O(n)

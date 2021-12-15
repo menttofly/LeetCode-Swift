@@ -9,8 +9,8 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/search-a-2d-matrix-ii/
- * Primary idea: 从右上角开始搜索，当前值比 target 大，row + 1，否则 col - 1
+ * Question Link: https://leetcode.com/problems/search-a-2d-matrix-ii/ (240)
+ * Primary idea: 从右上角开始搜索，当前值比 target 大，col - 1，否则 row + 1
  *
  * Time Complexity: O(m+n), Space Complexity: O(1)
  */

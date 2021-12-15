@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/trapping-rain-water/
+ * Question Link: https://leetcode.com/problems/trapping-rain-water/ (42)
  * Primary idea: 经典接雨水问题，使用左右双指针解法
  *
  * Time Complexity: O(n), Space Complexity: O(1)
@@ -32,6 +32,7 @@ class TrapRainWater {
             leftMax = max(leftMax, height[left])
             rightMax = max(rightMax, height[right])
             
+            /// 只关心 l_max 与 r_max 之间的更小值，因为能盛的水只与两者中的更小值有关
             if leftMax < rightMax {
                 res += leftMax - height[left]
                 left += 1

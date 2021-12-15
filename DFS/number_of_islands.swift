@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/number-of-islands/
+ * Question Link: https://leetcode.com/problems/number-of-islands/ (200)
  * Primary idea: 对于数字1，通过 dfs 将 4 个方向 1 都置为 0（将 land 变成 water），直到遇到 0 停止，一次 dfs 结束代表发现一个岛
  *
  * Time Complexity: O(mn), Space Complexity: O(1)

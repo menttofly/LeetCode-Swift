@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/min-stack/
+ * Question Link: https://leetcode.com/problems/min-stack/ (155)
  *
  * Primary idea: 当 push 一个小等于当前 min 的数时，先再 push 一个 min，然后 push 当前数 x，再更新 min 为 x
  *

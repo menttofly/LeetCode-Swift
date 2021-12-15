@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/combination-sum/
+ * Question Link: https://leetcode.com/problems/combination-sum/ (39)
  * Primary idea: 通过回溯法尝试所有可能的选项，过滤重复的情况
  *
  * Time Complexity: O(n^3), Space Complexity: O(n^2)

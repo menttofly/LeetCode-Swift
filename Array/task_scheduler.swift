@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/task-scheduler/
+ * Question Link: https://leetcode.com/problems/task-scheduler/ (621)
  * Primary idea: https://www.cnblogs.com/grandyang/p/7098764.html
  *
  * Time Complexity: O(n), Space Complexity: O(1)
@@ -25,7 +25,7 @@ class TaskScheduler {
             buckets[Int(index)] += 1
         }
         /// 排序后出现频率最高的放在末尾，即：buckets[25]
-        buckets = buckets.sorted()
+        buckets.sort()
         
         /// 统计出现频率最高的所有字母（任务）
         var count = 0

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/top-k-frequent-elements/
+ * Question Link: https://leetcode.com/problems/top-k-frequent-elements/ (347)
  * Primary idea: 字典存储每个数字出现次数，然后把次数作为下标，数字为值放到 bucket 数组中，从后往前遍历依次获取 k 个最频繁的数字
  *
  * Time Complexity: O(n), Space Complexity: O(n)

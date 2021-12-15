@@ -10,7 +10,7 @@ import Foundation
 
 class NextGreaterElement {
     /**
-     * Question Link: https://leetcode.com/problems/next-greater-element-i/
+     * Question Link: https://leetcode.com/problems/next-greater-element-i/ (496)
      * Primary idea: 暴力解法，用字典记录数和索引的关系，nums1 中寻找 val 的下一个更大元素时，先取得在 num2 中的索引，然后向后查找
      *
      * Time Complexity: O(n^2)

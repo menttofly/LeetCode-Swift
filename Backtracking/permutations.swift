@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/permutations/
+ * Question Link: https://leetcode.com/problems/permutations/ (46)
  * Primary idea: 全排列问题 f(n) = n!，即 n * n-1 * n-2 * .. * 1，nums 采用引用类型传递，所以需要在回溯时撤销选择
  *
  * Time Complexity: O(n!), Space Complexity: O(n * n!)

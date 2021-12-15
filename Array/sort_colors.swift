@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/sort-colors/
+ * Question Link: https://leetcode.com/problems/sort-colors/ (75)
  * Primary idea: 将 0 交换到头部，2交换到尾部，那么 [0..left) 都是 red， (right..end] 都是 blue.
  *
  * Time Complexity: O(n), Space Complexity: O(1)
@@ -17,20 +17,20 @@ import Foundation
 class SortColors {
     func sortColors(_ nums: inout [Int]) {
         /// [left..right] 代表中间未正确排序部分，也就是包含 0 和 2 且并未交换到头尾的部分
-        var left = 0, right = nums.count - 1, mid = 0
-        while mid <= right {
-            if nums[mid] == 0 {
-                /// 交换 1 到头部，并更新 left 排除左侧已排序部分，缩小中间区间
-                nums.swapAt(left, mid)
-                left += 1
-                mid += 1
-            } else if nums[mid] == 2 {
+        var red = 0, white = 0, blue = nums.count - 1
+        while white <= blue {
+            if nums[white] == 0 {
+                /// 交换 0 到头部，并更新 left 排除左侧已排序部分，缩小中间区间
+                nums.swapAt(red, white)
+                red += 1
+                white += 1
+            } else if nums[white] == 2 {
                 /// 交换 2 到尾部，并更新 right 排除右侧已排序部分，缩小中间区间
-                nums.swapAt(right, mid)
-                right -= 1
+                nums.swapAt(blue, white)
+                blue -= 1
             } else {
                 /// 1 在中间部分位置正确，不需要交换
-                mid += 1
+                white += 1
             }
         }
     }

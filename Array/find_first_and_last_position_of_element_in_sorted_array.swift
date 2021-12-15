@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * Question Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ (34)
  * Primary idea: 使用二分搜索技巧，在左闭右开区间 [left, right) 中搜索第一个等于 target 或大于的数
  *
  * Time Complexity: O(logn), Space Complexity: O(1)
@@ -44,6 +44,7 @@ class FindFirstAndLastPositionOfElementInSortedArray {
                 right = mid
             }
         }
+        
         return left
     }
 }

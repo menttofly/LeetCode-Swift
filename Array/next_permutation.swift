@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/next-permutation/
+ * Question Link: https://leetcode.com/problems/next-permutation/ (31)
  * Primary idea: 在数组从后往前找到第一个非增长的 pivot，将 privot 和其右边的数组中的最小值交换。最后，反转右半部分序列
  *
  * Time Complexity: O(n), Space Complexity: O(1)

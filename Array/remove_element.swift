@@ -9,7 +9,7 @@
 import Foundation
 
 /**
-* Question Link: https://leetcode.com/problems/remove-element/
+* Question Link: https://leetcode.com/problems/remove-element/ (27)
 * Primary idea: 使用快慢指针，当 fast 指向的元素不为 val，就赋值给 slow，否则跳过
 *
 * Time Complexity: O(n), Space Complexity: O(1)

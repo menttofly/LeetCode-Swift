@@ -9,8 +9,8 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/queue-reconstruction-by-height/
- * Primary idea: 按升高的降序和 k 的升序排序，然后将 people 插入队列中第 k 位置
+ * Question Link: https://leetcode.com/problems/queue-reconstruction-by-height/ (406)
+ * Primary idea: 按身高的降序和 k 的升序排序，然后将 people 插入队列中第 k 位置
  *
  * Time Complexity: O(nlogn), Space Complexity: O(n)
  */

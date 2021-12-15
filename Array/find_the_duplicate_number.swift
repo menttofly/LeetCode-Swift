@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/find-the-duplicate-number/
+ * Question Link: https://leetcode.com/problems/find-the-duplicate-number/ (287)
  * Primary idea: 受到 List Cycle II 启发, 重复元素的位置必定是环的入口.
  *
  * Time Complexity: O(n), Space Complexity: O(1)

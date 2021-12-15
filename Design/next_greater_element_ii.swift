@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/next-greater-element-ii/
+ * Question Link: https://leetcode.com/problems/next-greater-element-ii/ (503)
  * Primary idea: 使用单调递减栈对 x 元素索引持续入栈，维护单调递减特性，被弹出的栈的索引的下一更大值就是当前入栈索引对应的元素
  *
  * Time Complexity: O(n), Space Complexity: O(n)

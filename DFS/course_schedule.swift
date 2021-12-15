@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/course-schedule/
+ * Question Link: https://leetcode.com/problems/course-schedule/ (207)
  * Primary idea: 通过 dfs 检测课程依赖关系形成的有向图, 如果存在环则无法完成所有课程
  *
  * Time Complexity: O(n), Space Complexity: O(n)

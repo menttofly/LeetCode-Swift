@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/search-in-rotated-sorted-array/
+ * Question Link: https://leetcode.com/problems/search-in-rotated-sorted-array/ (33)
  * Primary idea: 旋转数组在 pivot 两侧都是有序递增的，使用二分查找定位 target
  *
  * Time Complexity: O(logn), Space Complexity: O(1)

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/merge-intervals/
+ * Question Link: https://leetcode.com/problems/merge-intervals/ (56)
  * Primary idea: 先按区间 start 升序排列, 然后分析区间重叠情况
  *
  * Time Complexity: O(nlogn), Space Complexity: O(1)
@@ -38,6 +38,7 @@ class MergeIntervals {
                 res[res.count - 1] = previous
             }
         }
+        
         return res
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/set-matrix-zeroes/
+ * Question Link: https://leetcode.com/problems/set-matrix-zeroes/ (73)
  * Primary idea: 待补
  *
  * Time Complexity: O(n), Space Complexity: O(n)
@@ -22,11 +22,11 @@ class SetMatrixZeroes {
 
         let row = matrix.count, col = matrix[0].count
         var firstColZero = false, firstRowZero = false
-        /// 记录第一列中是否存在 0
+        /// 记录原始第一列中是否存在 0
         for i in 0..<row {
             if matrix[i][0] == 0 { firstColZero = true }
         }
-        /// 记录第一行中是否存在 0
+        /// 记录原始第一行中是否存在 0
         for j in 0..<col {
             if matrix[0][j] == 0 { firstRowZero = true }
         }

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/kth-largest-element-in-an-array/
+ * Question Link: https://leetcode.com/problems/kth-largest-element-in-an-array/ (215)
  * Primary idea: 使用快速排序的 partition 算法, 让 divide 的位置不断逼近第 k 大元素
  *
  * Time Complexity: O(nlogn), Space Complexity: O(1)
@@ -37,6 +37,7 @@ class KthLargestElementInAnArray {
     
     /// 快速排序 partition 算法，划分为 [left..l), l, (l..right] 三部分
     /// 返回索引 l
+    /// 降序
     private func partition(_ nums: inout [Int], _ left: Int, _ right: Int) -> Int {
         var l = left, r = right
         /// 选择第一个元素作为枢纽元

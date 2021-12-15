@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+ * Question Link: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/ (114)
  * Primary idea: 后序遍历，先获取 root 的左右子树拉平后的链表，再根据要求将左链表接到右链表上
  *
  * Time Complexity: O(nlogn), Space Complexity: O(n)

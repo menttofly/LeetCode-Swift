@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/subarray-sum-equals-k/
+ * Question Link: https://leetcode.com/problems/subarray-sum-equals-k/ (560)
  * Primary idea: 前缀和数组，记录每个 [0..i] 区间的和。假设区间[left..right] 和为 k，则 sum[right] - sum[left] = k。
  *
  *Note: 扫描整个数组，用字典记录每个 sum[left] 的出现次数

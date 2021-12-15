@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/two-sum/
+ * Question Link: https://leetcode.com/problems/two-sum/ (1)
  * Primary idea: Traversing the array and store (nums[i], i) as (key, value) in a dictionary
  *
  * Time Complexity: O(n), Space Complexity: O(n)
@@ -17,6 +17,7 @@ import Foundation
 class TwoSum {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var hash: [Int: Int] = [:]
+        
         for (i, num) in nums.enumerated() {
             if let index = hash[target - num] {   /// target - num is what we are looking for
                 return [i, index]
@@ -24,6 +25,7 @@ class TwoSum {
                 hash[num] = i
             }
         }
+        
         fatalError("No valid output")
     }
 }

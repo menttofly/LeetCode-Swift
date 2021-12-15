@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/maximum-frequency-stack/
+ * Question Link: https://leetcode.com/problems/maximum-frequency-stack/ (895)
  * Primary idea: 如下
  *
  * Time Complexity: O(1), Space Complexity: O(n)

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/majority-element/
+ * Question Link: https://leetcode.com/problems/majority-element/ (169)
  * Primary idea: 消除不同的元素，最后留下来的就是出现超过一半的元素
  *
  * Time Complexity: O(n), Space Complexity: O(1)

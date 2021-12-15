@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/find-median-from-data-stream/
+ * Question Link: https://leetcode.com/problems/find-median-from-data-stream/ (295)
  * Primary idea: 通过中位数将元素划分到两个堆（大小之差不超过1，large 堆元素都大于 small 堆），通过 max-heap 与 min-heap 的堆顶元素求平均值
  *
  * Time Complexity: addNum is O(logn), findMedian is O(1)

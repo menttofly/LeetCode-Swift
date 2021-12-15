@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/3sum/
+ * Question Link: https://leetcode.com/problems/3sum/ (15)
  * Primary idea: 先对数组排序，遍历三元组中可能的第一个元素的索引，再对每个可能的第一个元素 'index'，从 index + 1 开始进行双向 2Sum 扫描.
  *
  * Time Complexity: O(n^2), Space Complexity: O(1)
