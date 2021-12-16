@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/longest-common-subsequence/
+ * Question Link: https://leetcode.com/problems/longest-common-subsequence/ (1143)
  * Primary idea: 和 Edit Distance 这道题有点类似
  *
  * Time Complexity: O(n^2), Space Complexity: O(n^2)

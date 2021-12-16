@@ -19,6 +19,7 @@ class WordSearch {
         if board.isEmpty || board[0].isEmpty {
             return false
         }
+        
         let word = Array(word)
         var board = board
         /// 判断是否在当前 dfs 路径中

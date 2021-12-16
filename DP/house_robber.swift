@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/house-robber/
+ * Question Link: https://leetcode.com/problems/house-robber/ (198)
  * Primary idea: DP[i] 代表 nums[0..i] 所有 house 能够打劫的最多钱财
  *
  * State Transition Equation: DP(i) = max{DP(i-1), DP(i-2) + num(i)}

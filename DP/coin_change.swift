@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/coin-change/
+ * Question Link: https://leetcode.com/problems/coin-change/ (322)
  * Primary idea: DP(i) 代表使用 coins 数组凑成价值 i 最少需要的硬币数量
  *
  * State Transition Equation: DP[i] = min{DP(i-c1]), DP(i-c2), ...} + 1

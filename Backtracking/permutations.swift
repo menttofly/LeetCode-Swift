@@ -39,10 +39,10 @@ class Permutations {
         /// 第一层在 [1,2,3] 中选择 2，第二层只能选 [1,3]
         /// 第一层在 [1,2,3] 中选择 3，第二层只能选 [1,2]
         for i in start..<nums.count {
-            /// 将当前选择 index 和 start 交换，让下一层有正确的可选项
+            /// 将当前选择 i 和 start 交换，让下一层有正确的可选项
             nums.swapAt(start, i)
             backtracking(&res, &nums, start + 1)
-            /// 回溯到当前层后，需要撤销选择，交换 start 和 index 的数字，在下一次循环中重新选择
+            /// 回溯到当前层后，需要撤销选择，交换 start 和 i 的数字，在下一次循环中重新选择
             /// 如果 nums 是值类型，就不需要撤销
             nums.swapAt(start, i)
         }

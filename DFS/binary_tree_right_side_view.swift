@@ -32,7 +32,7 @@ class BinaryTreeRightSideView {
         return res
     }
     
-    private func dfs(_ node: TreeNode?, _ depth: Int, _ res: inout [Int]) -> Void {
+    private func dfs(_ node: TreeNode?, _ depth: Int, _ res: inout [Int]) {
         /// 保证每一层只保存一个最右侧节点
         if let val = node?.val, res.count <= depth {
             res.append(val)

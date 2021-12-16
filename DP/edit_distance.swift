@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/edit-distance/
+ * Question Link: https://leetcode.com/problems/edit-distance/ (72)
  * Primary idea: dp[i][j] 代表将 word1[0..i) 转为 word2[0..j) 的最少操作次数
  *
  * Note: https://leetcode.com/problems/edit-distance/discuss/25846/C%2B%2B-O(n)-space-DP

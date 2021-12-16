@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/climbing-stairs/
+ * Question Link: https://leetcode.com/problems/climbing-stairs/ (70)
  * Primary idea: DP(n) 代表有 n 个台阶的楼梯，有多少中不同的跳跃方式到达楼顶
  *
  * State Transition Equation: DP(n) = DP(n-1) + DP(n-2), n > 1
