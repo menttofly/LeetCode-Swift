@@ -35,6 +35,7 @@ class ConvertBSTToGreaterTree {
         sum += root.val
         root.val = sum
         convertBST(root.left, &sum)
+        
         return root
     }
 }

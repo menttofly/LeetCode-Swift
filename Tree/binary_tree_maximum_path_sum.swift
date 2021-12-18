@@ -22,7 +22,7 @@ class BinaryTreeMaximumPathSum {
         return res
     }
     
-    /// 计算当前结点开始的单条路径最大和
+    /// 计算当前结点开始的单条路径最大和，即 root + max(root.left, root.right)
     /// - Parameters:
     ///   - root: 当前结点
     ///   - res: 二叉树最大路径和
