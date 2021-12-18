@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+ * Question Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/ (104)
  * Primary idea: Recursively iterating over the tree, the depth of node is maxinum of it's two sub-tree depth.
  *
  * Time Complexity: O(n), Space Complexity: O(1)

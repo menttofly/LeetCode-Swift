@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/path-sum/
+ * Question Link: https://leetcode.com/problems/path-sum/ (112)
  * Primary idea: Deep-first-seaching and compare the root's value with target sum.
  *
  * Time Complexity: O(n^2), Space Complexity: O(n)

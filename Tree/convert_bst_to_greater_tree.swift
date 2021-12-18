@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/convert-bst-to-greater-tree/
+ * Question Link: https://leetcode.com/problems/convert-bst-to-greater-tree/ (538)
  * Primary idea: 利用 BST 的特性，使用中序遍历按大小倒序输出，当前节点的新值就是累加和
  *
  * Time Complexity: O(n), Space Complexity: O(1)

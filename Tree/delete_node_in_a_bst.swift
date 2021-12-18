@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/delete-node-in-a-bst/
+ * Question Link: https://leetcode.com/problems/delete-node-in-a-bst/ (450)
  * Primary idea: 找到待删除的节点后，需要保持 BST 特性，所以从右子树中找最小值替换到待删除的节点中
  *
  * Time Complexity: O(n), Space Complexity: O(n)

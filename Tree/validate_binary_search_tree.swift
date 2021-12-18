@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/validate-binary-search-tree/
+ * Question Link: https://leetcode.com/problems/validate-binary-search-tree/ (98)
  * Primary idea: 递归遍历二叉树所有节点，满足动态更新区间 (minVal..maxVal) 的节点为 BST
  *
  * Time Complexity: O(n), Space Complexity: O(1)

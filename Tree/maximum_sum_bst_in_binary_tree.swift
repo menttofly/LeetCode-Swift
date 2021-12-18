@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/
+ * Question Link: https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/ (1373)
  * Primary idea: 通过后续遍历，获取左右子树是否为 BST，所有节点和等信息，判断当前 root 树是否为 BST，是则更新 BST 的最大值并返回当前树信息
  *
  * Time Complexity: O(n), Space Complexity: O(n)

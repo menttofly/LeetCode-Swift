@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+ * Question Link: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/ (297)
  * Primary idea: 通过后续遍历获取左右子树字符串，再结合当前节点生成序列化字符串；反序列化时，最后一个节点是根节点，同时要先构造 root.right
  * Note：left:(#,#,#,4,2) right:(#,#,3) root:(1)
  *

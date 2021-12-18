@@ -19,7 +19,7 @@ class Node {
 }
 
 /**
- * Question Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+ * Question Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/ (116)
  * Primary idea: 由于要连接的两个节点不一定有公共父节点，所以connectBetween用两个参数代表左右节点
  *
  * Time Complexity: O(n), Space Complexity: O(n)

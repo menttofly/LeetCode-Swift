@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/minimum-depth-of-binary-tree/
+ * Question Link: https://leetcode.com/problems/minimum-depth-of-binary-tree/ (111)
  * Primary idea: 二叉树的最小深度，为左右子树的最小深度 + 1
  *
  * Time Complexity: O(n), Space Complexity: O(1)

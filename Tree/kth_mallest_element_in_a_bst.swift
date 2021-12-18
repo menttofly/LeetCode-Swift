@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+ * Question Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/ (230)
  * Primary idea: 二叉树中序遍历结果是有序的，检查当前 rank，如果等于 k 则找到 kth 元素
  *
  * Time Complexity: O(n), Space Complexity: O(n)

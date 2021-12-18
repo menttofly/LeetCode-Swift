@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/find-duplicate-subtrees/
+ * Question Link: https://leetcode.com/problems/find-duplicate-subtrees/ (652)
  * Primary idea: 先确定如何描述一个树，即用`left+right+node`形式的字符串表示，在递归过程中缓存所有tree的出现次数，次数>=1时说明有重复
  *
  * Time Complexity: O(n), Space Complexity: O(n)

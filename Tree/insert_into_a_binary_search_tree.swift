@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/insert-into-a-binary-search-tree/
+ * Question Link: https://leetcode.com/problems/insert-into-a-binary-search-tree/ (701)
  * Primary idea: 利用 BST 左小右大的特性，在适当的位置插入新值（该位置指针为空，需要创建新节点）
  *
  * Time Complexity: O(n), Space Complexity: O(n)
