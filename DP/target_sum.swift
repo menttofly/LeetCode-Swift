@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/target-sum/
+ * Question Link: https://leetcode.com/problems/target-sum/ (494)
  * Primary idea: DP(S) means how many ways to assign symbols to make sum of integers equal to target S
  *
  * Note: https://leetcode.com/problems/target-sum/discuss/455024/DP-IS-EASY!-5-Steps-to-Think-Through-DP-Questions.

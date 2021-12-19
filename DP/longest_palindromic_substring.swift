@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/longest-palindromic-substring/
+ * Question Link: https://leetcode.com/problems/longest-palindromic-substring/ (5)
  * Primary idea: DP[i][j] 代表 s[i..j] 是否构成回文字符串
  *
  * State Transition Equation: DP(i,j) = (DP(i+1,j−1) and Si == Sj)

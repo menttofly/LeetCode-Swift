@@ -20,9 +20,9 @@ class DiameterOfBinaryTree {
             return 0
         }
         
-        var res = 1
+        var res = 0
         depth(root, &res)
-        return res - 1
+        return res
     }
     
     /// 计算 root 二叉树的高度，即左右子树高度的较大者
@@ -38,7 +38,7 @@ class DiameterOfBinaryTree {
         
         let leftDepth = depth(root.left, &res)
         let rightDepth = depth(root.right, &res)
-        res = max(res, leftDepth + rightDepth + 1)
+        res = max(res, leftDepth + rightDepth)
         
         return max(leftDepth, rightDepth) + 1
     }

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/palindromic-substrings/
+ * Question Link: https://leetcode.com/problems/palindromic-substrings/ (647)
  * Primary idea: 遍历字符串，从当前索引向两端拓展，计算回文串的数量
  *
  * Time Complexity: O(n^2), Space Complexity: O(n)

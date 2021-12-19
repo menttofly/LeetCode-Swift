@@ -15,6 +15,7 @@ import Foundation
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class LowestCommonAncestorOfABinarySearchTree {
+    
     func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         guard let root = root, let p = p, let q = q else {
             return nil

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+ * Question Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/ (19)
  * Primary idea: 使用快慢指针，让 slow 指针指向待删除节点的前驱节点
  *
  * Time Complexity: O(n), Space Complexity: O(1)

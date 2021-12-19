@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+ * Question Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/ (83)
  * Primary idea: 快慢指针，遍历已排序的数组
  *
  * Time Complexity: O(n), Space Complexity: O(1)

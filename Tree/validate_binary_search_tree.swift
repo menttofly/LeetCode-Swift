@@ -27,7 +27,7 @@ class ValidateBinarySearchTree {
         if root.val <= minVal || root.val >= maxVal {
             return false
         }
-        ///  root 符合 BST 性质， 且左右子树均为 BST
+        /// root 符合 BST 性质， 且左右子树均为 BST
         /// left 子树若为 BST，其所有节点值小于 root.val
         /// right 子树若为 BST，其所有节点值大于 root.val
         return isValidBST(root.left, minVal, Int64(root.val)) && isValidBST(root.right, Int64(root.val), maxVal)

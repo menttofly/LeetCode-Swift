@@ -25,8 +25,7 @@ class SubtreeOfAnotherTree {
             return false
         }
         
-        let res = isSubtree(s.left, t) || isSubtree(s.right, t)
-        return res || isMatch(s, t)
+        return isSubtree(s.left, t) || isSubtree(s.right, t) || isMatch(s, t)
     }
     
     /// 判断 s 和 t 是否完全一致

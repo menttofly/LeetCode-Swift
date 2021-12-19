@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * Question Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/ (3)
  * Primary idea: Store (char, index) to a dictionary while traversing the array, update the sliding window and the current maximum value
  *
  * Time Complexity: O(n), Space Complexity: O(n)

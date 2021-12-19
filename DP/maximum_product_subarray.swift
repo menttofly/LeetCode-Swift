@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/maximum-product-subarray/
+ * Question Link: https://leetcode.com/problems/maximum-product-subarray/ (152)
  * Primary idea: MAX[i] 表示以 nums[i] 结尾最大乘积子数组，MIN[i] 表示以 nums[i] 结尾最小乘积子数组
  *
  * Time Complexity: O(n), Space Complexity: O(1)

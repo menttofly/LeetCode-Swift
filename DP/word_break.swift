@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/word-break/
+ * Question Link: https://leetcode.com/problems/word-break/ (139)
  * Primary idea: DP(i) 代表 s[0..i) 字符串是否能被拆分为 wordDict 中的元素组成
  *
  * State Transition Equation: DP[i] true --> {DP[j] = true, s[j..<i] in wordDict}

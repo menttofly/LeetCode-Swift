@@ -15,15 +15,15 @@ import Foundation
  * Time Complexity: O(n^2), Space Complexity: O(n)
  */
 class PathSum {
-    func hasPathSum(_ root: TreeNode?, _ sum: Int) -> Bool {
+    func hasPathSum(_ root: TreeNode?, _ targetSum: Int) -> Bool {
         guard let root = root else {
             return false
         }
         /// root 是叶子节点，并且存储的值 val 和 sum 相等，代表该路径存在
-        if root.left == nil && root.right == nil && root.val == sum {
+        if root.left == nil && root.right == nil && root.val == targetSum {
             return true
         }
         /// 从左右子树寻找和为 sum - root.val 的路径
-        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val)
+        return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val)
     }
 }

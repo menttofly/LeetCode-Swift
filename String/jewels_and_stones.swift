@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/jewels-and-stones/
+ * Question Link: https://leetcode.com/problems/jewels-and-stones/ (771)
  * Primary idea: 使用 Set 保存 jewels，遍历 stones 中的字符，如果在 jewels 中则 res 加一
  *
  * Time Complexity: O(n), Space Complexity: O(n)

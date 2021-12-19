@@ -15,6 +15,12 @@ import Foundation
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class DeleteBSTNode {
+    
+    /// 从 root 为根的树中找到 key 对应节点，删除后返回根节点
+    /// - Parameters:
+    ///   - root: 当前根节点
+    ///   - key: 目标值
+    /// - Returns: 删除 key 后的根节点，可能变为 nil
     func deleteNode(_ root: TreeNode?, _ key: Int) -> TreeNode? {
         guard let root = root else {
             return nil

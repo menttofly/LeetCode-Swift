@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/non-overlapping-intervals/
+ * Question Link: https://leetcode.com/problems/non-overlapping-intervals/ (435)
  * Primary idea: 贪心算法之区间调度(Interval Scheduling)，按区间 end 升序排列，下一不重叠的区间 start 要大等于上一区间的 end
  *
  * Note: 同时参考 labuladong 的解法
@@ -37,7 +37,7 @@ class EraseOverlapIntervals {
                 preEnd = interval[1]
             }
         }
-        
+        /// 要移除的区间数量 = 总数量 - 不重叠区间数量
         return intervals.count - count
     }
 }

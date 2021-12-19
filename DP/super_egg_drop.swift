@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/super-egg-drop/
+ * Question Link: https://leetcode.com/problems/super-egg-drop/ (887)
  * Primary idea: DP(K, N) means the minimum number of moves that you need to know with certainty what F is.
  *
  * State Transition Equation: DP(K, N) = min(1 + max(DP(K - 1, N - 1), DP{K, N - x))), x in [1...N]

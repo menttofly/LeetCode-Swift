@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/permutation-in-string/
+ * Question Link: https://leetcode.com/problems/permutation-in-string/ (567)
  * Primary idea: 固定窗口大小的滑动窗口，和 Group Anagrams 几乎完全相同
  *
  * Time Complexity: O(n), Space Complexity: O(n)
@@ -93,7 +93,7 @@ class CheckInclusion {
                     /// 由于将 left 踢出窗口，所以 count 计数需要加 1，表示满足条件字符又减少一个
                     count += 1
                 }
-
+                /// left 对应字符回到 hash 中，表示重新成为可用字符
                 hash[index] += 1
                 left += 1
             }

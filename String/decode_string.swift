@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/decode-string/
+ * Question Link: https://leetcode.com/problems/decode-string/ (394)
  * Primary idea: Decode substring behind "[" recursively.
  *
  * Time Complexity: O(n), Space Complexity: O(n)

@@ -22,6 +22,7 @@ class MaximumDepthOfBinaryTree {
         
         let leftDepth = maxDepth(root.left)
         let rightDepth = maxDepth(root.right)
+        
         return max(leftDepth, rightDepth) + 1
     }
 }

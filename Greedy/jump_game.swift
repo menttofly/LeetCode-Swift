@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/jump-game/
+ * Question Link: https://leetcode.com/problems/jump-game/ (55)
  * Primary idea: 贪心算法，每次计算当前位置可跳跃的最远距离，并和之前的 furthest 对比
  *
  * Time Complexity: O(n), Space Complexity: O(1)

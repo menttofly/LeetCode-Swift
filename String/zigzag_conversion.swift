@@ -10,7 +10,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/zigzag-conversion/
+ * Question Link: https://leetcode.com/problems/zigzag-conversion/ (6)
  * Primary idea: Visit the characters by row in the same order as reading the Zig-Zag pattern line by line
  *
  * Note: Frequent access to s.count of string is very inefficient in Swift

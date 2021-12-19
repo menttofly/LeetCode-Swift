@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/find-all-anagrams-in-a-string/
+ * Question Link: https://leetcode.com/problems/find-all-anagrams-in-a-string/ (438)
  * Primary idea: 哈希表记录待满足的字符串，及次数信息，并使用固定窗口大小滑动，及左右指针间距为窗口大小时，left 指针就需要滑动
  *
  * Note: labuladong 的通用框架适合窗口大小不固定的问题，本题属于固定窗口，所以不用内层循环而是 if 判断窗口大小
@@ -106,7 +106,7 @@ class FindAllAnagramsInAString {
                     /// 由于将 left 踢出窗口，所以 count 计数需要加 1，表示满足条件字符又减少一个
                     count += 1
                 }
-
+                /// left 对应字符回到 hash 中，表示重新成为可用字符
                 hash[index] += 1
                 left += 1
             }

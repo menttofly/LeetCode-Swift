@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/valid-parentheses/
+ * Question Link: https://leetcode.com/problems/valid-parentheses/ (20)
  * Primary idea: 遇到开括号入栈，遇到闭括号时和栈顶开括号比较，若字典中开括号 key 对应的闭括号与当前一致，则有效继续比较全部字符
  *
  * Time Complexity: O(n), Space Complexity: O(n)

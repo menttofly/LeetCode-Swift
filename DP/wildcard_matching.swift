@@ -9,14 +9,14 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/wildcard-matching/
+ * Question Link: https://leetcode.com/problems/wildcard-matching/ (44)
  * Primary idea: A classic Two-Dimensional Dynamic Programming
  *
  * Time Complexity: O(n^2), Space Complexity: O(n^2)
  */
 class WildcardMatching {
     func isMatch(_ s: String, _ p: String) -> Bool {
-        var ss = Array(s), sp = Array(p)
+        let ss = Array(s), sp = Array(p)
         let m = ss.count, n = sp.count
         if n == 0 {
             return m == 0

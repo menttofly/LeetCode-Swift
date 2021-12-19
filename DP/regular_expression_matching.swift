@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/regular-expression-matching/
+ * Question Link: https://leetcode.com/problems/regular-expression-matching/ (10)
  * Primary idea: 如果 s[0..i) 和 p[0..j) 匹配，则 DP[i][j] = true 否则 false
  *
  * Note: https://leetcode.com/problems/regular-expression-matching/discuss/5684/C%2B%2B-O(n)-space-DP

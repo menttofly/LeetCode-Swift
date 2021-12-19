@@ -16,14 +16,15 @@ import Foundation
  */
 class LowestCommonAncestorOfABinaryTree {
     func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
-        guard let root = root, let p = p, let q = q else {
+        guard let root = root else {
             return nil
         }
         
-        if p === root || q === root {
+        if root === p || root === q {
             return root
         }
         
+        /// 并非返回 p、q 的 LCA，而是在左右子树中查找 p、q 节点
         let left = lowestCommonAncestor(root.left, p, q)
         let right = lowestCommonAncestor(root.right, p, q)
         if left != nil && right != nil {

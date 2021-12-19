@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/intersection-of-two-linked-lists/
+ * Question Link: https://leetcode.com/problems/intersection-of-two-linked-lists/ (160)
  * Primary idea: A 指针指向尾部时，重新指向 B 头部。B 指针指向尾部时，重新指向 A 头部，相交时会走过相同的长度 len(A) + len(B)
  *
  * Note: 这里不获取两条链表的长度，然后使用快慢指针

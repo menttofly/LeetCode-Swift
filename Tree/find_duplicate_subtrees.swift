@@ -15,7 +15,7 @@ import Foundation
  * Time Complexity: O(n), Space Complexity: O(n)
  */
 class FindDuplicateSubtrees {
-    var res = [TreeNode](), hash = [String: Int]()
+    var res = [TreeNode](), memo = [String: Int]()
     
     func findDuplicateSubtrees(_ root: TreeNode?) -> [TreeNode?] {
         traverse(root)
@@ -35,12 +35,12 @@ class FindDuplicateSubtrees {
         let right = traverse(root.right)
         let tree = "\(left),\(right),\(root.val)"
     
-        if let count = hash[tree] {
+        if let count = memo[tree] {
             /// 重复多次，也只需要添加一次
             if count == 1 { res.append(root) }
-            hash[tree] = count + 1
+            memo[tree] = count + 1
         } else {
-            hash[tree] = 1
+            memo[tree] = 1
         }
         
         return tree

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/longest-increasing-subsequence/
+ * Question Link: https://leetcode.com/problems/longest-increasing-subsequence/ (300)
  * Primary idea: DP(i) 代表以 nums[i] 结尾的序列的 LIS
  *
  * State Transition Equation: DP(i) = max(DP(j) | Aj < Ai, j in [0..<i]) + 1

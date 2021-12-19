@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/unique-binary-search-trees/
+ * Question Link: https://leetcode.com/problems/unique-binary-search-trees/ (96)
  * Primary idea: DP(i) 表示 [1..i] 区间的数字组成 unique BST 的数量
  *
  * Note: 结果为选择任意一个数作为节点后，其左右子树的乘积就是一个选择的 BST 数量，全部相加即为结果

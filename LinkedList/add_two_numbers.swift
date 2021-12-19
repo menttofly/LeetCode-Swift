@@ -17,7 +17,7 @@ public class ListNode {
 }
 
 /**
- * Question Link: https://leetcode.com/problems/add-two-numbers/
+ * Question Link: https://leetcode.com/problems/add-two-numbers/ (2)
  * Primary idea: 使用 sum 变量记录记录和，然后使用余数作为新链表当前和，同时在下一次计算中处理进位
  *
  * Time Complexity: O(n), Space Complexity: O(n)

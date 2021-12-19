@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/reverse-linked-list/
+ * Question Link: https://leetcode.com/problems/reverse-linked-list/ (206)
  * Primary idea: 遍历链表时使用三个指针，分别存储 current、previous、next
  *
  * Time Complexity: O(n), Space Complexity: O(1)

@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- * Question Link: https://leetcode.com/problems/perfect-squares/
+ * Question Link: https://leetcode.com/problems/perfect-squares/ (279)
  * Primary idea: DP[i] represent the least number of perfect square numbers which sum to i.
  *
  * State Transition Equation: DP(i+j*j) = min{DP(i+j*j), DP(i) + 1, i in [0...n], i+j*j <=n }
