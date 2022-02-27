@@ -24,10 +24,10 @@ class RotateImage {
             }
         }
         /// Then reverse matrix every single line.
-        for index in 0..<matrix.count {
-            var line = matrix[index]
+        for i in 0..<matrix.count {
+            var line = matrix[i]
             line.reverse()
-            matrix[index] = line
+            matrix[i] = line
         }
     }
     

@@ -34,7 +34,7 @@ class LetterCombinationsOfAPhoneNumber {
         return res
     }
     
-    /// 使用递归树，对于当前 index 对应的字母串，选择所有的字母。如 "abc" 中选取任一字母 'a' 'b' 'c'，统计所有的字母组合
+    /// 使用递归树，对于当前 level 对应的字母串，选择所有的字母。如 "abc" 中选取任一字母 'a' 'b' 'c'，统计所有的字母组合
     /// - Parameters:
     ///   - letters: 字母串数组
     ///   - index: 当前位置，或者树中的层，每层只能选择对应顺序的字母串

@@ -16,9 +16,8 @@ import Foundation
  */
 class Subsets {
     func subsets(_ nums: [Int]) -> [[Int]] {
-        var nums = nums
         var res = [[Int]]()
-        backtracking(&res, &nums, [], 0)
+        backtracking(&res, nums, [], 0)
         return res
     }
     
@@ -29,12 +28,12 @@ class Subsets {
     ///   - nums: 所有的数字
     ///   - sets: 经过一系列选择后到达的路径，即当前数字的组合，非引用类型不需要撤销选择（引用类型需要撤销）
     ///   - start: 可选择区间的下界，也可以代表树当前的层级
-    private func backtracking(_ res: inout [[Int]], _ nums: inout [Int], _ sets: [Int], _ start: Int) {
+    private func backtracking(_ res: inout [[Int]], _ nums: [Int], _ sets: [Int], _ start: Int) {
         /// 保存当前 sets
         res.append(sets)
         /// 从 [start..count) 区间中选取
         for i in start..<nums.count {
-            backtracking(&res, &nums, sets + [nums[i]], i + 1)
+            backtracking(&res, nums, sets + [nums[i]], i + 1)
         }
     }
 }

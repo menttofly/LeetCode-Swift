@@ -16,7 +16,7 @@ import Foundation
  */
 class TrapRainWater {
     func trap(_ height: [Int]) -> Int {
-        guard height.count < 3 else {
+        guard height.count >= 3 else {
             return 0
         }
         
